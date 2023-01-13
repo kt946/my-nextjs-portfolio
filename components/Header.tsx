@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HiMenu } from 'react-icons/hi';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdOutlineEmail } from 'react-icons/md';
 
 type Props = {};
 
@@ -22,12 +24,29 @@ const Header = (props: Props) => {
       url: '#skills',
     },
     {
-      name: 'Work',
-      url: '#work',
+      name: 'Works',
+      url: '#works',
     },
     {
       name: 'Contact',
       url: '#contact',
+    },
+  ];
+  const socialLinks = [
+    {
+      name: 'mail',
+      icon: <MdOutlineEmail />,
+      url: '/',
+    },
+    {
+      name: 'linkedin',
+      icon: <FaLinkedin />,
+      url: '/',
+    },
+    {
+      name: 'github',
+      icon: <FaGithub />,
+      url: '/',
     },
   ];
 
@@ -42,9 +61,10 @@ const Header = (props: Props) => {
           <Image
             src="/assets/portfolio-logo.svg"
             alt="Portfolio Logo"
-            width={60}
-            height={60}
+            width={0}
+            height={0}
             priority
+            className="w-auto h-7"
           />
         </Link>
 
@@ -54,7 +74,7 @@ const Header = (props: Props) => {
         />
 
         {/* Navigation */}
-        <ul className="hidden md:flex flex-row items-center space-x-5 tracking-widest font-semibold">
+        <ul className="hidden md:flex flex-row items-center space-x-6 tracking-wider">
           {navLinks.map((navLink) => (
             <Link
               key={navLink.name}
@@ -66,10 +86,19 @@ const Header = (props: Props) => {
           ))}
           <Link
             href="/"
-            className="py-2 px-3 text-sky-500 border hover:text-white border-sky-500 hover:bg-sky-500 rounded transition duration-300"
+            className="py-1.5 px-4 text-sky-500 border hover:text-white border-sky-500 hover:bg-sky-500 rounded-full transition duration-300"
           >
             Resume
           </Link>
+          {socialLinks.map((socialLink) => (
+            <Link
+              key={socialLink.name}
+              href={socialLink.url}
+              className="text-2xl text-slate-500 hover:text-sky-500 transition duration-300"
+            >
+              {socialLink.icon}
+            </Link>
+          ))}
         </ul>
       </nav>
     </header>
