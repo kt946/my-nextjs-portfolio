@@ -1,48 +1,48 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HiMenu } from 'react-icons/hi';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { MdOutlineEmail } from 'react-icons/md';
-import { GrClose } from 'react-icons/gr';
+import { FaGithub, FaLinkedin, FaList } from 'react-icons/fa';
+import { HiOutlineMail, HiOutlineHome, HiFolder } from 'react-icons/hi';
+import { HiUserCircle } from 'react-icons/hi2';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import MobileMenu from './MobileMenu';
 
 type Props = {};
 
 const Header = (props: Props) => {
   const [navMenu, setNavMenu] = useState(false);
-  const [menuButton, setMenuButton] = useState(false);
-
-  const displayMobileMenu = () => {
-    setNavMenu(!navMenu);
-    setMenuButton(!menuButton);
-  };
 
   const navLinks = [
     {
       name: 'Home',
+      icon: <HiOutlineHome />,
       url: '#home',
     },
     {
       name: 'About',
+      icon: <HiUserCircle />,
       url: '#about',
     },
     {
       name: 'Skills',
+      icon: <FaList />,
       url: '#skills',
     },
     {
       name: 'Works',
+      icon: <HiFolder />,
       url: '#works',
     },
     {
       name: 'Contact',
+      icon: <BsFillPersonLinesFill />,
       url: '#contact',
     },
   ];
   const socialLinks = [
     {
       name: 'mail',
-      icon: <MdOutlineEmail />,
+      icon: <HiOutlineMail />,
       url: '/',
     },
     {
@@ -63,7 +63,7 @@ const Header = (props: Props) => {
         {/* Logo */}
         <Link
           href="/"
-          className="hover:opacity-70 transition duration-300 py-1 px-2"
+          className="hover:opacity-70 transition duration-300 py-1 px-2 md:p-0"
         >
           <Image
             src="/assets/portfolio-logo.svg"
@@ -80,7 +80,7 @@ const Header = (props: Props) => {
           {navLinks.map((navLink) => (
             <Link
               key={navLink.name}
-              href="/" // {navLink.url}
+              href={navLink.url}
               className="hover:text-sky-500 transition duration-300"
             >
               {navLink.name}
@@ -88,7 +88,7 @@ const Header = (props: Props) => {
           ))}
           <Link
             href="/"
-            className="py-1 px-4 text-sky-500 border hover:text-white border-sky-500 hover:bg-sky-500 rounded-full transition duration-300"
+            className="text-sky-500  hover:text-white border border-sky-500 hover:bg-sky-500 py-1 px-4 rounded-full transition duration-300"
           >
             Resume
           </Link>
@@ -106,8 +106,8 @@ const Header = (props: Props) => {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          className={`hamburger hamburger--spin p-2 pb-0 z-30 md:hidden ${menuButton && 'is-active'}`}
-          onClick={() => displayMobileMenu()}
+          className={`hamburger hamburger--spin p-2 pb-0 z-30 md:hidden ${navMenu && 'is-active'}`}
+          onClick={() => setNavMenu(!navMenu)}
         >
           <span className="hamburger-box ">
             <span className="hamburger-inner"></span>
@@ -118,15 +118,16 @@ const Header = (props: Props) => {
         {/* Overlay */}
         <div className={`${navMenu ? 'inset-0' : ''} fixed`}>
           <div
-            className={`${navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm ease-in-out duration-300' : ''}`}
-            onClick={() => displayMobileMenu()}
+            className="w-full h-screen bg-black/70 backdrop-blur-sm ease-in-out duration-300"
+            onClick={() => setNavMenu(!navMenu)}
           />
           {/* Menu */}
-          <div
-            className={`${
-              navMenu ? 'right-0' : 'right-[-100%]'
-            } fixed top-0 w-full max-w-xs h-screen p-6 py-2 bg-slate-800 ease-in-out duration-300`}
-          ></div>
+          <MobileMenu
+            navMenu={navMenu}
+            setNavMenu={setNavMenu}
+            navLinks={navLinks}
+            socialLinks={socialLinks}
+          />
         </div>
       </nav>
     </header>
