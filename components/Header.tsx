@@ -58,12 +58,12 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <header className="bg-black/40 fixed w-full top-0 z-20 backdrop-blur py-3 px-3 sm:px-5 text-base border-b border-slate-500/50">
+    <header className="bg-black/40 fixed w-full top-0 z-20 backdrop-blur py-3 px-3 md:px-5 text-base border-b border-slate-300/10">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <Link
           href="/"
-          className="hover:opacity-70 transition duration-300"
+          className="hover:opacity-70 transition duration-300 py-1 px-2"
         >
           <Image
             src="/assets/portfolio-logo.svg"
@@ -109,19 +109,18 @@ const Header = (props: Props) => {
           className={`hamburger hamburger--spin p-2 pb-0 z-30 md:hidden ${menuButton && 'is-active'}`}
           onClick={() => displayMobileMenu()}
         >
-          <span className="hamburger-box">
+          <span className="hamburger-box ">
             <span className="hamburger-inner"></span>
           </span>
         </button>
 
         {/* Mobile Menu */}
         {/* Overlay */}
-        <div
-          className={`${
-            navMenu ? 'md:hidden inset-0 w-full h-screen bg-black/70 backdrop-blur-sm ease-in-out duration-300' : ''
-          } fixed`}
-          onClick={() => displayMobileMenu()}
-        >
+        <div className={`${navMenu ? 'inset-0' : ''} fixed`}>
+          <div
+            className={`${navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm ease-in-out duration-300' : ''}`}
+            onClick={() => displayMobileMenu()}
+          />
           {/* Menu */}
           <div
             className={`${
