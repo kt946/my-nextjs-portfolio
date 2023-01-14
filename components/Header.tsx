@@ -116,9 +116,9 @@ const Header = (props: Props) => {
 
         {/* Mobile Menu */}
         {/* Overlay */}
-        <div className={`${navMenu ? 'inset-0' : ''} fixed`}>
+        <div className={`${navMenu ? 'inset-0' : ''} fixed transition ease-in-out duration-300`}>
           <div
-            className="w-full h-screen bg-black/70 backdrop-blur-sm ease-in-out duration-300"
+            className={`${navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm transition ease-in-out duration-300' : ''}`}
             onClick={() => setNavMenu(!navMenu)}
           />
           {/* Menu */}

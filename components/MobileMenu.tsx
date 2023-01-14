@@ -28,7 +28,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks, socialLinks }: Props) => {
           <Link
             key={navLink.name}
             href={navLink.url}
-            className="flex items-center hover:bg-[#28354b] hover:text-sky-500 p-2 rounded-lg transition duration-300"
+            className="flex items-center hover:bg-[#28354b] hover:text-sky-500 p-2 rounded-lg transition ease-in-out duration-300"
             onClick={() => setNavMenu(false)}
           >
             <div className="pr-6 text-2xl">{navLink.icon}</div>
@@ -38,7 +38,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks, socialLinks }: Props) => {
         <div className="border-y border-slate-500/20 my-4 py-6">
           <Link
             href="/"
-            className="py-2 px-6 text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 border-t-1 rounded-full transition duration-300"
+            className="py-2 px-6 text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 border-t-1 rounded-full transition ease-in-out duration-300"
           >
             Resume
           </Link>
