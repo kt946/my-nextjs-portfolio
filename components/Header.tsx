@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaList } from 'react-icons/fa';
-import { HiOutlineMail, HiOutlineHome, HiFolder } from 'react-icons/hi';
-import { HiUserCircle } from 'react-icons/hi2';
+import { FaGithub, FaLinkedinIn, FaList } from 'react-icons/fa';
+import { HiOutlineMail, HiOutlineHome } from 'react-icons/hi';
+import { HiUserCircle, HiOutlineFolder } from 'react-icons/hi2';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import MobileMenu from './MobileMenu';
 
@@ -29,9 +29,9 @@ const Header = (props: Props) => {
       url: '#skills',
     },
     {
-      name: 'Works',
-      icon: <HiFolder />,
-      url: '#works',
+      name: 'Work',
+      icon: <HiOutlineFolder />,
+      url: '#work',
     },
     {
       name: 'Contact',
@@ -47,7 +47,7 @@ const Header = (props: Props) => {
     },
     {
       name: 'linkedin',
-      icon: <FaLinkedin />,
+      icon: <FaLinkedinIn />,
       url: '/',
     },
     {
@@ -63,7 +63,7 @@ const Header = (props: Props) => {
         {/* Logo */}
         <Link
           href="/"
-          className="hover:opacity-70 transition duration-300 py-1 px-2 md:p-0"
+          className="py-1 px-2 md:p-0 hover:opacity-70 transition duration-300"
         >
           <Image
             src="/assets/portfolio-logo.svg"
@@ -88,7 +88,7 @@ const Header = (props: Props) => {
           ))}
           <Link
             href="/"
-            className="text-sky-500  hover:text-white border border-sky-500 hover:bg-sky-500 py-1 px-4 rounded-full transition duration-300"
+            className="py-1 px-4 rounded-full text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 transition duration-300"
           >
             Resume
           </Link>
@@ -96,7 +96,7 @@ const Header = (props: Props) => {
             <Link
               key={socialLink.name}
               href={socialLink.url}
-              className="text-2xl text-slate-500 hover:text-sky-500 transition duration-300"
+              className="text-2xl text-slate-400 hover:text-sky-500 transition duration-300"
             >
               {socialLink.icon}
             </Link>
@@ -116,9 +116,11 @@ const Header = (props: Props) => {
 
         {/* Mobile Menu */}
         {/* Overlay */}
-        <div className={`${navMenu ? 'inset-0' : ''} fixed transition ease-in-out duration-300`}>
+        <div className={`fixed md:hidden ${navMenu ? 'inset-0' : ''}`}>
           <div
-            className={`${navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm transition ease-in-out duration-300' : ''}`}
+            className={`${
+              navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm transition ease-in-out duration-300' : ''
+            }`}
             onClick={() => setNavMenu(!navMenu)}
           />
           {/* Menu */}
