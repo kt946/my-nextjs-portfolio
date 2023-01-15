@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
   return (
     <section
       id="home"
-      className="w-full h-screen flex flex-col items-center justify-center text-center overflow-hidden"
+      className="md:pt-40 w-full h-screen flex flex-col items-center justify-center text-center"
     >
       <BackgroundCircles />
 
@@ -34,7 +34,7 @@ const Hero = (props: Props) => {
         {/* Outer Ring */}
         <div className="absolute w-[134px] h-[134px] rounded-full bg-gradient-to-b from-sky-600 to-cyan-400 shadow-md shadow-cyan-400/50 animate-[spin_3s_linear_infinite]" />
         {/* Inner Circle */}
-        <div className="absolute w-32 h-32 flex flex-col justify-center bg-black rounded-full animate-none">
+        <div className="absolute w-32 h-32 flex flex-col justify-center bg-black rounded-full">
           {/* Image */}
           <Image
             src="/assets/portfolio-logo.svg"
@@ -46,7 +46,8 @@ const Hero = (props: Props) => {
           />
         </div>
       </motion.div>
-      <div className="z-10 mt-[160px]">
+
+      <div className="z-10 mt-28">
         <h2 className="pb-2 text-lg md:text-xl lg:text-2xl font-bold tracking-widest">Hi, my name is</h2>
         <h1 className="pb-2 text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold text-sky-500 tracking-widest">
           Kyle Tang
