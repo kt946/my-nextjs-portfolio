@@ -58,7 +58,7 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <header className="bg-black/40 fixed w-full top-0 z-20 backdrop-blur py-3 px-3 md:px-5 text-base border-b border-slate-300/10">
+    <header className="bg-black/40 fixed w-full top-0 z-20 backdrop-blur min-h-[61px] py-3 px-3 md:px-5 text-base border-b border-slate-300/10">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <Link
@@ -71,7 +71,7 @@ const Header = (props: Props) => {
             width={0}
             height={0}
             priority={true}
-            className="w-auto max-w-xs h-6"
+            className="w-auto max-w-xs h-7"
           />
         </Link>
 
