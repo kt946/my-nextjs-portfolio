@@ -11,7 +11,7 @@ const About = (props: Props) => {
       id="about"
       className="my-36 w-full flex flex-col items-center scroll-mt-16"
     >
-      <h2 className="mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">About</h2>
+      <h2 className="pl-[15px] mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">About</h2>
 
       <div className="relative px-6 w-full max-w-7xl flex flex-col md:flex-row justify-center">
         {/* Image container */}

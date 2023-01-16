@@ -45,7 +45,7 @@ const Skills = (props: Props) => {
       id="skills"
       className="my-36 w-full flex flex-col items-center scroll-mt-16"
     >
-      <h2 className="mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">Skills</h2>
+      <h2 className="pl-[15px] mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">Skills</h2>
       {/* Skills Container */}
       <div className="relative px-6 w-full max-w-full flex flex-col md:flex-row justify-center">
         {/* Skill Card */}
