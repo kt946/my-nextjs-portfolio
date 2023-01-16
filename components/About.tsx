@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 type Props = {};
@@ -8,11 +9,11 @@ const About = (props: Props) => {
   return (
     <section
       id="about"
-      className="w-full min-h-screen flex flex-col items-center scroll-mt-16"
+      className="my-36 w-full flex flex-col items-center scroll-mt-16"
     >
-      <h2 className="mt-6 uppercase text-3xl text-center tracking-[15px] text-sky-500">About</h2>
+      <h2 className="mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">About</h2>
 
-      <div className="relative px-6 mt-10 w-full max-w-7xl flex flex-col md:flex-row justify-center">
+      <div className="relative px-6 w-full max-w-7xl flex flex-col md:flex-row justify-center">
         {/* Image container */}
         <div className="mx-auto md:mx-0">
           <Image
@@ -21,15 +22,15 @@ const About = (props: Props) => {
             width={500}
             height={500}
             priority={true}
-            className="w-[256px] h-[256px] md:w-[300px] md:h-[300px] rounded-xl object-cover"
+            className="w-[256px] h-[256px] md:w-[300px] md:h-[300px] rounded-2xl object-cover"
           />
         </div>
         {/* Bio */}
-        <div className="md:ml-10 mt-10 md:mt-0 w-full md:w-[60%]">
+        <div className="md:ml-10 mt-10 md:mt-0 w-full md:w-[60%] flex flex-col">
           <h3 className="mb-4 text-center md:text-left text-2xl md:text-3xl tracking-wide font-semibold">
             Who am I? You sure you want to know?
           </h3>
-          <div className="md:text-xl text-slate-400 space-y-4">
+          <div className="mb-10 sm:text-lg md:text-xl text-slate-400 space-y-4">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quaerat, accusantium quae consequuntur
               temporibus accusamus, inventore velit officia perspiciatis doloremque itaque! Cumque eligendi doloribus ad
@@ -46,6 +47,12 @@ const About = (props: Props) => {
               aliquid ea, provident hic?
             </p>
           </div>
+          <Link
+            href="#contact"
+            className="w-fit mx-auto md:mx-0 py-3 px-6 border-2 border-sky-500 hover:bg-sky-500 rounded-full text-center text-lg font-semibold text-sky-500 hover:text-white transition ease-in-out duration-300"
+          >
+            Connect with me
+          </Link>
         </div>
       </div>
     </section>

@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
   return (
     <section
       id="home"
-      className="md:pt-40 w-full h-[600px] min-h-screen flex flex-col items-center justify-center text-center"
+      className="mb-20 md:pt-40 w-full h-[600px] min-h-screen flex flex-col items-center justify-center text-center"
     >
       {/* Background Animation */}
       <BackgroundCircles />
