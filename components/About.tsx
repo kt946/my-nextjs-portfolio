@@ -8,13 +8,13 @@ const About = (props: Props) => {
   return (
     <section
       id="about"
-      className="pt-[60px] w-full min-h-screen flex flex-col items-center"
+      className="w-full min-h-screen flex flex-col items-center scroll-mt-16"
     >
       <h2 className="mt-6 uppercase text-3xl text-center tracking-[15px] text-sky-500">About</h2>
 
-      <div className="relative px-6 mt-12 w-full max-w-7xl flex flex-col md:flex-row justify-center">
+      <div className="relative px-6 mt-10 w-full max-w-7xl flex flex-col md:flex-row justify-center">
         {/* Image container */}
-        <div className='mx-auto md:mx-0'>
+        <div className="mx-auto md:mx-0">
           <Image
             src="/assets/portrait2.png"
             alt="Portfolio portrait"
@@ -25,7 +25,7 @@ const About = (props: Props) => {
           />
         </div>
         {/* Bio */}
-        <div className="md:ml-9 mt-12 md:mt-0 w-full md:w-[60%]">
+        <div className="md:ml-10 mt-10 md:mt-0 w-full md:w-[60%]">
           <h3 className="mb-4 text-center md:text-left text-2xl md:text-3xl tracking-wide font-semibold">
             Who am I? You sure you want to know?
           </h3>
