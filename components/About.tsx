@@ -9,11 +9,13 @@ const About = (props: Props) => {
   return (
     <section
       id="about"
-      className="my-36 w-full flex flex-col items-center scroll-mt-16"
+      className="my-36 px-6 w-full flex flex-col items-center scroll-mt-16"
     >
-      <h2 className="pl-[15px] mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">About</h2>
+      <h2 className="pl-[15px] mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">
+        About
+      </h2>
 
-      <div className="relative px-6 w-full max-w-7xl flex flex-col md:flex-row justify-center">
+      <div className="relative w-full max-w-7xl flex flex-col md:flex-row justify-center">
         {/* Image container */}
         <div className="mx-auto md:mx-0">
           <Image
@@ -26,7 +28,7 @@ const About = (props: Props) => {
           />
         </div>
         {/* Bio */}
-        <div className="md:ml-10 mt-10 md:mt-0 w-full md:w-[60%] flex flex-col">
+        <div className="mt-10 md:ml-10 md:mt-0 w-full md:w-[60%] flex flex-col">
           <h3 className="mb-4 text-center md:text-left text-2xl md:text-3xl tracking-wide font-semibold">
             Who am I? You sure you want to know?
           </h3>

@@ -43,15 +43,17 @@ const Skills = (props: Props) => {
   return (
     <section
       id="skills"
-      className="my-36 w-full max-w-7xl flex flex-col mx-auto items-center scroll-mt-16"
+      className="my-36 px-6 w-full flex flex-col items-center scroll-mt-16"
     >
-      <h2 className="pl-[15px] mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">Skills</h2>
+      <h2 className="pl-[15px] mt-6 mb-10 uppercase text-3xl text-center tracking-[15px] text-sky-500 font-semibold">
+        Skills
+      </h2>
       {/* Skills Container */}
-      <div className="relative px-6 w-full max-w-full flex flex-col md:flex-row justify-center">
+      <div className="relative w-full max-w-full flex flex-col md:flex-row justify-center">
         {/* Skill Card */}
-        <div className="w-full flex flex-col md:flex-row rounded-xl shadow-lg bg-slate-800 text-center">
+        <div className="w-full max-w-7xl flex flex-col md:flex-row rounded-xl shadow-lg bg-slate-800 text-center">
           {/* Frontend List */}
-          <div className="w-full border-b md:border-b-0 md:border-r border-sky-500/50">
+          <div className="w-full px-3 border-b md:border-b-0 md:border-r border-sky-500/50">
             <div className="my-6 flex flex-col items-center">
               <div className="mb-4 p-4 rounded-full bg-slate-900 text-3xl text-sky-500">
                 <HiCode />
@@ -66,7 +68,7 @@ const Skills = (props: Props) => {
           </div>
 
           {/* Backend List */}
-          <div className="w-full">
+          <div className="w-full px-3">
             <div className="my-6 flex flex-col items-center">
               <div className="mb-4 p-4 rounded-full bg-slate-900 text-3xl text-sky-500">
                 <HiDatabase />

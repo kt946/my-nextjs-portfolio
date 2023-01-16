@@ -58,12 +58,12 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <header className="bg-[#111111]/70 sticky w-full top-0 z-20 backdrop-blur min-h-[61px] py-3 px-3 md:px-5 text-base border-b border-slate-300/10">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto">
+    <header className="bg-[#111111]/70 sticky top-0 z-20 w-full min-h-[61px] py-3 px-6 md:px-5 text-base border-b border-slate-300/10  backdrop-blur">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
-          className="py-1 px-2 md:p-0 hover:opacity-70 transition duration-300"
+          className="py-1 md:p-0 hover:opacity-70 transition duration-300"
         >
           <Image
             src="/assets/portfolio-logo.svg"
@@ -106,7 +106,7 @@ const Header = (props: Props) => {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          className={`hamburger hamburger--spin p-2 pb-0 z-30 md:hidden ${navMenu && 'is-active'}`}
+          className={`hamburger hamburger--spin pt-2 z-30 md:hidden ${navMenu && 'is-active'}`}
           onClick={() => setNavMenu(!navMenu)}
         >
           <span className="hamburger-box ">
