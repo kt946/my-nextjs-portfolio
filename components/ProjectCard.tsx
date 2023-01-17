@@ -25,39 +25,37 @@ const ProjectCard = ({ project }: Props) => {
           href={project.projectLink}
           className="w-fit group"
         >
-          <h4 className="mb-2 flex flex-wrap text-xl sm:text-2xl md:text-3xl font-bold tracking-wide group-hover:text-sky-400 custom-transition">
+          <h4 className="my-2 flex flex-wrap text-xl sm:text-2xl md:text-3xl font-bold tracking-wide group-hover:text-sky-500 custom-transition">
             {project.title}
-            <span className="hidden sm:block ml-2 mt-1 text-sky-400 opacity-0 group-hover:opacity-100 custom-transition">
+            <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 custom-transition">
               <HiArrowRight />
             </span>
           </h4>
         </Link>
         {/* Project Description */}
-        <p className="mb-2 sm:text-lg md:text-xl text-slate-400">{project.description}</p>
+        <p className="sm:text-lg md:text-xl text-slate-300">{project.description}</p>
         {/* Project Technologies */}
-        <ul className="mb-2 flex flex-wrap text-lg text-slate-400 font-semibold">
+        <ul className="my-4 flex flex-wrap text-slate-400 gap-2">
           {project.tech.map((techItem) => (
             <li
               key={techItem}
-              className="pr-4 pb-1"
+              className="px-3 py-1 border border-slate-400 rounded-lg"
             >
               {techItem}
             </li>
           ))}
         </ul>
         {/* Project Link and Github */}
-        <div className="flex space-x-6 md:text-lg md:font-semibold">
-          <Link
-            href={project.projectLink}
-            className="p-2 text-2xl border-2 border-sky-400 hover:bg-sky-400 rounded-full text-sky-400 hover:text-white custom-transition"
-          >
-            <HiOutlineExternalLink />
+        <div className="flex space-x-6">
+          <Link href={project.projectLink}>
+            <button className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition">
+              <HiOutlineExternalLink />
+            </button>
           </Link>
-          <Link
-            href={project.githubLink}
-            className="p-2 text-2xl border-2 border-sky-400 hover:bg-sky-400 rounded-full text-sky-400 hover:text-white custom-transition"
-          >
-            <FaGithub />
+          <Link href={project.githubLink}>
+            <button className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition">
+              <FaGithub />
+            </button>
           </Link>
         </div>
       </div>
@@ -76,7 +74,7 @@ const ProjectCard = ({ project }: Props) => {
           className="w-full h-full object-cover group-hover:scale-125 transition ease-in-out duration-500"
         ></Image>
         {/* Overlay */}
-        <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-sky-400 opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
+        <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-sky-500 opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
           <span className="flex">
             Visit Project
             <span className="ml-2 mt-1">

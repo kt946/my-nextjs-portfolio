@@ -56,7 +56,6 @@ const Work = (props: Props) => {
   ];
 
   return (
-    // Section Container
     <section
       id="work"
       className="my-36 px-6 py-12 scroll-mt-16 border border-red-500"
@@ -65,10 +64,10 @@ const Work = (props: Props) => {
       <div className="mx-auto w-full max-w-[1280px] flex flex-col border border-emerald-500">
         {/* Section Title */}
         <div className="mb-12 md:mb-24">
-          <h2 className="mb-3 text-3xl md:text-4xl text-center md:text-left text-sky-400 uppercase tracking-widest font-semibold">
+          <h2 className="mb-3 text-3xl md:text-4xl text-center md:text-left text-sky-500 uppercase tracking-widest font-semibold">
             Work
           </h2>
-          <h3 className="text-3xl sm:text-4xl md:text-6xl text-center md:text-left font-bold">
+          <h3 className="text-3xl sm:text-5xl md:text-6xl text-center md:text-left font-bold">
             A selection of my latest web development projects
           </h3>
         </div>
