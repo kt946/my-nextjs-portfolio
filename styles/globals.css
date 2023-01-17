@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+  .custom-transition {
+    @apply transition ease-in-out duration-300;
+  }
+}
+
 .hamburger {
   display: inline-block;
   cursor: pointer;

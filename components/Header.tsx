@@ -63,7 +63,7 @@ const Header = (props: Props) => {
         {/* Logo */}
         <Link
           href="/"
-          className="py-1 md:p-0 hover:opacity-70 transition duration-300"
+          className="py-1 md:p-0 hover:opacity-70 custom-transition"
         >
           <Image
             src="/assets/portfolio-logo.svg"
@@ -81,14 +81,14 @@ const Header = (props: Props) => {
             <Link
               key={navLink.name}
               href={navLink.url}
-              className="hover:text-sky-500 transition duration-300"
+              className="hover:text-sky-500 custom-transition"
             >
               {navLink.name}
             </Link>
           ))}
           <Link
             href="/"
-            className="py-1 px-4 rounded-full text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 transition duration-300"
+            className="py-1 px-4 rounded-full text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 custom-transition"
           >
             Resume
           </Link>
@@ -96,7 +96,7 @@ const Header = (props: Props) => {
             <Link
               key={socialLink.name}
               href={socialLink.url}
-              className="text-2xl text-slate-400 hover:text-sky-500 transition duration-300"
+              className="text-2xl text-slate-400 hover:text-sky-500 custom-transition"
             >
               {socialLink.icon}
             </Link>
@@ -119,7 +119,7 @@ const Header = (props: Props) => {
         <div className={`fixed md:hidden ${navMenu ? 'inset-0' : ''}`}>
           <div
             className={`${
-              navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm transition ease-in-out duration-300' : ''
+              navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm custom-transition' : ''
             }`}
             onClick={() => setNavMenu(!navMenu)}
           />
