@@ -18,8 +18,8 @@ const ProjectCard = ({ project }: Props) => {
   return (
     // Project Container
     <li className="w-full flex flex-col lg:flex-row lg:space-y-0 space-x-0 lg:space-x-6 lg:even:flex-row-reverse lg:even:space-x-reverse">
-      {/* Project info */}
-      <div className="lg:max-w-lg my-2 flex flex-col justify-center order-last lg:order-first">
+      {/* Project Info */}
+      <div className="lg:max-w-xl my-2 flex flex-col item justify-center order-last lg:order-first">
         {/* Project Title */}
         <Link
           href={project.projectLink}
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }: Props) => {
       {/* Project Screenshot */}
       <Link
         href={project.projectLink}
-        className="relative flex max-w-5xl rounded-2xl overflow-hidden group"
+        className="relative flex w-full rounded-2xl overflow-hidden group"
       >
         {/* Image */}
         <Image
