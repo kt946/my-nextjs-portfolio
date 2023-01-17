@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 type Props = {};
@@ -9,7 +8,7 @@ const About = (props: Props) => {
   return (
     <section
       id="about"
-      className="my-36 px-6 py-12 scroll-mt-16 border border-blue-500"
+      className="mb-10 px-6 py-12 scroll-mt-16 border border-blue-500"
     >
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col border border-red-500">
@@ -54,11 +53,6 @@ const About = (props: Props) => {
                 aliquid ea, provident hic?
               </p>
             </div>
-            <Link href="#contact">
-              <button className="w-fit mx-auto md:mx-0 py-3 px-6 border-2 border-sky-500 hover:bg-sky-500 rounded-full text-center text-lg font-semibold text-sky-500 hover:text-white transition ease-in-out duration-300">
-                Connect with me
-              </button>
-            </Link>
           </div>
         </div>
       </div>
