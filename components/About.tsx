@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { HiArrowRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 type Props = {};
@@ -18,7 +20,7 @@ const About = (props: Props) => {
             About
           </h2>
           <h3 className="text-3xl sm:text-5xl md:text-6xl text-center md:text-left font-bold">
-            Who am I? You sure you want to know?
+            Me, Myself, and I
           </h3>
         </div>
 
@@ -52,6 +54,17 @@ const About = (props: Props) => {
                 aspernatur quidem deserunt voluptatibus dolor commodi soluta vel consectetur, delectus quae culpa amet
                 aliquid ea, provident hic?
               </p>
+              <Link
+                href='#work'
+                className="group"
+              >
+                <p className="my-2 flex flex-wrap text-sky-500">
+                  Check out some of my latest projects.
+                  <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
+                    <HiArrowRight />
+                  </span>
+                </p>
+              </Link>
             </div>
           </div>
         </div>
