@@ -23,7 +23,7 @@ const About = (props: Props) => {
           </h3>
         </div>
 
-        <div className="relative w-full flex flex-col md:flex-row space-y-8 md:space-y-0 space-x-0 md:space-x-12">
+        <div className="w-full flex flex-col md:flex-row space-y-8 md:space-y-0 space-x-0 md:space-x-12">
           {/* Image container */}
           <div className="mx-auto md:mx-0">
             <Image
