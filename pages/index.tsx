@@ -6,6 +6,7 @@ import Skills from '../components/Skills';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
 import CallToAction from '../components/CallToAction';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
 
       </main>
 
-      {/* Footer */}
+      <Footer />
     </div>
   )
 }

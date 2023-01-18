@@ -23,7 +23,7 @@ const Contact = (props: Props) => {
   return (
     <section
       id="contact"
-      className="section-container border border-orange-500"
+      className="section-container mb-14 border border-orange-500"
     >
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col border border-blue-500">
@@ -38,7 +38,7 @@ const Contact = (props: Props) => {
         </div>
         <div className="w-full grid md:grid-cols-5 md:flex-row gap-8 border border-emerald-500">
           {/* Contact Card */}
-          <div className="w-full h-full p-3 pb-6 flex flex-col items-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-8">
+          <div className="w-full h-full p-3 py-6 flex flex-col items-center justify-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-5">
             <h4 className="flex text-2xl md:text-3xl font-bold tracking-wide">
               Get In Touch
               <span className="mt-1 ml-3 text-2xl md:text-3xl">

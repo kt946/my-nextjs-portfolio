@@ -4,7 +4,7 @@
 
 @layer components {
   .section-container {
-    @apply mb-28 px-4 pt-12 scroll-mt-16
+    @apply md:mb-28 px-4 pt-12 scroll-mt-16
   }
   .custom-transition {
     @apply transition ease-in-out duration-300;
