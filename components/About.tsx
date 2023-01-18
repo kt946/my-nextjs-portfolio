@@ -10,7 +10,7 @@ const About = (props: Props) => {
   return (
     <section
       id="about"
-      className="mb-10 px-6 py-12 scroll-mt-16 border border-blue-500"
+      className="section-container border border-blue-500"
     >
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col border border-red-500">

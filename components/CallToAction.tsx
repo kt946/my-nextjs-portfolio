@@ -8,7 +8,7 @@ const CallToAction = (props: Props) => {
   return (
     <section
       id="callToAction"
-      className="mb-10 px-6"
+      className="mb-10 px-3"
     >
       {/* Content Container */}
       <div className="mx-auto p-6 md:py-12 w-full max-w-[1280px] flex flex-col justify-center items-center space-y-6 text-center bg-slate-800 rounded-xl">

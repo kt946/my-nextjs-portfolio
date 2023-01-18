@@ -4,27 +4,24 @@ import { HiOutlineMail } from 'react-icons/hi';
 // Social Links
 export const socialLinks = [
   {
-    id: 'email',
-    name: 'example@email.com',
+    name: 'email',
     icon: <HiOutlineMail />,
     url: 'mailto:example@email.com',
   },
   {
-    id: 'linkedin',
-    name: 'Linkedin',
+    name: 'linkedin',
     icon: <FaLinkedinIn />,
     url: '/',
   },
   {
-    id: 'github',
-    name: 'Github',
+    name: 'github',
     icon: <FaGithub />,
     url: '/',
   },
 ];
 
 export const resumeLink = {
-  url: '/'
+  url: '/',
 };
 
 // Front-end skills
@@ -49,18 +46,22 @@ export const frontEndSkills = [
 export const backEndSkills = [
   'Git',
   'Github',
+  'JSON',
   'AJAX',
-  'Third-party APIs',
   'Node',
   'OOP',
   'Express',
   'REST API',
-  'SQL, MySQL, Sequelize',
+  'SQL',
+  'MySQL',
+  'Sequelize',
   'ORM',
   'MVC',
   'Handlebars',
-  'NoSQL, MongoDB, Mongoose',
-  'MERN',
+  'NoSQL',
+  'MongoDB',
+  'Mongoose',
+  'MERN Stack',
 ];
 
 // Project List

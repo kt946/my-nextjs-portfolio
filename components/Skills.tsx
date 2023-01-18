@@ -8,7 +8,7 @@ const Skills = (props: Props) => {
   return (
     <section
       id="skills"
-      className="mb-20 px-6 py-12 scroll-mt-16 border border-amber-500"
+      className="section-container border border-amber-500"
     >
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">

@@ -31,7 +31,6 @@ export default function Home() {
 
         <Work />
 
-        {/* Contact */}
         <Contact />
 
       </main>

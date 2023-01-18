@@ -42,7 +42,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
         <div className="flex justify-between">
           {socialLinks.map((socialLink) => (
             <Link
-              key={socialLink.id}
+              key={socialLink.name}
               href={socialLink.url}
               className="p-2 rounded-full text-2xl text-slate-400 hover:text-sky-500 border-2 border-slate-500 hover:border-sky-500 custom-transition"
             >

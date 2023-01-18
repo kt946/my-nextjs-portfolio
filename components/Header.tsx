@@ -78,7 +78,7 @@ const Header = (props: Props) => {
           </Link>
           {socialLinks.map((socialLink) => (
             <Link
-              key={socialLink.id}
+              key={socialLink.name}
               href={socialLink.url}
               className="text-2xl text-slate-400 hover:text-sky-500 custom-transition"
             >
