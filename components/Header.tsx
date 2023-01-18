@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub, FaLinkedinIn, FaList } from 'react-icons/fa';
-import { HiOutlineMail, HiOutlineHome } from 'react-icons/hi';
+import { FaList } from 'react-icons/fa';
+import { HiOutlineHome } from 'react-icons/hi';
 import { HiUserCircle, HiOutlineFolder } from 'react-icons/hi2';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import MobileMenu from './MobileMenu';
+import { socialLinks, resumeLink } from './../utils/constants';
 
 type Props = {};
 
@@ -39,23 +40,6 @@ const Header = (props: Props) => {
       url: '#contact',
     },
   ];
-  const socialLinks = [
-    {
-      name: 'mail',
-      icon: <HiOutlineMail />,
-      url: '/',
-    },
-    {
-      name: 'linkedin',
-      icon: <FaLinkedinIn />,
-      url: '/',
-    },
-    {
-      name: 'github',
-      icon: <FaGithub />,
-      url: '/',
-    },
-  ];
 
   return (
     <header className="bg-[#111111]/70 sticky top-0 z-20 w-full min-h-[61px] py-3 px-6 md:px-5 text-base border-b border-slate-300/10  backdrop-blur">
@@ -87,14 +71,14 @@ const Header = (props: Props) => {
             </Link>
           ))}
           <Link
-            href="/"
+            href={resumeLink.url}
             className="py-1 px-4 rounded-full text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 custom-transition"
           >
             Resume
           </Link>
           {socialLinks.map((socialLink) => (
             <Link
-              key={socialLink.name}
+              key={socialLink.id}
               href={socialLink.url}
               className="text-2xl text-slate-400 hover:text-sky-500 custom-transition"
             >
@@ -118,9 +102,7 @@ const Header = (props: Props) => {
         {/* Overlay */}
         <div className={`fixed md:hidden ${navMenu ? 'inset-0' : ''}`}>
           <div
-            className={`${
-              navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm custom-transition' : ''
-            }`}
+            className={`${navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm custom-transition' : ''}`}
             onClick={() => setNavMenu(!navMenu)}
           />
           {/* Menu */}
@@ -128,7 +110,6 @@ const Header = (props: Props) => {
             navMenu={navMenu}
             setNavMenu={setNavMenu}
             navLinks={navLinks}
-            socialLinks={socialLinks}
           />
         </div>
       </nav>

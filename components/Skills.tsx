@@ -1,45 +1,10 @@
 import React from 'react';
 import { HiCode, HiDatabase } from 'react-icons/hi';
+import { frontEndSkills, backEndSkills } from '../utils/constants';
 
 type Props = {};
 
 const Skills = (props: Props) => {
-  // Front-end skills
-  const frontEndSkills = [
-    'HTML',
-    'CSS',
-    'JavaScript ES6',
-    'TypeScript',
-    'jQuery',
-    'Responsive Design',
-    'DOM API',
-    'Bootstrap',
-    'Bulma',
-    'React',
-    'Redux',
-    'Tailwind CSS',
-    'NextJS',
-    'Framer Motion',
-  ];
-
-  // Back-end skills
-  const backEndSkills = [
-    'Git',
-    'Github',
-    'AJAX',
-    'Third-party APIs',
-    'Node',
-    'OOP',
-    'Express',
-    'REST API',
-    'SQL, MySQL, Sequelize',
-    'ORM',
-    'MVC',
-    'Handlebars',
-    'NoSQL, MongoDB, Mongoose',
-    'MERN',
-  ];
-
   return (
     <section
       id="skills"
@@ -67,7 +32,7 @@ const Skills = (props: Props) => {
           {/* Frontend Skill Card */}
           <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center">
             {/* Card Header */}
-            <div className="mb-6 flex flex-col items-center">
+            <div className="mb-6 mt-3 flex flex-col items-center">
               {/* Frontend Icon */}
               <div className="mb-4 p-4 rounded-full bg-slate-900 text-3xl text-sky-500">
                 <HiCode />
@@ -89,7 +54,7 @@ const Skills = (props: Props) => {
           {/* Backend Skill Card */}
           <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center">
             {/* Card Header */}
-            <div className="mb-6 flex flex-col items-center">
+            <div className="mb-6 mt-3 flex flex-col items-center">
               {/* Backend Icon */}
               <div className="mb-4 p-4 rounded-full bg-slate-900 text-3xl text-sky-500">
                 <HiDatabase />

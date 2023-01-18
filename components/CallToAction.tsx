@@ -16,7 +16,7 @@ const CallToAction = (props: Props) => {
           Don&apos;t be a stranger. Feel free to reach out and connect with me!
         </h3>
         <Link href="#contact">
-          <button className="py-2 px-4 flex border-2 border-sky-500 hover:bg-sky-500 rounded-full text-lg font-semibold text-sky-500 hover:text-white transition ease-in-out duration-300">
+          <button className="custom-btn custom-transition">
             Get in touch
             <span className='mt-1 ml-2 text-xl'>
               <FaRegSmileWink />

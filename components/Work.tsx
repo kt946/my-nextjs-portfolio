@@ -1,60 +1,10 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { projectList } from '../utils/constants';
 
 type Props = {};
 
 const Work = (props: Props) => {
-  const projectList = [
-    {
-      title: 'Lorem Ipsum 1',
-      description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex autem pariatur illum ullam quos earum ad veritatis quaerat, at, voluptatem laudantium eius. Id quaerat odio sed, aliquid sequi architecto eligendi!',
-      tech: ['Node', 'Express', 'React', 'MongoDB', 'Tailwind'],
-      projectLink: '/',
-      githubLink: '/',
-    },
-    {
-      title: 'Lorem Ipsum 2',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-      tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-      projectLink: '/',
-      githubLink: '/',
-    },
-    {
-      title: 'Lorem Ipsum 3',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-      tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-      projectLink: '/',
-      githubLink: '/',
-    },
-    {
-      title: 'Lorem Ipsum 4',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-      tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-      projectLink: '/',
-      githubLink: '/',
-    },
-    {
-      title: 'Lorem Ipsum 5',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-      tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-      projectLink: '/',
-      githubLink: '/',
-    },
-    {
-      title: 'Lorem Ipsum 6',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-      tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-      projectLink: '/',
-      githubLink: '/',
-    },
-  ];
-
   return (
     <section
       id="work"

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { socialLinks, resumeLink } from './../utils/constants';
 
 type Props = {
   navMenu: boolean;
@@ -9,14 +10,9 @@ type Props = {
     icon: JSX.Element;
     url: string;
   }[];
-  socialLinks: {
-    name: string;
-    icon: JSX.Element;
-    url: string;
-  }[];
 };
 
-const MobileMenu = ({ navMenu, setNavMenu, navLinks, socialLinks }: Props) => {
+const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
   return (
     <div
       className={`${
@@ -37,8 +33,8 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks, socialLinks }: Props) => {
         ))}
         <div className="my-4 py-6 flex flex-col border-y border-slate-500/30">
           <Link
-            href="/"
-            className="py-2 px-6 rounded-full text-center text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 custom-transition"
+            href={resumeLink.url}
+            className="custom-btn block custom-transition"
           >
             Resume
           </Link>
@@ -46,7 +42,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks, socialLinks }: Props) => {
         <div className="flex justify-between">
           {socialLinks.map((socialLink) => (
             <Link
-              key={socialLink.name}
+              key={socialLink.id}
               href={socialLink.url}
               className="p-2 rounded-full text-2xl text-slate-400 hover:text-sky-500 border-2 border-slate-500 hover:border-sky-500 custom-transition"
             >
