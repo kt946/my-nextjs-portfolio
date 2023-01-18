@@ -38,7 +38,7 @@ const About = (props: Props) => {
           </div>
           {/* Bio */}
           <div className="w-full flex flex-col">
-            <div className="mb-10 sm:text-lg md:text-xl text-slate-300 space-y-4">
+            <div className="sm:text-lg md:text-xl text-slate-300 space-y-4">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quaerat, accusantium quae consequuntur
                 temporibus accusamus, inventore velit officia perspiciatis doloremque itaque! Cumque eligendi doloribus

@@ -20,10 +20,6 @@ const Skills = (props: Props) => {
     'Tailwind CSS',
     'NextJS',
     'Framer Motion',
-    'Python',
-    'Lorem-1',
-    'asd',
-    'qwerty',
   ];
 
   // Back-end skills
@@ -42,7 +38,6 @@ const Skills = (props: Props) => {
     'Handlebars',
     'NoSQL, MongoDB, Mongoose',
     'MERN',
-    'Sanity',
   ];
 
   return (
@@ -62,10 +57,15 @@ const Skills = (props: Props) => {
           </h3>
         </div>
 
+        <p className="mb-12 text-lg sm:text-xl md:text-2xl text-center md:text-left text-slate-300 font-medium">
+          Web development is a never-ending quest, and I&apos;m always striving to improve myself, one skill set at a
+          time.
+        </p>
+
         {/* Skills Container */}
-        <div className="w-full max-w-full flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+        <div className="w-full max-w-full flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
           {/* Frontend Skill Card */}
-          <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl shadow-lg bg-slate-800 text-center">
+          <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center">
             {/* Card Header */}
             <div className="mb-6 flex flex-col items-center">
               {/* Frontend Icon */}
@@ -79,7 +79,7 @@ const Skills = (props: Props) => {
             </div>
             {/* Card Body */}
             {/* Frontend List */}
-            <ul className="h-full py-4 space-y-2 bg-slate-900 rounded-xl text-lg text-slate-300">
+            <ul className="h-full px-2 py-4 space-y-2 bg-slate-900 rounded-xl text-lg text-slate-300">
               {frontEndSkills.map((skill) => (
                 <li key={skill}>{skill}</li>
               ))}
@@ -87,7 +87,7 @@ const Skills = (props: Props) => {
           </div>
 
           {/* Backend Skill Card */}
-          <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl shadow-lg bg-slate-800 text-center">
+          <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center">
             {/* Card Header */}
             <div className="mb-6 flex flex-col items-center">
               {/* Backend Icon */}
@@ -101,7 +101,7 @@ const Skills = (props: Props) => {
             </div>
             {/* Card Body */}
             {/* Backend List */}
-            <ul className="h-full py-4 space-y-2 bg-slate-900 rounded-xl text-lg text-slate-300">
+            <ul className="h-full px-2 py-4 space-y-2 bg-slate-900 rounded-xl text-lg text-slate-300">
               {backEndSkills.map((skill) => (
                 <li key={skill}>{skill}</li>
               ))}

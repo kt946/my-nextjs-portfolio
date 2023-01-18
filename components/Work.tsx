@@ -73,7 +73,7 @@ const Work = (props: Props) => {
         </div>
 
         {/* Project List Container */}
-        <ul className="flex flex-col space-y-12 md:space-y-28 border border-amber-400">
+        <ul className="flex flex-col space-y-12 md:space-y-36 border border-amber-400">
           {/* Every odd index, reverse project screenshot and info */}
           {projectList.map((project) => (
             <ProjectCard
