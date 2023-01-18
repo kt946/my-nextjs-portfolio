@@ -42,7 +42,7 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <header className="bg-[#111111]/70 sticky top-0 z-20 w-full min-h-[61px] py-3 px-6 md:px-5 text-base border-b border-slate-300/10  backdrop-blur">
+    <header className="bg-[#111111]/70 sticky top-0 z-20 w-full min-h-[61px] py-3 px-4 md:px-5 text-base border-b border-slate-300/10  backdrop-blur">
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link

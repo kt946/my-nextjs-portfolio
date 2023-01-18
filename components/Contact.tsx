@@ -38,7 +38,7 @@ const Contact = (props: Props) => {
         </div>
         <div className="w-full grid md:grid-cols-5 md:flex-row gap-8 border border-emerald-500">
           {/* Contact Card */}
-          <div className="w-full h-full p-3 flex flex-col items-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-6">
+          <div className="w-full h-full p-3 pb-6 flex flex-col items-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-8">
             <h4 className="flex text-2xl md:text-3xl font-bold tracking-wide">
               Get In Touch
               <span className="mt-1 ml-3 text-2xl md:text-3xl">
@@ -49,7 +49,6 @@ const Contact = (props: Props) => {
               I&apos;m currently looking for full-time positions, but if you got an exciting opportunity to share or if
               you just want to say hi, my inbox is always open!
             </p>
-
             {/* Social Links */}
             <div className="w-full flex justify-center space-x-8">
               {socialLinks.map((socialLink) => (
@@ -62,10 +61,12 @@ const Contact = (props: Props) => {
                 </Link>
               ))}
             </div>
-
             {/* Resume Link */}
-            <Link href={resumeLink.url}>
-              <button className="custom-btn custom-transition mb-3">Download Resume</button>
+            <Link
+              href={resumeLink.url}
+              className="custom-btn custom-transition"
+            >
+              Download Resume
             </Link>
           </div>
           {/* Contact Form */}

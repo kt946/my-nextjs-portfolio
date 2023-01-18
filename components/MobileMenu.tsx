@@ -24,10 +24,10 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
           <Link
             key={navLink.name}
             href={navLink.url}
-            className="py-2 px-3 flex items-center rounded-lg hover:bg-slate-900/60 hover:text-sky-500 custom-transition"
+            className="py-2 px-3 flex items-center rounded-lg hover:bg-slate-900/60 font-semibold hover:text-sky-500 custom-transition"
             onClick={() => setNavMenu(false)}
           >
-            <div className="pr-6 text-2xl">{navLink.icon}</div>
+            <span className="pr-6 text-2xl text-slate-400">{navLink.icon}</span>
             {navLink.name}
           </Link>
         ))}
