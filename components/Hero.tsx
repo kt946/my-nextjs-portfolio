@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
   return (
     <section
       id="home"
-      className="md:mb-36 md:pt-40 px-6 w-full h-[600px] min-h-screen flex flex-col items-center justify-center text-center scroll-mt-16"
+      className="section-container hero-container md:pt-64 flex flex-col items-center justify-center text-center border border-emerald-500"
     >
       {/* Background Animation */}
       <BackgroundCircles />
@@ -51,11 +51,11 @@ const Hero = (props: Props) => {
 
       {/* Heading */}
       <div className="z-10 mt-20 md:mt-28">
-        <h2 className="pb-2 text-lg md:text-xl lg:text-2xl font-bold tracking-widest">Hi, my name is</h2>
-        <h1 className="pb-2 text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold text-sky-500 tracking-widest">
+        <h2 className="pb-2 text-xl lg:text-2xl font-bold tracking-widest custom-text-shadow">Hi, my name is</h2>
+        <h1 className="pb-2 text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold text-sky-500 tracking-widest custom-text-shadow">
           Kyle Tang
         </h1>
-        <h2 className="h-10 uppercase text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-widest">
+        <h2 className="h-10 uppercase text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-widest custom-text-shadow">
           <span>{text}</span>
           <Cursor cursorColor="#0ea5e9" />
         </h2>

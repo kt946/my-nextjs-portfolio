@@ -15,6 +15,17 @@
   .contactInput {
     @apply p-2.5 rounded-md flex bg-slate-900 outline-none border border-slate-900 focus:border-sky-500 text-slate-300 placeholder-slate-500 transition-all;
   }
+  .hero-ring-style {
+    @apply absolute rounded-full
+  }
+}
+
+.custom-text-shadow {
+  text-shadow: 0px 1px 3px rgba(0,0,0,.50), 0px 2px 6px rgba(0, 0, 0, 0.65)
+}
+
+.hero-container {
+  min-height: calc(100vh - 60px);
 }
 
 .hamburger {
