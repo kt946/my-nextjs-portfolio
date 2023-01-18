@@ -1,11 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2';
 import { socialLinks, resumeLink } from '../utils/constants';
+
+type Inputs = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 
 type Props = {};
 
 const Contact = (props: Props) => {
+  const { register, handleSubmit } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    console.log(formData);
+  };
   return (
     <section
       id="contact"
@@ -60,7 +73,10 @@ const Contact = (props: Props) => {
           </div>
           {/* Contact Form */}
           <div className="col-span-3 w-full h-auto bg-slate-800 rounded-xl p-3 caret-sky-500 focus:caret-sky-500">
-            <form className="md:px-3">
+            <form
+              className="md:px-3"
+              onSubmit={handleSubmit(onSubmit)}
+            >
               <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
                 {/* Name Field */}
                 <div className="flex flex-col">
@@ -69,6 +85,7 @@ const Contact = (props: Props) => {
                     className="contactInput"
                     type="text"
                     placeholder="Name"
+                    {...register('name')}
                   />
                 </div>
                 {/* Email Field */}
@@ -78,6 +95,7 @@ const Contact = (props: Props) => {
                     className="contactInput"
                     type="email"
                     placeholder="Email"
+                    {...register('email')}
                   />
                 </div>
               </div>
@@ -88,6 +106,7 @@ const Contact = (props: Props) => {
                   className="contactInput"
                   type="text"
                   placeholder="Subject"
+                  {...register('subject')}
                 />
               </div>
               {/* Message Field */}
@@ -97,6 +116,7 @@ const Contact = (props: Props) => {
                   className="contactInput"
                   rows={8}
                   placeholder="Message"
+                  {...register('message')}
                 ></textarea>
               </div>
               <button
