@@ -41,11 +41,11 @@ const Contact = (props: Props) => {
                 <HiOutlineChatBubbleBottomCenterText />
               </span>
             </h4>
-            <p className="text-slate-400 text-lg md:px-2">
-              I&apos;m currently looking for full-time positions, but if you got an exciting opportunity to share or if
+            <p className="text-slate-300 text-lg md:px-2">
+              I&apos;m currently looking for full-time positions, but if you got an exciting opportunity you need help with or if
               you just want to say hi, my inbox is always open!
             </p>
-            <p className="text-slate-400 text-lg md:px-2">
+            <p className="text-slate-300 text-lg md:px-2">
               Send me a message through the form or connect with me on socials!
             </p>
             {/* Social Links */}
@@ -54,7 +54,7 @@ const Contact = (props: Props) => {
                 <Link
                   key={socialLink.name}
                   href={socialLink.url}
-                  className="p-2 rounded-full text-2xl text-slate-400 hover:text-sky-500 border-2 border-slate-500 hover:border-sky-500 custom-transition"
+                  className="p-2 md:p-3 rounded-full text-2xl md:text-3xl text-slate-400 hover:text-sky-500 border-2 md:border-[3px] border-slate-500 hover:border-sky-500 custom-transition"
                 >
                   {socialLink.icon}
                 </Link>
