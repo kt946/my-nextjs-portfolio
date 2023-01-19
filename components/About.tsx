@@ -16,17 +16,43 @@ const About = (props: Props) => {
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}
         <div className="mb-12 md:mb-24">
-          <h2 className="section-title">
-            About
-          </h2>
-          <h3 className="section-subtitle">
-            Me, Myself, and I
-          </h3>
+          <h2 className="section-title">About</h2>
+          <h3 className="section-subtitle">Me, Myself, and I</h3>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row space-y-8 md:space-y-0 space-x-0 md:space-x-12">
+        <div className="w-full flex flex-col md:flex-row items-center md:items-start space-y-8 space-y-reverse md:space-y-0 space-x-0 md:space-x-12">
+          {/* Bio */}
+          <div className="w-full flex flex-col sm:text-lg md:text-xl text-slate-300 space-y-4">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quaerat, accusantium quae consequuntur
+              temporibus accusamus, inventore velit officia perspiciatis doloremque itaque! Cumque eligendi doloribus ad
+              harum accusantium optio at facere.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat voluptate voluptatem amet ipsam
+              porro suscipit? Impedit totam, cumque repudiandae maiores reiciendis assumenda excepturi accusantium
+              dolores architecto quod? Officiis, dolore!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis ullam doloribus harum
+              aspernatur quidem deserunt voluptatibus dolor commodi soluta vel consectetur, delectus quae culpa amet
+              aliquid ea, provident hic?
+            </p>
+            <Link
+              href="#work"
+              className="group"
+            >
+              <p className="my-2 flex flex-wrap text-sky-500">
+                Check out some of my latest projects.
+                <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
+                  <HiArrowRight />
+                </span>
+              </p>
+            </Link>
+          </div>
+
           {/* Image container */}
-          <div className="mx-auto md:mx-0">
+          <div className="mx-auto md:mx-0 order-first md:order-last">
             <Image
               src="/assets/portrait2.png"
               alt="Portfolio portrait"
@@ -35,37 +61,6 @@ const About = (props: Props) => {
               priority={true}
               className="w-[256px] h-[256px] md:min-w-[320px] md:h-[320px] lg:h-[384px] lg:min-w-[384px] rounded-2xl object-cover"
             />
-          </div>
-          {/* Bio */}
-          <div className="w-full flex flex-col">
-            <div className="sm:text-lg md:text-xl text-slate-300 space-y-4">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quaerat, accusantium quae consequuntur
-                temporibus accusamus, inventore velit officia perspiciatis doloremque itaque! Cumque eligendi doloribus
-                ad harum accusantium optio at facere.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat voluptate voluptatem amet
-                ipsam porro suscipit? Impedit totam, cumque repudiandae maiores reiciendis assumenda excepturi
-                accusantium dolores architecto quod? Officiis, dolore!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis ullam doloribus harum
-                aspernatur quidem deserunt voluptatibus dolor commodi soluta vel consectetur, delectus quae culpa amet
-                aliquid ea, provident hic?
-              </p>
-              <Link
-                href='#work'
-                className="group"
-              >
-                <p className="my-2 flex flex-wrap text-sky-500">
-                  Check out some of my latest projects.
-                  <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
-                    <HiArrowRight />
-                  </span>
-                </p>
-              </Link>
-            </div>
           </div>
         </div>
       </div>
