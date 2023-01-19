@@ -42,8 +42,8 @@ const Contact = (props: Props) => {
               </span>
             </h4>
             <p className="text-slate-300 text-lg md:px-2">
-              I&apos;m currently looking for full-time positions, but if you got an exciting opportunity you need help with or if
-              you just want to say hi, my inbox is always open!
+              I&apos;m currently looking for full-time positions, but if you got an exciting opportunity you need help
+              with or if you just want to say hi, my inbox is always open!
             </p>
             <p className="text-slate-300 text-lg md:px-2">
               Send me a message through the form or connect with me on socials!
@@ -118,7 +118,7 @@ const Contact = (props: Props) => {
               </div>
               <button
                 type="submit"
-                className="mx-auto px-8 mt-4 mb-2 custom-btn group custom-transition"
+                className="mx-auto px-8 mt-4 mb-2 custom-btn custom-transition group"
               >
                 Submit
                 <span className="ml-2 mt-1.5 text-sky-500 group-hover:text-slate-200 custom-transition">

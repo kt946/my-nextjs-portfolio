@@ -15,13 +15,14 @@ const CallToAction = (props: Props) => {
         <h3 className="text-xl md:text-3xl font-bold">
           Don&apos;t be a stranger. Feel free to reach out and connect with me!
         </h3>
-        <Link href="#contact">
-          <button className="custom-btn custom-transition">
-            Get in touch
-            <span className='mt-1 ml-2 text-xl'>
-              <FaRegSmileWink />
-            </span>
-          </button>
+        <Link
+          href="#contact"
+          className="custom-btn custom-transition"
+        >
+          Get in touch
+          <span className="mt-1 ml-2 text-xl">
+            <FaRegSmileWink />
+          </span>
         </Link>
       </div>
     </section>

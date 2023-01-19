@@ -21,17 +21,17 @@ const ProjectCard = ({ project }: Props) => {
       {/* Project Info */}
       <div className="w-full my-2 flex flex-col item justify-center order-last lg:order-first">
         {/* Project Title */}
-        <Link
-          href={project.projectLink}
-          className="w-fit group"
-        >
-          <h4 className="my-2 flex flex-wrap text-xl sm:text-2xl md:text-3xl font-bold tracking-wide group-hover:text-sky-500 custom-transition">
+        <h4 className="w-fit group">
+          <Link
+            href={project.projectLink}
+            className="my-2 flex flex-wrap text-xl sm:text-2xl md:text-3xl font-bold tracking-wide group-hover:text-sky-500 custom-transition"
+          >
             {project.title}
             <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 custom-transition">
               <HiArrowRight />
             </span>
-          </h4>
-        </Link>
+          </Link>
+        </h4>
         {/* Project Description */}
         <p className="sm:text-lg md:text-xl text-slate-300">{project.description}</p>
         {/* Project Technologies */}
@@ -47,15 +47,17 @@ const ProjectCard = ({ project }: Props) => {
         </ul>
         {/* Project Link and Github */}
         <div className="flex space-x-6">
-          <Link href={project.projectLink}>
-            <button className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition">
-              <HiOutlineExternalLink />
-            </button>
+          <Link
+            href={project.projectLink}
+            className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition"
+          >
+            <HiOutlineExternalLink />
           </Link>
-          <Link href={project.githubLink}>
-            <button className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition">
-              <FaGithub />
-            </button>
+          <Link
+            href={project.githubLink}
+            className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition"
+          >
+            <FaGithub />
           </Link>
         </div>
       </div>

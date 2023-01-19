@@ -40,14 +40,12 @@ const About = (props: Props) => {
             </p>
             <Link
               href="#work"
-              className="group"
+              className="my-2 flex flex-wrap text-sky-500 group"
             >
-              <p className="my-2 flex flex-wrap text-sky-500">
-                Check out some of my latest projects.
-                <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
-                  <HiArrowRight />
-                </span>
-              </p>
+              Check out some of my latest projects.
+              <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
+                <HiArrowRight />
+              </span>
             </Link>
           </div>
 
