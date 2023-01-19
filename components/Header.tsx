@@ -42,7 +42,7 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <header className="bg-[#111111]/70 sticky top-0 z-20 w-full min-h-[61px] py-3 px-4 md:px-5 text-base border-b border-slate-300/10  backdrop-blur">
+    <header className="bg-[#111111]/70 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/10  backdrop-blur">
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link
@@ -62,28 +62,32 @@ const Header = (props: Props) => {
         {/* Navigation Links */}
         <ul className="hidden md:flex flex-row items-center space-x-6 tracking-wider">
           {navLinks.map((navLink) => (
-            <Link
-              key={navLink.name}
-              href={navLink.url}
-              className="hover:text-sky-500 custom-transition"
-            >
-              {navLink.name}
-            </Link>
+            <li key={navLink.name}>
+              <Link
+                href={navLink.url}
+                className="hover:text-sky-500 custom-transition"
+              >
+                {navLink.name}
+              </Link>
+            </li>
           ))}
-          <Link
-            href={resumeLink.url}
-            className="py-1 px-4 rounded-full text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 custom-transition"
-          >
-            Resume
-          </Link>
-          {socialLinks.map((socialLink) => (
+          <li>
             <Link
-              key={socialLink.name}
-              href={socialLink.url}
-              className="text-2xl text-slate-400 hover:text-sky-500 custom-transition"
+              href={resumeLink.url}
+              className="py-1 px-4 rounded-full text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 custom-transition"
             >
-              {socialLink.icon}
+              Resume
             </Link>
+          </li>
+          {socialLinks.map((socialLink) => (
+            <li key={socialLink.name}>
+              <Link
+                href={socialLink.url}
+                className="text-2xl text-slate-400 hover:text-sky-500 custom-transition"
+              >
+                {socialLink.icon}
+              </Link>
+            </li>
           ))}
         </ul>
 
