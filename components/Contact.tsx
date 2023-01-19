@@ -29,12 +29,8 @@ const Contact = (props: Props) => {
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}
         <div className="mb-12 md:mb-24">
-          <h2 className="section-title">
-            Contact
-          </h2>
-          <h3 className="section-subtitle">
-            Let&apos;s build something incredible together!
-          </h3>
+          <h2 className="section-title">Contact</h2>
+          <h3 className="section-subtitle">Let&apos;s build something incredible together!</h3>
         </div>
         <div className="w-full grid md:grid-cols-5 md:flex-row gap-8">
           {/* Contact Card */}
@@ -45,9 +41,12 @@ const Contact = (props: Props) => {
                 <HiOutlineChatBubbleBottomCenterText />
               </span>
             </h4>
-            <p className="text-slate-400">
+            <p className="text-slate-400 text-lg md:px-2">
               I&apos;m currently looking for full-time positions, but if you got an exciting opportunity to share or if
               you just want to say hi, my inbox is always open!
+            </p>
+            <p className="text-slate-400 text-lg md:px-2">
+              Send me a message through the form or connect with me on socials!
             </p>
             {/* Social Links */}
             <div className="w-full flex justify-center space-x-8">
