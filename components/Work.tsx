@@ -8,22 +8,22 @@ const Work = (props: Props) => {
   return (
     <section
       id="work"
-      className="section-container border border-red-500"
+      className="section-container"
     >
       {/* Content Container */}
-      <div className="mx-auto w-full max-w-[1280px] flex flex-col border border-emerald-500">
+      <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}
         <div className="mb-12 md:mb-24">
-          <h2 className="mb-3 text-3xl md:text-4xl text-center md:text-left text-sky-500 uppercase tracking-widest font-semibold">
+          <h2 className="section-title">
             Work
           </h2>
-          <h3 className="text-3xl sm:text-5xl md:text-6xl text-center md:text-left font-bold">
+          <h3 className="section-subtitle">
             A selection of my latest web development projects
           </h3>
         </div>
 
         {/* Project List Container */}
-        <ul className="flex flex-col space-y-12 md:space-y-36 border border-amber-400">
+        <ul className="flex flex-col space-y-12 md:space-y-36">
           {/* Every odd index, reverse project screenshot and info */}
           {projectList.map((project) => (
             <ProjectCard

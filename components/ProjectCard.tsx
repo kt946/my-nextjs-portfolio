@@ -39,7 +39,7 @@ const ProjectCard = ({ project }: Props) => {
           {project.tech.map((techItem) => (
             <li
               key={techItem}
-              className="px-3 py-1 border border-slate-400 rounded-lg"
+              className="px-3 py-1 border border-slate-400 rounded-full"
             >
               {techItem}
             </li>
@@ -60,7 +60,7 @@ const ProjectCard = ({ project }: Props) => {
         </div>
       </div>
 
-      {/* Project Screenshot */}
+      {/* Project Image */}
       <Link
         href={project.projectLink}
         className="lg:max-w-2xl relative flex w-full rounded-2xl overflow-hidden group"

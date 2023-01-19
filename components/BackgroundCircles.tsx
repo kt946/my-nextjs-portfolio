@@ -19,15 +19,15 @@ const BackgroundCircles = (props: Props) => {
     >
       <div className="h-[75px] md:h-[125px] w-[75px] md:w-[125px] hero-ring-style border md:border-2 border-slate-500/25 animate-ping" />
 
-      <div className="h-[150px] w-[150px] md:h-[350px] md:w-[350px] hero-ring-style border-dashed border-4 md:border-[15px] border-slate-800/30 animate-[spin_10s_linear_infinite_reverse]" />
+      <div className="h-[150px] w-[150px] md:h-[350px] md:w-[350px] hero-ring-style border-dashed border-4 md:border-[15px] border-slate-800/40 animate-[spin_10s_linear_infinite_reverse]" />
 
       <div className="h-[200px] w-[200px] md:h-[400px] md:w-[400px] hero-ring-style border-4 md:border-8 border-b-transparent border-slate-600/10 animate-[spin_10s_linear_infinite]" />
 
-      <div className="h-[250px] w-[250px] md:h-[450px] md:w-[450px] hero-ring-style border-dotted border-4 md:border-[10px] border-slate-800/30 animate-[spin_10s_linear_infinite_reverse]" />
+      <div className="h-[250px] w-[250px] md:h-[450px] md:w-[450px] hero-ring-style border-dotted border-4 md:border-[10px] border-slate-800/40 animate-[spin_10s_linear_infinite_reverse]" />
 
-      <div className="h-[300px] w-[300px] md:h-[500px] md:w-[500px] hero-ring-style border-4 md:border-8 border-t-transparent border-r-transparent border-slate-600/10 animate-[spin_10s_linear_infinite]" />
+      <div className="h-[300px] w-[300px] md:h-[500px] md:w-[500px] hero-ring-style border-double border-4 md:border-8 border-t-transparent border-r-transparent border-slate-600/10 animate-[spin_10s_linear_infinite]" />
 
-      <div className="h-[350px] w-[350px] md:h-[550px] md:w-[550px] hero-ring-style border-4 md:border-8 border-x-transparent border-slate-800/30 animate-[spin_10s_linear_infinite_reverse]" />
+      <div className="h-[350px] w-[350px] md:h-[550px] md:w-[550px] hero-ring-style border-doubleborder-4 md:border-8 border-r-transparent border-t-transparent border-slate-800/40 animate-[spin_10s_linear_infinite_reverse]" />
 
       <div className="h-[400px] w-[400px] md:h-[600px] md:w-[600px] hero-ring-style border-4 md:border-8 border-x-transparent border-slate-600/10 animate-[spin_10s_linear_infinite]" />
 

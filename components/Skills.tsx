@@ -8,16 +8,16 @@ const Skills = (props: Props) => {
   return (
     <section
       id="skills"
-      className="section-container border border-amber-500"
+      className="section-container"
     >
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}
         <div className="mb-12 md:mb-24">
-          <h2 className="mb-3 text-3xl md:text-4xl text-center md:text-left text-sky-500 uppercase tracking-widest font-semibold">
+          <h2 className="section-title">
             Skills
           </h2>
-          <h3 className="text-3xl sm:text-5xl md:text-6xl text-center md:text-left font-bold">
+          <h3 className="section-subtitle">
             Crafting digital solutions with style
           </h3>
         </div>

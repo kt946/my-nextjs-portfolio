@@ -23,20 +23,20 @@ const Contact = (props: Props) => {
   return (
     <section
       id="contact"
-      className="section-container mb-14 border border-orange-500"
+      className="section-container mb-14"
     >
       {/* Content Container */}
-      <div className="mx-auto w-full max-w-[1280px] flex flex-col border border-blue-500">
+      <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}
         <div className="mb-12 md:mb-24">
-          <h2 className="mb-3 text-3xl md:text-4xl text-center md:text-left text-sky-500 uppercase tracking-widest font-semibold">
+          <h2 className="section-title">
             Contact
           </h2>
-          <h3 className="text-3xl sm:text-5xl md:text-6xl text-center md:text-left font-bold">
+          <h3 className="section-subtitle">
             Let&apos;s build something incredible together!
           </h3>
         </div>
-        <div className="w-full grid md:grid-cols-5 md:flex-row gap-8 border border-emerald-500">
+        <div className="w-full grid md:grid-cols-5 md:flex-row gap-8">
           {/* Contact Card */}
           <div className="w-full h-full p-3 py-6 flex flex-col items-center justify-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-5">
             <h4 className="flex text-2xl md:text-3xl font-bold tracking-wide">
@@ -72,7 +72,7 @@ const Contact = (props: Props) => {
           {/* Contact Form */}
           <div className="col-span-3 w-full h-auto bg-slate-800 rounded-xl p-3 caret-sky-500 focus:caret-sky-500">
             <form
-              className="md:px-3"
+              className="md:p-3"
               onSubmit={handleSubmit(onSubmit)}
             >
               <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
