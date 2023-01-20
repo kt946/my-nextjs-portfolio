@@ -21,7 +21,7 @@ const About = (props: Props) => {
             opacity: 0,
           }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
           className="mb-12 md:mb-24"
         >
@@ -37,7 +37,7 @@ const About = (props: Props) => {
               opacity: 0,
             }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
             className="w-full flex flex-col sm:text-lg md:text-xl text-slate-300 space-y-4"
           >
@@ -74,7 +74,7 @@ const About = (props: Props) => {
               opacity: 0,
             }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
             className="mx-auto md:mx-0 order-first md:order-last"
           >

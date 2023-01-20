@@ -1,26 +1,37 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2';
-import { socialLinks, resumeLink } from '../utils/constants';
 import { MdSend } from 'react-icons/md';
 import { motion } from 'framer-motion';
-
-type Inputs = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+import emailjs from '@emailjs/browser';
+import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2';
+import { socialLinks, resumeLink } from '../utils/constants';
 
 type Props = {};
 
 const Contact = (props: Props) => {
-  const { register, handleSubmit } = useForm<Inputs>();
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    console.log(formData);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // console.log(formRef.current);
+    // console.log(serviceId, templateId, publicKey);
+
+    // if form data exists and environment variaiables exist, then send form data using emailjs
+    if (formRef.current && serviceId && templateId && publicKey) {
+      try {
+        await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
+        console.log('Email sent successfully');
+        formRef.current.reset();
+      } catch (error) {
+        console.error('Error sending email: ', error);
+      }
+    }
   };
+
   return (
     <section
       id="contact"
@@ -35,7 +46,7 @@ const Contact = (props: Props) => {
             opacity: 0,
           }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
           className="mb-12 md:mb-24"
         >
@@ -100,7 +111,8 @@ const Contact = (props: Props) => {
           >
             <form
               className="md:p-3"
-              onSubmit={handleSubmit(onSubmit)}
+              ref={formRef}
+              onSubmit={handleSubmit}
             >
               <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
                 {/* Name Field */}
@@ -110,7 +122,8 @@ const Contact = (props: Props) => {
                     className="contactInput"
                     type="text"
                     placeholder="Name"
-                    {...register('name')}
+                    name="name"
+                    required 
                   />
                 </div>
                 {/* Email Field */}
@@ -120,7 +133,8 @@ const Contact = (props: Props) => {
                     className="contactInput"
                     type="email"
                     placeholder="Email"
-                    {...register('email')}
+                    name="email"
+                    required 
                   />
                 </div>
               </div>
@@ -131,7 +145,8 @@ const Contact = (props: Props) => {
                   className="contactInput"
                   type="text"
                   placeholder="Subject"
-                  {...register('subject')}
+                  name="subject"
+                  required 
                 />
               </div>
               {/* Message Field */}
@@ -141,7 +156,8 @@ const Contact = (props: Props) => {
                   className="contactInput"
                   rows={6}
                   placeholder="Message"
-                  {...register('message')}
+                  name="message"
+                  required 
                 ></textarea>
               </div>
               <button

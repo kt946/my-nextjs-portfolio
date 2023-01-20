@@ -18,7 +18,7 @@ const SkillCard = ({ frontEndSkills, backEndSkills }: Props) => {
         </h3>
       </div>
       {/* Card List */}
-      <ul className="h-full px-2 py-4 space-y-2 bg-slate-900 rounded-xl text-lg text-slate-300">
+      <ul className="h-full px-2 py-4 space-y-2 bg-slate-900 rounded-xl sm:text-lg text-slate-300">
         {frontEndSkills?.map((skill) => (
           <li key={skill}>{skill}</li>
         ))}

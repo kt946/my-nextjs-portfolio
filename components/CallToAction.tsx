@@ -18,7 +18,7 @@ const CallToAction = (props: Props) => {
           opacity: 0,
         }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
         className="mx-auto p-6 md:py-12 w-full max-w-[1280px] flex flex-col justify-center items-center space-y-6 text-center bg-slate-800 rounded-xl"
       >
@@ -29,7 +29,7 @@ const CallToAction = (props: Props) => {
           href="#contact"
           className="custom-btn custom-transition"
         >
-          Get in touch
+          Let&apos;s chat
           <span className="mt-1 ml-2 text-xl">
             <FaRegSmileWink />
           </span>

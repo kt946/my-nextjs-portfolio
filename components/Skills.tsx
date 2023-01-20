@@ -1,5 +1,4 @@
 import React from 'react';
-import { HiCode, HiDatabase } from 'react-icons/hi';
 import { frontEndSkills, backEndSkills } from '../utils/constants';
 import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
@@ -21,7 +20,7 @@ const Skills = (props: Props) => {
             opacity: 0,
           }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
           className="mb-12 md:mb-24"
         >
@@ -35,7 +34,7 @@ const Skills = (props: Props) => {
             opacity: 0,
           }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
           className="mb-12 text-lg sm:text-xl md:text-2xl text-center md:text-left text-slate-300 font-medium"
         >
@@ -56,10 +55,9 @@ const Skills = (props: Props) => {
         >
           {/* Frontend Skill Card */}
           <SkillCard frontEndSkills={frontEndSkills} />
-          
+
           {/* Backend Skill Card */}
           <SkillCard backEndSkills={backEndSkills} />
-          
         </motion.div>
       </div>
     </section>

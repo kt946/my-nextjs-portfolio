@@ -58,7 +58,7 @@ const Hero = (props: Props) => {
         className="z-10 mt-10 md:mt-20"
       >
         <h2 className="pb-2 text-lg md:text-xl lg:text-2xl font-bold tracking-widest custom-text-shadow">Hi, my name is</h2>
-        <h1 className="pb-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold text-sky-500 tracking-widest custom-text-shadow">
+        <h1 className="pb-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold text-sky-500 tracking-wider md:tracking-widest custom-text-shadow">
           Kyle Tang
         </h1>
         <h2 className="h-10 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest custom-text-shadow">

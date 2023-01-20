@@ -24,7 +24,7 @@ const ProjectCard = ({ project }: Props) => {
         opacity: 0,
       }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
       className="w-full flex flex-col lg:flex-row lg:space-y-0 space-x-0 lg:space-x-6 lg:even:flex-row-reverse lg:even:space-x-reverse"
     >
