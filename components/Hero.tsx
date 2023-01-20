@@ -31,7 +31,7 @@ const Hero = (props: Props) => {
           opacity: 1,
         }}
         transition={{ delay: 2.9, duration: 0.5 }}
-        className="-mt-[64px] p-[6px] w-32 h-32 bg-gradient-to-t from-sky-600 to-cyan-400 rounded-full"
+        className="-mt-[64px] p-[4px] w-32 h-32 bg-sky-500 rounded-full"
       >
         <div className="relative flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
           <Image
@@ -57,9 +57,11 @@ const Hero = (props: Props) => {
         transition={{ type: 'tween', ease: 'easeOut', duration: 0.8 }}
         className="z-10 mt-10 md:mt-20"
       >
-        <h2 className="pb-2 text-lg md:text-xl lg:text-2xl font-bold tracking-widest custom-text-shadow">Hi, my name is</h2>
-        <h1 className="pb-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold text-sky-500 tracking-wider md:tracking-widest custom-text-shadow">
-          Kyle Tang
+        <h2 className="pb-2 text-lg md:text-xl lg:text-2xl font-bold tracking-widest custom-text-shadow">
+          Hi, my name is
+        </h2>
+        <h1 className="pb-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold tracking-wider md:tracking-widest">
+          <span className="custom-gradient-text">Kyle Tang</span>
         </h1>
         <h2 className="h-10 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest custom-text-shadow">
           <span>{text}</span>

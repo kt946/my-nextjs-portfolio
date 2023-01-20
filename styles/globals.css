@@ -7,7 +7,7 @@
     @apply mb-12 md:mb-24 px-4 pt-10 scroll-mt-16;
   }
   .section-title {
-    @apply mb-3 text-3xl md:text-4xl text-center md:text-left text-sky-500 uppercase tracking-widest font-semibold;
+    @apply mb-3 text-3xl md:text-4xl text-center md:text-left custom-gradient-text uppercase tracking-widest font-semibold;
   }
   .section-subtitle {
     @apply text-3xl sm:text-5xl md:text-6xl text-center md:text-left font-bold;
@@ -23,6 +23,9 @@
   }
   .hero-ring-style {
     @apply absolute rounded-full;
+  }
+  .custom-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-t from-blue-600 to-[#00ddff];
   }
 }
 
