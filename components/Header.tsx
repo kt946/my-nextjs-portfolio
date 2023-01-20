@@ -7,6 +7,7 @@ import { HiUserCircle, HiOutlineFolder } from 'react-icons/hi2';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import MobileMenu from './MobileMenu';
 import { socialLinks, resumeLink } from './../utils/constants';
+import { motion } from 'framer-motion';
 
 type Props = {};
 
@@ -42,7 +43,18 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <header className="bg-[#111111]/70 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/10  backdrop-blur">
+    <motion.header
+      initial={{
+        y: -60,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{ type: 'tween', ease: 'easeOut', duration: 0.8 }}
+      className="bg-[#111111]/70 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/10  backdrop-blur"
+    >
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link
@@ -54,7 +66,6 @@ const Header = (props: Props) => {
             alt="Portfolio Logo"
             width={0}
             height={0}
-            priority={true}
             className="w-auto max-w-xs h-7"
           />
         </Link>
@@ -117,7 +128,7 @@ const Header = (props: Props) => {
           />
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

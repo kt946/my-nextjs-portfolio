@@ -1,6 +1,7 @@
 import React from 'react';
 import { HiCode, HiDatabase } from 'react-icons/hi';
 import { frontEndSkills, backEndSkills } from '../utils/constants';
+import { motion } from 'framer-motion';
 
 type Props = {};
 
@@ -13,22 +14,45 @@ const Skills = (props: Props) => {
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}
-        <div className="mb-12 md:mb-24">
-          <h2 className="section-title">
-            Skills
-          </h2>
-          <h3 className="section-subtitle">
-            Crafting digital solutions with style
-          </h3>
-        </div>
+        <motion.div
+          initial={{
+            y: 20,
+            opacity: 0,
+          }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+          className="mb-12 md:mb-24"
+        >
+          <h2 className="section-title">Skills</h2>
+          <h3 className="section-subtitle">Crafting digital solutions with style</h3>
+        </motion.div>
 
-        <p className="mb-12 text-lg sm:text-xl md:text-2xl text-center md:text-left text-slate-300 font-medium">
+        <motion.p
+          initial={{
+            y: 20,
+            opacity: 0,
+          }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+          className="mb-12 text-lg sm:text-xl md:text-2xl text-center md:text-left text-slate-300 font-medium"
+        >
           Web development is a never-ending quest, and I&apos;m always striving to improve myself, one skill set at a
           time.
-        </p>
+        </motion.p>
 
         {/* Skills Container */}
-        <div className="w-full max-w-full flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
+        <motion.div
+          initial={{
+            y: 20,
+            opacity: 0,
+          }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+          className="w-full max-w-full flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8"
+        >
           {/* Frontend Skill Card */}
           <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center">
             {/* Card Header */}
@@ -72,7 +96,7 @@ const Skills = (props: Props) => {
               ))}
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

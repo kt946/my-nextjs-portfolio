@@ -11,8 +11,8 @@ const Footer = (props: Props) => {
       id="footer"
       className="px-4"
     >
-      <div className="py-12 border-t border-slate-500/50 flex flex-col items-center font-medium text-center">
-        <p className="text-lg mb-4">&copy; {year} Kyle Tang</p>
+      <div className="py-12 border-t border-slate-500/50 flex flex-col items-center font-semibold text-lg text-center">
+        <p className="mb-4">&copy; {year} Kyle Tang</p>
         <p className="flex items-center">
           Made with
           <span className="pl-2 flex text-3xl space-x-2">

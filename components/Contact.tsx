@@ -4,6 +4,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2';
 import { socialLinks, resumeLink } from '../utils/constants';
 import { MdSend } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 type Inputs = {
   name: string;
@@ -28,13 +29,31 @@ const Contact = (props: Props) => {
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}
-        <div className="mb-12 md:mb-24">
+        <motion.div
+          initial={{
+            y: 20,
+            opacity: 0,
+          }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+          className="mb-12 md:mb-24"
+        >
           <h2 className="section-title">Contact</h2>
           <h3 className="section-subtitle">Let&apos;s build something incredible together!</h3>
-        </div>
+        </motion.div>
         <div className="w-full grid md:grid-cols-5 md:flex-row gap-8">
           {/* Contact Card */}
-          <div className="w-full h-full p-3 py-6 flex flex-col items-center justify-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-5">
+          <motion.div
+            initial={{
+              y: 20,
+              opacity: 0,
+            }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+            className="w-full h-full p-3 py-6 flex flex-col items-center justify-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-5"
+          >
             <h4 className="flex text-2xl md:text-3xl font-bold tracking-wide">
               Get In Touch
               <span className="mt-1 ml-3 text-2xl md:text-3xl">
@@ -67,9 +86,18 @@ const Contact = (props: Props) => {
             >
               Download Resume
             </Link>
-          </div>
+          </motion.div>
           {/* Contact Form */}
-          <div className="col-span-3 w-full h-auto bg-slate-800 rounded-xl p-3 caret-sky-500 focus:caret-sky-500">
+          <motion.div
+            initial={{
+              y: 20,
+              opacity: 0,
+            }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+            className="col-span-3 w-full h-auto bg-slate-800 rounded-xl p-3 caret-sky-500 focus:caret-sky-500"
+          >
             <form
               className="md:p-3"
               onSubmit={handleSubmit(onSubmit)}
@@ -126,7 +154,7 @@ const Contact = (props: Props) => {
                 </span>
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

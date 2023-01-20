@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { HiOutlineExternalLink, HiArrowRight } from 'react-icons/hi';
 import { FaGithub } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 type Props = {
   project: {
@@ -17,7 +18,16 @@ type Props = {
 const ProjectCard = ({ project }: Props) => {
   return (
     // Project Container
-    <li className="w-full flex flex-col lg:flex-row lg:space-y-0 space-x-0 lg:space-x-6 lg:even:flex-row-reverse lg:even:space-x-reverse">
+    <motion.li
+      initial={{
+        y: 20,
+        opacity: 0,
+      }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+      className="w-full flex flex-col lg:flex-row lg:space-y-0 space-x-0 lg:space-x-6 lg:even:flex-row-reverse lg:even:space-x-reverse"
+    >
       {/* Project Info */}
       <div className="w-full my-2 flex flex-col item justify-center order-last lg:order-first">
         {/* Project Title */}
@@ -86,7 +96,7 @@ const ProjectCard = ({ project }: Props) => {
         </p>
         <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black opacity-0 group-hover:opacity-80 transition ease-in-out duration-500" />
       </Link>
-    </li>
+    </motion.li>
   );
 };
 

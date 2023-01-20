@@ -15,14 +15,32 @@ const About = (props: Props) => {
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
         {/* Section Title */}
-        <div className="mb-12 md:mb-24">
+        <motion.div
+          initial={{
+            y: 20,
+            opacity: 0,
+          }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+          className="mb-12 md:mb-24"
+        >
           <h2 className="section-title">About</h2>
           <h3 className="section-subtitle">Me, Myself, and I</h3>
-        </div>
+        </motion.div>
 
         <div className="w-full flex flex-col md:flex-row items-center md:items-start space-y-8 space-y-reverse md:space-y-0 space-x-0 md:space-x-12">
           {/* Bio */}
-          <div className="w-full flex flex-col sm:text-lg md:text-xl text-slate-300 space-y-4">
+          <motion.div
+            initial={{
+              x: -50,
+              opacity: 0,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+            className="w-full flex flex-col sm:text-lg md:text-xl text-slate-300 space-y-4"
+          >
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quaerat, accusantium quae consequuntur
               temporibus accusamus, inventore velit officia perspiciatis doloremque itaque! Cumque eligendi doloribus ad
@@ -47,10 +65,19 @@ const About = (props: Props) => {
                 <HiArrowRight />
               </span>
             </Link>
-          </div>
+          </motion.div>
 
           {/* Image container */}
-          <div className="mx-auto md:mx-0 order-first md:order-last">
+          <motion.div
+            initial={{
+              x: 50,
+              opacity: 0,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+            className="mx-auto md:mx-0 order-first md:order-last"
+          >
             <Image
               src="/assets/portrait2.png"
               alt="Portfolio portrait"
@@ -59,7 +86,7 @@ const About = (props: Props) => {
               priority={true}
               className="w-[256px] h-[256px] md:min-w-[320px] md:h-[320px] lg:h-[384px] lg:min-w-[384px] rounded-2xl object-cover"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
