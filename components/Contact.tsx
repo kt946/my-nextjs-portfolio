@@ -16,7 +16,7 @@ const Contact = (props: Props) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     // if form data exists and environment variables exist, then send form data using emailjs
     if (formRef.current && serviceId && templateId && publicKey) {
       try {
@@ -87,7 +87,7 @@ const Contact = (props: Props) => {
                 <Link
                   key={socialLink.name}
                   href={socialLink.url}
-                  className="p-2 md:p-3 rounded-full text-2xl md:text-3xl text-slate-400 hover:text-sky-500 border-2 md:border-[3px] border-slate-500 hover:border-sky-500 custom-transition"
+                  className="p-2 rounded-full text-2xl text-slate-400 hover:text-sky-500 border-2 border-slate-500 hover:border-sky-500 custom-transition"
                 >
                   {socialLink.icon}
                 </Link>
