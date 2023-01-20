@@ -34,7 +34,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
           </Link>
         ))}
         {/* Resume Link */}
-        <div className="py-4 flex flex-col">
+        <div className="my-4 py-4 flex flex-col border-y border-slate-500/30">
           <Link
             href={resumeLink.url}
             className="custom-btn block custom-transition"
@@ -42,7 +42,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
             Resume
           </Link>
         </div>
-        <div className="pt-2 flex justify-between">
+        <div className="flex justify-between">
           {/* Social Links */}
           {socialLinks.map((socialLink) => (
             <Link

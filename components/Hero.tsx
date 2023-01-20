@@ -56,7 +56,7 @@ const Hero = (props: Props) => {
           opacity: 1,
         }}
         transition={{ type: 'tween', ease: 'easeOut', duration: 0.8 }}
-        className="z-10 mt-10 md:mt-20"
+        className="z-10 mt-10 md:mt-12"
       >
         {/* Intro */}
         <h2 className="pb-2 text-lg md:text-xl lg:text-2xl font-bold tracking-widest custom-text-shadow">
