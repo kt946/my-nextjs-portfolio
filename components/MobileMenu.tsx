@@ -36,7 +36,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
         {/* Resume Link */}
         <div className="my-4 py-4 flex flex-col border-y border-slate-500/30">
           <Link
-            href={resumeLink.url}
+            href={resumeLink}
             className="custom-btn block custom-transition"
           >
             Resume

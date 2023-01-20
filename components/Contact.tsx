@@ -78,9 +78,7 @@ const Contact = (props: Props) => {
               I&apos;m currently looking for full-time positions, but if you got an exciting opportunity you need help
               with or if you just want to say hi, my inbox is always open!
             </p>
-            <p className="text-slate-300 md:px-2">
-              Send me a message through the form or connect with me on socials!
-            </p>
+            <p className="text-slate-300 md:px-2">Send me a message through the form or connect with me on socials!</p>
             {/* Social Links */}
             <div className="w-full flex justify-center space-x-8">
               {socialLinks.map((socialLink) => (
@@ -95,7 +93,7 @@ const Contact = (props: Props) => {
             </div>
             {/* Resume Link */}
             <Link
-              href={resumeLink.url}
+              href={resumeLink}
               className="custom-btn custom-transition"
             >
               Download Resume

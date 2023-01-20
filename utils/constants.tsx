@@ -20,9 +20,22 @@ export const socialLinks = [
   },
 ];
 
-export const resumeLink = {
-  url: '/',
-};
+export const resumeLink = '/';
+
+export const bioParagraphs = [
+  {
+    id: 'paragraph1',
+    text: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quaerat, accusantium quae consequuntur temporibus accusamus, inventore velit officia perspiciatis doloremque itaque! Cumque eligendi doloribus ad harum accusantium optio at facere.`,
+  },
+  {
+    id: 'paragraph2',
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat voluptate voluptatem amet ipsam porro suscipit? Impedit totam, cumque repudiandae maiores reiciendis assumenda excepturi accusantium dolores architecto quod? Officiis, dolore!`,
+  },
+  {
+    id: 'paragraph3',
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis ullam doloribus harum aspernatur quidem deserunt voluptatibus dolor commodi soluta vel consectetur, delectus quae culpa amet aliquid ea, provident hic?`,
+  },
+];
 
 // Front-end skills
 export const frontEndSkills = [
@@ -38,7 +51,7 @@ export const frontEndSkills = [
   'React',
   'Redux',
   'Tailwind CSS',
-  'NextJS',
+  'Next.js',
   'Framer Motion',
 ];
 
@@ -48,10 +61,10 @@ export const backEndSkills = [
   'Github',
   'JSON',
   'AJAX',
-  'Node',
+  'Node.js',
   'NPM',
   'OOP',
-  'Express',
+  'Express.js',
   'REST API',
   'SQL',
   'MySQL',

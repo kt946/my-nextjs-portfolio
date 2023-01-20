@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { HiArrowRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import { bioParagraphs } from '../utils/constants';
 
 type Props = {};
 
@@ -41,21 +42,9 @@ const About = (props: Props) => {
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
             className="w-full flex flex-col sm:text-lg md:text-xl text-slate-300 space-y-4"
           >
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quaerat, accusantium quae consequuntur
-              temporibus accusamus, inventore velit officia perspiciatis doloremque itaque! Cumque eligendi doloribus ad
-              harum accusantium optio at facere.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat voluptate voluptatem amet ipsam
-              porro suscipit? Impedit totam, cumque repudiandae maiores reiciendis assumenda excepturi accusantium
-              dolores architecto quod? Officiis, dolore!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis ullam doloribus harum
-              aspernatur quidem deserunt voluptatibus dolor commodi soluta vel consectetur, delectus quae culpa amet
-              aliquid ea, provident hic?
-            </p>
+            {bioParagraphs.map((paragraph) => (
+              <p key={paragraph.id}>{paragraph.text}</p>
+            ))}
             <Link
               href="#work"
               className="my-2 flex flex-wrap text-sky-500 group"

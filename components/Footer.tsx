@@ -9,7 +9,7 @@ const Footer = (props: Props) => {
   return (
     <section
       id="footer"
-      className="px-4 "
+      className="px-4"
     >
       <div className="max-w-7xl mx-auto py-12 border-t border-slate-300/20 flex flex-col sm:flex-row justify-between items-center text-lg text-center text-slate-300">
         {/* Copyright */}
