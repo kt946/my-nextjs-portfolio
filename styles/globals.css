@@ -47,7 +47,6 @@
 .scrollbar-firefox {
   scrollbar-width: thin;
   scrollbar-color: rgb(14 165 233) rgb(30 41 59);
-  -webkit-overflow-scrolling: touch;
 }
 
 .custom-text-shadow {

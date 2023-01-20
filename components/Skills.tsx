@@ -2,6 +2,7 @@ import React from 'react';
 import { HiCode, HiDatabase } from 'react-icons/hi';
 import { frontEndSkills, backEndSkills } from '../utils/constants';
 import { motion } from 'framer-motion';
+import SkillCard from './SkillCard';
 
 type Props = {};
 
@@ -54,48 +55,11 @@ const Skills = (props: Props) => {
           className="w-full max-w-full flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8"
         >
           {/* Frontend Skill Card */}
-          <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center">
-            {/* Card Header */}
-            <div className="mb-6 mt-3 flex flex-col items-center">
-              {/* Frontend Icon */}
-              <div className="mb-4 p-4 rounded-full bg-slate-900 text-3xl text-sky-500">
-                <HiCode />
-              </div>
-              {/* Frontend Title */}
-              <h3 className="w-min text-xl sm:2xl md:text-3xl font-semibold uppercase tracking-widest">
-                Frontend Development
-              </h3>
-            </div>
-            {/* Card Body */}
-            {/* Frontend List */}
-            <ul className="h-full px-2 py-4 space-y-2 bg-slate-900 rounded-xl text-lg text-slate-300">
-              {frontEndSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-
+          <SkillCard frontEndSkills={frontEndSkills} />
+          
           {/* Backend Skill Card */}
-          <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center">
-            {/* Card Header */}
-            <div className="mb-6 mt-3 flex flex-col items-center">
-              {/* Backend Icon */}
-              <div className="mb-4 p-4 rounded-full bg-slate-900 text-3xl text-sky-500">
-                <HiDatabase />
-              </div>
-              {/* Backend Title */}
-              <h3 className="w-min text-xl sm:2xl md:text-3xl font-semibold uppercase tracking-widest">
-                Backend Development
-              </h3>
-            </div>
-            {/* Card Body */}
-            {/* Backend List */}
-            <ul className="h-full px-2 py-4 space-y-2 bg-slate-900 rounded-xl text-lg text-slate-300">
-              {backEndSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </div>
+          <SkillCard backEndSkills={backEndSkills} />
+          
         </motion.div>
       </div>
     </section>

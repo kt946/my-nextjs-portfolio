@@ -60,11 +60,11 @@ const Contact = (props: Props) => {
                 <HiOutlineChatBubbleBottomCenterText />
               </span>
             </h4>
-            <p className="text-slate-300 text-lg md:px-2">
+            <p className="text-slate-300 sm:text-lg md:px-2">
               I&apos;m currently looking for full-time positions, but if you got an exciting opportunity you need help
               with or if you just want to say hi, my inbox is always open!
             </p>
-            <p className="text-slate-300 text-lg md:px-2">
+            <p className="text-slate-300 sm:text-lg md:px-2">
               Send me a message through the form or connect with me on socials!
             </p>
             {/* Social Links */}
