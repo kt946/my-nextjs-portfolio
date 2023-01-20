@@ -9,10 +9,12 @@ const Footer = (props: Props) => {
   return (
     <section
       id="footer"
-      className="px-4"
+      className="px-4 "
     >
-      <div className="py-12 border-t border-slate-500/50 flex flex-col items-center font-semibold text-lg text-center">
-        <p className="mb-4">&copy; {year} Kyle Tang</p>
+      <div className="max-w-7xl mx-auto py-12 border-t border-slate-300/20 flex flex-col sm:flex-row justify-between items-center text-lg text-center text-slate-300">
+        <p className="mb-4 sm:mb-0">
+          &copy; {year} <span className="text-slate-200 font-bold">Kyle Tang</span>
+        </p>
         <p className="flex items-center">
           Made with
           <span className="pl-2 flex text-3xl space-x-2">

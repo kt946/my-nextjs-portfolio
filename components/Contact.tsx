@@ -57,10 +57,10 @@ const Contact = (props: Props) => {
           {/* Contact Card */}
           <motion.div
             initial={{
-              y: 20,
+              x: -50,
               opacity: 0,
             }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
             className="w-full h-full p-3 py-6 flex flex-col items-center justify-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-5"
@@ -101,10 +101,10 @@ const Contact = (props: Props) => {
           {/* Contact Form */}
           <motion.div
             initial={{
-              y: 20,
+              x: 50,
               opacity: 0,
             }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
             className="col-span-3 w-full h-auto bg-slate-800 rounded-xl p-3 caret-sky-500 focus:caret-sky-500"

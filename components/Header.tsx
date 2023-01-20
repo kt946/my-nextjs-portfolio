@@ -53,7 +53,7 @@ const Header = (props: Props) => {
         opacity: 1,
       }}
       transition={{ type: 'tween', ease: 'easeOut', duration: 0.8 }}
-      className="bg-black/70 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/10  backdrop-blur"
+      className="bg-black/70 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/20  backdrop-blur"
     >
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
