@@ -160,6 +160,7 @@ const Contact = (props: Props) => {
                   required 
                 ></textarea>
               </div>
+              {/* Submit button */}
               <button
                 type="submit"
                 className="mx-auto px-8 mt-4 mb-2 custom-btn custom-transition group"

@@ -55,14 +55,16 @@ const ProjectCard = ({ project }: Props) => {
             </li>
           ))}
         </ul>
-        {/* Project Link and Github */}
+        {/* Project Links */}
         <div className="flex space-x-6">
+          {/* Deployed Link */}
           <Link
             href={project.projectLink}
             className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition"
           >
             <HiOutlineExternalLink />
           </Link>
+          {/* Github Link */}
           <Link
             href={project.githubLink}
             className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition"

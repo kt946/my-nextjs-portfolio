@@ -55,6 +55,7 @@ const Header = (props: Props) => {
       transition={{ type: 'tween', ease: 'easeOut', duration: 0.8 }}
       className="bg-black/70 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/20  backdrop-blur"
     >
+      {/* Navbar */}
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link
@@ -70,8 +71,9 @@ const Header = (props: Props) => {
           />
         </Link>
 
-        {/* Navigation Links */}
-        <ul className="hidden md:flex flex-row items-center space-x-6 tracking-wider">
+        {/* Navigation Group */}
+        <ul className="hidden md:flex flex-row items-center space-x-6 tracking-wider font-semibold">
+          {/* Navigation Links */}
           {navLinks.map((navLink) => (
             <li key={navLink.name}>
               <Link
@@ -82,6 +84,7 @@ const Header = (props: Props) => {
               </Link>
             </li>
           ))}
+          {/* Resume Link */}
           <li>
             <Link
               href={resumeLink.url}
@@ -90,6 +93,7 @@ const Header = (props: Props) => {
               Resume
             </Link>
           </li>
+          {/* Social Links */}
           {socialLinks.map((socialLink) => (
             <li key={socialLink.name}>
               <Link
@@ -114,8 +118,8 @@ const Header = (props: Props) => {
         </button>
 
         {/* Mobile Menu */}
-        {/* Overlay */}
         <div className={`fixed md:hidden ${navMenu ? 'inset-0' : ''}`}>
+          {/* Overlay */}
           <div
             className={`${navMenu ? 'w-full h-screen bg-black/70 backdrop-blur-sm custom-transition' : ''}`}
             onClick={() => setNavMenu(!navMenu)}

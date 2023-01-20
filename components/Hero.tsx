@@ -33,13 +33,14 @@ const Hero = (props: Props) => {
         transition={{ delay: 2.9, duration: 0.5 }}
         className="-mt-[64px] p-[4px] w-32 h-32 bg-sky-500 rounded-full"
       >
-        <div className="relative flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
+        {/* Center Image */}
+        <div className="flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
           <Image
             src="/assets/portfolio-logo.svg"
             alt="Portfolio Logo"
             width={150}
             height={150}
-            className="relative w-full object-cover object-center"
+            className="w-full object-cover object-center"
           />
         </div>
       </motion.div>
@@ -57,12 +58,15 @@ const Hero = (props: Props) => {
         transition={{ type: 'tween', ease: 'easeOut', duration: 0.8 }}
         className="z-10 mt-10 md:mt-20"
       >
+        {/* Intro */}
         <h2 className="pb-2 text-lg md:text-xl lg:text-2xl font-bold tracking-widest custom-text-shadow">
           Hi, my name is
         </h2>
+        {/* Name */}
         <h1 className="pb-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold tracking-wider md:tracking-widest">
           <span className="custom-gradient-text">Kyle Tang</span>
         </h1>
+        {/* Typing Text */}
         <h2 className="h-10 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest custom-text-shadow">
           <span>{text}</span>
           <Cursor cursorColor="#0ea5e9" />

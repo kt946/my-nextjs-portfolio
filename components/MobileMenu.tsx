@@ -14,12 +14,14 @@ type Props = {
 
 const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
   return (
+    // Menu Container
     <div
       className={`${
         navMenu ? 'right-0' : 'right-[-100%]'
       } fixed top-0 w-full max-w-xs h-screen z-25 py-10 px-6 flex flex-col bg-slate-800 border-l-2 border-sky-500 text-lg tracking-wider ease-in-out duration-300`}
     >
       <div className="flex flex-col mt-4">
+        {/* Navigation Links */}
         {navLinks.map((navLink) => (
           <Link
             key={navLink.name}
@@ -31,6 +33,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
             {navLink.name}
           </Link>
         ))}
+        {/* Resume Link */}
         <div className="py-4 flex flex-col">
           <Link
             href={resumeLink.url}
@@ -40,6 +43,7 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
           </Link>
         </div>
         <div className="pt-2 flex justify-between">
+          {/* Social Links */}
           {socialLinks.map((socialLink) => (
             <Link
               key={socialLink.name}
