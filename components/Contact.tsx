@@ -16,16 +16,19 @@ const Contact = (props: Props) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // console.log(formRef.current);
-    // console.log(serviceId, templateId, publicKey);
-
-    // if form data exists and environment variaiables exist, then send form data using emailjs
+    
+    // if form data exists and environment variables exist, then send form data using emailjs
     if (formRef.current && serviceId && templateId && publicKey) {
       try {
-        await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
-        console.log('Email sent successfully');
-        formRef.current.reset();
+        const result = await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
+        // if message sent is successful
+        if (result.status === 200) {
+          console.log('Email sent successfully');
+          // clear form
+          formRef.current.reset();
+        } else {
+          console.error(`Error sending email: ${result.text}`);
+        }
       } catch (error) {
         console.error('Error sending email: ', error);
       }
@@ -123,7 +126,7 @@ const Contact = (props: Props) => {
                     type="text"
                     placeholder="Name"
                     name="name"
-                    required 
+                    required
                   />
                 </div>
                 {/* Email Field */}
@@ -134,7 +137,7 @@ const Contact = (props: Props) => {
                     type="email"
                     placeholder="Email"
                     name="email"
-                    required 
+                    required
                   />
                 </div>
               </div>
@@ -146,7 +149,7 @@ const Contact = (props: Props) => {
                   type="text"
                   placeholder="Subject"
                   name="subject"
-                  required 
+                  required
                 />
               </div>
               {/* Message Field */}
@@ -157,7 +160,7 @@ const Contact = (props: Props) => {
                   rows={6}
                   placeholder="Message"
                   name="message"
-                  required 
+                  required
                 ></textarea>
               </div>
               {/* Submit button */}
