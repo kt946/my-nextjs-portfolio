@@ -40,7 +40,7 @@ const Hero = (props: Props) => {
             alt="Portfolio Logo"
             width={150}
             height={150}
-            className="w-full object-cover object-center"
+            className="p-7 w-full object-cover object-center"
           />
         </div>
       </motion.div>

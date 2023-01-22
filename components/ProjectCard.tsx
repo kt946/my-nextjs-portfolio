@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 type Props = {
   project: {
     title: string;
+    image: string;
     description: string;
     tech: string[];
     projectLink: string;
@@ -77,11 +78,11 @@ const ProjectCard = ({ project }: Props) => {
       {/* Project Image */}
       <Link
         href={project.projectLink}
-        className="lg:max-w-2xl relative flex w-full rounded-2xl overflow-hidden group"
+        className="lg:max-w-2xl relative flex w-full rounded-2xl overflow-hidden group shadow-2xl shadow-slate-800"
       >
         {/* Image */}
         <Image
-          src="/assets/screenshot-placeholder.png"
+          src={`/assets/${project.image}`}
           alt="Project screenshot"
           width={1920}
           height={1080}

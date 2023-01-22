@@ -68,7 +68,7 @@ const About = (props: Props) => {
             className="mx-auto md:mx-0 order-first md:order-last"
           >
             <Image
-              src="/assets/portrait2.png"
+              src="/assets/portrait.png"
               alt="Portfolio portrait"
               width={500}
               height={500}

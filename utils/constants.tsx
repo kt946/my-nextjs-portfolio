@@ -1,43 +1,49 @@
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 
-// Social Links
+// Social URL Links
 export const socialLinks = [
   {
     name: 'email',
     icon: <HiOutlineMail />,
-    url: 'mailto:example@email.com',
+    url: 'mailto:ktang1151@gmail.com',
   },
   {
     name: 'linkedin',
     icon: <FaLinkedinIn />,
-    url: '/',
+    url: 'https://www.linkedin.com/in/kyle-tang-',
   },
   {
     name: 'github',
     icon: <FaGithub />,
-    url: '/',
+    url: 'https://github.com/kt946',
   },
 ];
 
-export const resumeLink = '/';
+// Resume URL link
+export const resumeLink = 'https://drive.google.com/file/d/1aUiFaAlnXzcr3Nrz8uu4RTZr9klqImxv/view?usp=sharing';
 
+// Bio paragraphs for About section
 export const bioParagraphs = [
   {
     id: 'paragraph1',
-    text: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quaerat, accusantium quae consequuntur temporibus accusamus, inventore velit officia perspiciatis doloremque itaque! Cumque eligendi doloribus ad harum accusantium optio at facere.`,
+    text: `Hi everyone! My name is Kyle and I'm a full stack web developer with a B.A. in Psychology from Rutgers University and a passion for technology, creativity, and learning. I've completed a certificate in Full Stack Web Development from the Rutgers Coding Bootcamp.`,
   },
   {
     id: 'paragraph2',
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat voluptate voluptatem amet ipsam porro suscipit? Impedit totam, cumque repudiandae maiores reiciendis assumenda excepturi accusantium dolores architecto quod? Officiis, dolore!`,
+    text: `As a versatile quick learner and problem-solver, I'm able to collaborate with teams to develop projects with simple, elegant designs and robust databases. I'm eager to demonstrate my newly acquired skills and build innovative applications that help me grow as a developer and provide users with immersive digital experiences.`,
   },
   {
     id: 'paragraph3',
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis ullam doloribus harum aspernatur quidem deserunt voluptatibus dolor commodi soluta vel consectetur, delectus quae culpa amet aliquid ea, provident hic?`,
+    text: `When I'm not coding on my laptop, skimming through documentation, or searching Google for solutions to various issues, I enjoy cooking, exercising, video games, playing guitar, and learning new skills and languages.`,
+  },
+  {
+    id: 'paragraph4',
+    text: `And yes, I do like blue.`,
   },
 ];
 
-// Front-end skills
+// Front-end skills for Skills section
 export const frontEndSkills = [
   'HTML',
   'CSS',
@@ -55,7 +61,7 @@ export const frontEndSkills = [
   'Framer Motion',
 ];
 
-// Back-end skills
+// Back-end skills for Skills section
 export const backEndSkills = [
   'Git',
   'Github',
@@ -65,7 +71,7 @@ export const backEndSkills = [
   'NPM',
   'OOP',
   'Express.js',
-  'REST API',
+  'REST',
   'SQL',
   'MySQL',
   'Sequelize',
@@ -75,57 +81,58 @@ export const backEndSkills = [
   'NoSQL',
   'MongoDB',
   'Mongoose',
-  'MERN Stack',
+  'GraphQL',
+  'MERN',
 ];
 
-// Project List
+// Project List for Work section
 export const projectList = [
   {
-    title: 'Lorem Ipsum 1',
-    description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex autem pariatur illum ullam quos earum ad veritatis quaerat, at, voluptatem laudantium eius. Id quaerat odio sed, aliquid sequi architecto eligendi!',
-    tech: ['Node', 'Express', 'React', 'MongoDB', 'Tailwind'],
-    projectLink: '/',
-    githubLink: '/',
+    title: 'CodeFlow',
+    image: 'codeflow.png',
+    description: `CodeFlow is an interactive social media MERN stack SPA that gives developers a creative hub to show off their coding projects through posts, add friends, and join the discussion with other developers in threaded comments.`,
+    tech: ['MERN', 'GraphQL', 'JWT', 'Tagify', 'Bootstrap'],
+    projectLink: 'https://code-flow-app.herokuapp.com/',
+    githubLink: 'https://github.com/cnohilly/codeflow',
   },
   {
-    title: 'Lorem Ipsum 2',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-    tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-    projectLink: '/',
-    githubLink: '/',
+    title: 'Watch It Later',
+    image: 'watch-it-later.png',
+    description: `A full-stack app allowing users to search for movies and TV shows, create accounts to add them to their personal watchlist saved in a SQL database, leave comments, and rate movies.`,
+    tech: ['Node', 'MySQL', 'Sequelize', 'Handlebars', 'Bulma', 'MVC', 'TMDB API'],
+    projectLink: 'https://watch-it-later.herokuapp.com/',
+    githubLink: 'https://github.com/cnohilly/watch-it-later',
   },
   {
-    title: 'Lorem Ipsum 3',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-    tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-    projectLink: '/',
-    githubLink: '/',
+    title: 'Movie TV Watchlist',
+    image: 'movie-tv-watchlist.png',
+    description: `Looking for something to watch? Use this app to search for movies and TV shows through the TMDB's API as well as add them to a personal watchlist saved in the browser's local storage.`,
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'TMDB API'],
+    projectLink: 'https://cnohilly.github.io/movie-tv-watchlist/',
+    githubLink: 'https://github.com/cnohilly/movie-tv-watchlist',
   },
   {
-    title: 'Lorem Ipsum 4',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-    tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-    projectLink: '/',
-    githubLink: '/',
+    title: 'Shop-Shop',
+    image: 'shop-shop.png',
+    description: `An e-commerce full-stack MERN application that uses Redux to manage global state. Users can create accounts to add products to their shopping cart and checkout using the Stripe API.`,
+    tech: ['MERN', 'JavaScript', 'GraphQL', 'JWT', 'Stripe', 'Redux'],
+    projectLink: 'https://shop-shop-75043.herokuapp.com',
+    githubLink: 'https://github.com/kt946/awesome-shop-shop-redux',
   },
   {
-    title: 'Lorem Ipsum 5',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-    tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-    projectLink: '/',
-    githubLink: '/',
+    title: 'Pizza Hunt',
+    image: 'pizza-hunt.png',
+    description: `Hungry for some pizza but can't decide on your toppings? Check out Pizza Hunt, an app that uses MongoDB to store custom pizza recipies and user comments.`,
+    tech: ['Node', 'Express', 'NoSQL', 'MongoDB', 'Mongoose'],
+    projectLink: 'https://pizza-hunt-13648.herokuapp.com/',
+    githubLink: 'https://github.com/kt946/pizza-hunt',
   },
   {
-    title: 'Lorem Ipsum 6',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati quod illum delectus natus suscipit debitis sed libero? Debitis, quas officiis tempore repellendus harum culpa soluta necessitatibus eaque ipsam nihil!',
-    tech: ['TypeScript', 'NextJS', 'Framer Motion', 'NoSQL', 'Bootstrap'],
-    projectLink: '/',
-    githubLink: '/',
+    title: 'The Epic Tech Blog',
+    image: 'the-epic-tech-blog.png',
+    description: `A CMS-style blog site using the MVC paradigm for discussing technology through blog posts and comments.`,
+    tech: ['Node', 'Express', 'MySQL', 'Handlebars', 'Bootstrap', 'MVC'],
+    projectLink: 'https://sheltered-mesa-54132.herokuapp.com',
+    githubLink: 'https://github.com/kt946/epic-tech-blog-MVC',
   },
 ];
