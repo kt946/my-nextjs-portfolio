@@ -9,7 +9,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   // typewriter effect from 'react-simple-typewriter' package
-  // import roles here 
+  // import roles here
   const [text] = useTypewriter({
     words: [...roles],
     loop: true,
@@ -38,13 +38,13 @@ const Hero = (props: Props) => {
       >
         {/* Center Image */}
         <div className="flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
-          {/* For personal brand Logo or portrait image */}
+          {/* For personal brand Logo or portrait image, use either jpg or png for image file */}
           <Image
-            src="/assets/portfolio-logo.svg"
+            src="/assets/logo500xA500.png"
             alt="Portfolio Logo"
             width={150}
             height={150}
-            className=" p-7 w-full object-cover object-center" // if using portrait image, remove class "p-7" for image to cover object, else add some padding for logo
+            className="p-7 w-full object-cover object-center" // if using portrait image, remove class "p-7" for image to cover object, else add some padding for logo
           />
         </div>
       </motion.div>
