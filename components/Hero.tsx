@@ -40,7 +40,7 @@ const Hero = (props: Props) => {
         <div className="flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
           {/* For personal brand Logo or portrait image, use either jpg or png for image file */}
           <Image
-            src="/assets/logo500xA500.png"
+            src="/assets/logo500x500.png"
             alt="Portfolio Logo"
             width={150}
             height={150}
