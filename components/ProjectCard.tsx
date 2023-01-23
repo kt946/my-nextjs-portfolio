@@ -50,7 +50,7 @@ const ProjectCard = ({ project }: Props) => {
           {project.tech.map((techItem) => (
             <li
               key={techItem}
-              className="px-3 py-1 border border-slate-400 rounded-full"
+              className="px-3 py-1 border border-slate-400 rounded-lg"
             >
               {techItem}
             </li>

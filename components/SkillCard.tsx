@@ -12,9 +12,9 @@ type Props = {
 const SkillCard = ({ skillCard }: Props) => {
   return (
     // Skill Card Container
-    <div className="w-full max-w-7xl px-3 py-8 flex flex-col rounded-xl bg-slate-800 text-center gap-5">
+    <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center gap-5">
       {/* Card Icon */}
-      <div className="w-fit mx-auto p-4 rounded-full bg-slate-900 text-3xl text-primary">
+      <div className="w-fit mx-auto mt-4 p-4 rounded-full bg-slate-900 text-3xl text-primary">
         {/* If id equals 'frontEndSkills', use HiCode for frontend skills, else use HiDatabase for backend skills */}
         {skillCard.id === 'frontEndSkills' ? <HiCode /> : <HiDatabase />}
       </div>
@@ -29,12 +29,19 @@ const SkillCard = ({ skillCard }: Props) => {
       <p className="mx-auto max-w-sm text-slate-300 sm:text-lg">{skillCard.summary}</p>
 
       {/* Card List */}
-      <ul className="h-full flex flex-col px-2 py-4 gap-2 rounded-xl sm:text-lg text-slate-300">
-        {/* Render skills list */}
-        {skillCard?.skills.map((skill) => (
-          <li key={skill}>{skill}</li>
-        ))}
-      </ul>
+      <div className="h-full p-4 bg-slate-900 rounded-xl ">
+        <ul className="flex flex-start flex-wrap gap-4 text-slate-400">
+          {/* Render skills list */}
+          {skillCard?.skills.map((skill) => (
+            <li
+              key={skill}
+              className="px-3 py-1 border border-slate-400 rounded-lg"
+            >
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

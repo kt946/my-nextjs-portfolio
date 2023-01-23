@@ -31,7 +31,7 @@
     @apply p-2 rounded-full border-2 border-slate-500 hover:border-primary text-2xl text-slate-400 hover:text-primary;
   }
   .contactInput {
-    @apply p-2.5 rounded-md flex bg-neutral-900 outline-none border border-neutral-900 focus:border-primary text-white placeholder-slate-500 transition-all;
+    @apply p-2.5 rounded-md flex bg-slate-900 outline-none border border-slate-900 focus:border-primary text-white placeholder-slate-500 transition-all;
   }
   .hero-ring-style {
     @apply absolute rounded-full;
@@ -54,13 +54,13 @@
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-primary rounded-xl hover:bg-[#008EDB];
+    @apply bg-primary rounded-xl hover:bg-[#008AEC];
   }
 }
 
 .scrollbar-firefox {
   scrollbar-width: thin;
-  scrollbar-color: rgb(0 166 255) rgb(30 41 59);
+  scrollbar-color: rgb(48 168 255) rgb(30 41 59);
 }
 
 .custom-text-shadow {
@@ -97,7 +97,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #00a6ff;
+  background-color: #30a8ff;
 }
 
 .hamburger-box {
@@ -117,7 +117,7 @@
 .hamburger-inner::after {
   width: 24px;
   height: 3px;
-  background-color: #00a6ff;
+  background-color: #30a8ff;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -183,7 +183,7 @@
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #00a6ff;
+    background: #30a8ff;
     border-radius: 5px;
   }
 

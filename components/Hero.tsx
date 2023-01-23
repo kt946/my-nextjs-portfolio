@@ -75,11 +75,12 @@ const Hero = (props: Props) => {
           <span className="custom-gradient-text">{devName}</span>
         </h1>
         {/* Typing Text */}
-        <h2 className="h-10 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest custom-text-shadow">
+        <h2 className="h-10 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest custom-text-shadow text-primary">
           {/* text from array will display here */}
-          <span>{text}</span>
-          {/* change the color of the cursor here */}
-          <Cursor cursorColor="#00A6FF" />
+          <span className="text-white">{text}</span>
+          {/* change the color of the cursor here manually by adding the prop "cursorColor="#30a8ff" */}
+          {/* can also change color by adding text color classes to parent container */}
+          <Cursor />
         </h2>
       </motion.div>
     </section>
