@@ -42,8 +42,8 @@ const Hero = (props: Props) => {
           <Image
             src="/assets/logo500x500.png"
             alt="Portfolio Logo"
-            width={150}
-            height={150}
+            width={64} // {128}
+            height={64} // {128}
             className="p-7 w-full object-cover object-center" // if using portrait image, remove class "p-7" for image to cover object, else add some padding for logo
           />
         </div>
