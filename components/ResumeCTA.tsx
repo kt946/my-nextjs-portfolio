@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaRegSmileWink } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { FaRegSmileWink } from 'react-icons/fa';
+import { resumeLink } from '../utils/constants';
 
 type Props = {};
 
-const CallToAction = (props: Props) => {
+const ResumeCTA = (props: Props) => {
   return (
     <section
       id="callToAction"
@@ -24,14 +25,14 @@ const CallToAction = (props: Props) => {
       >
         {/* Text */}
         <h3 className="text-xl text-white md:text-3xl font-bold">
-          Don&apos;t be a stranger. Feel free to reach out and connect with me!
+          Want to see more of what I can do? Check out my resume.
         </h3>
         {/* Link */}
         <Link
-          href="#contact"
+          href={resumeLink}
           className="custom-btn custom-transition"
         >
-          Get in touch
+          To my resume
           <span className="mt-1 ml-2 text-xl">
             <FaRegSmileWink />
           </span>
@@ -41,4 +42,4 @@ const CallToAction = (props: Props) => {
   );
 };
 
-export default CallToAction;
+export default ResumeCTA;

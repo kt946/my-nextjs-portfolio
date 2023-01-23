@@ -71,8 +71,8 @@ const Contact = (props: Props) => {
         </motion.p>
 
         <div className="w-full">
-          {/* Contact Form Card */}
-          <motion.div
+          {/* Form */}
+          <motion.form
             initial={{
               y: 20,
               opacity: 0,
@@ -80,72 +80,67 @@ const Contact = (props: Props) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
-            className="mx-auto max-w-3xl h-auto bg-[#111111] rounded-xl p-3 text-slate-300 caret-primary focus:caret-primary"
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="mx-auto max-w-3xl text-slate-300 caret-primary focus:caret-primary"
           >
-            {/* Form */}
-            <form
-              className="md:p-3"
-              ref={formRef}
-              onSubmit={handleSubmit}
-            >
-              <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
-                {/* Name Field */}
-                <div className="flex flex-col">
-                  <label className="pb-2 uppercase md:text-md font-semibold">Name</label>
-                  <input
-                    className="contactInput"
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    required
-                  />
-                </div>
-                {/* Email Field */}
-                <div className="flex flex-col">
-                  <label className="pb-2 uppercase md:text-md font-semibold tracking-wider">Email</label>
-                  <input
-                    className="contactInput"
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    required
-                  />
-                </div>
-              </div>
-              {/* Subject Field */}
-              <div className="flex flex-col py-3">
-                <label className="pb-2 uppercase md:text-md font-semibold tracking-wider">Subject</label>
+            <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
+              {/* Name Field */}
+              <div className="flex flex-col">
+                <label className="pb-2 uppercase md:text-md">Name</label>
                 <input
                   className="contactInput"
                   type="text"
-                  placeholder="Subject"
-                  name="subject"
+                  placeholder="Name"
+                  name="name"
                   required
                 />
               </div>
-              {/* Message Field */}
-              <div className="flex flex-col py-2">
-                <label className="pb-2 uppercase md:text-md font-semibold tracking-wider">Message</label>
-                <textarea
+              {/* Email Field */}
+              <div className="flex flex-col">
+                <label className="pb-2 uppercase md:text-md tracking-wider">Email</label>
+                <input
                   className="contactInput"
-                  rows={6}
-                  placeholder="Message"
-                  name="message"
+                  type="email"
+                  placeholder="Email"
+                  name="email"
                   required
-                ></textarea>
+                />
               </div>
-              {/* Submit button */}
-              <button
-                type="submit"
-                className="mx-auto px-8 mt-4 mb-2 custom-btn custom-transition group"
-              >
-                Submit
-                <span className="ml-2 mt-1.5 text-primary group-hover:text-black custom-transition">
-                  <MdSend />
-                </span>
-              </button>
-            </form>
-          </motion.div>
+            </div>
+            {/* Subject Field */}
+            <div className="flex flex-col py-2">
+              <label className="pb-2 uppercase md:text-md tracking-wider">Subject</label>
+              <input
+                className="contactInput"
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                required
+              />
+            </div>
+            {/* Message Field */}
+            <div className="flex flex-col py-2">
+              <label className="pb-2 uppercase md:text-md tracking-wider">Message</label>
+              <textarea
+                className="contactInput"
+                rows={6}
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            {/* Submit button */}
+            <button
+              type="submit"
+              className="mx-auto px-8 mt-8 custom-btn custom-transition group"
+            >
+              Submit
+              <span className="ml-2 mt-1.5 text-primary group-hover:text-black custom-transition">
+                <MdSend />
+              </span>
+            </button>
+          </motion.form>
         </div>
       </div>
     </section>

@@ -7,6 +7,7 @@ import Work from '../components/Work';
 import Contact from '../components/Contact';
 import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
+import ResumeCTA from '../components/ResumeCTA';
 
 export default function Home() {
   return (
@@ -37,6 +38,8 @@ export default function Home() {
         <CallToAction />
 
         <Skills />
+
+        <ResumeCTA />
 
         <Work />
 

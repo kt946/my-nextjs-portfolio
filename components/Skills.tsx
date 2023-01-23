@@ -9,7 +9,7 @@ const Skills = (props: Props) => {
   return (
     <section
       id="skills"
-      className="section-container"
+      className="section-container mb-14"
     >
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">

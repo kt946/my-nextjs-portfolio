@@ -31,7 +31,7 @@
     @apply p-2 rounded-full border-2 border-slate-500 hover:border-primary text-3xl text-slate-400 hover:text-primary;
   }
   .contactInput {
-    @apply p-2.5 rounded-md flex bg-neutral-800 outline-none border border-neutral-800 focus:border-primary text-white placeholder-slate-500 transition-all;
+    @apply p-2.5 rounded-md flex bg-neutral-900 outline-none border border-neutral-900 focus:border-primary text-white placeholder-slate-500 transition-all;
   }
   .hero-ring-style {
     @apply absolute rounded-full;

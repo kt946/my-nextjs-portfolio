@@ -37,7 +37,7 @@ export const bioParagraphs = [
   },
   {
     id: 'paragraph2',
-    text: `As a versatile quick learner and problem-solver, I'm able to collaborate with teams to develop projects with simple, elegant designs and robust databases. I'm eager to demonstrate my newly acquired skills and build innovative applications that help me grow as a developer and provide users with immersive digital experiences.`,
+    text: `As a quick learner and versatile problem-solver, I'm able to collaborate with teams to develop projects with simple, elegant designs and robust databases. I'm eager to demonstrate my newly acquired skills and build innovative applications that help me grow as a developer and provide users with immersive digital experiences.`,
   },
   {
     id: 'paragraph3',
@@ -50,46 +50,18 @@ export const bioParagraphs = [
 ];
 
 // Front-end skills for Skills section
-export const frontEndSkills = [
-  'HTML',
-  'CSS',
-  'JavaScript ES6',
-  'TypeScript',
-  'jQuery',
-  'DOM API',
-  'Responsive Design',
-  'Bootstrap',
-  'Bulma',
-  'React',
-  'Redux',
-  'Tailwind CSS',
-  'Next.js',
-  'Framer Motion',
-];
+export const frontEndSkills = {
+  summary:
+    'I am passionate about bringing ideas to life and creating visually stunning projects using a variety of modern technologies and frameworks.',
+  skills: ['HTML, CSS, JavaScript, TypeScript', 'Bootstrap, Tailwind CSS, Responsive Design', 'React, Redux, Next.js'],
+};
 
 // Back-end skills for Skills section
-export const backEndSkills = [
-  'Git',
-  'Github',
-  'JSON',
-  'AJAX',
-  'Node.js',
-  'NPM',
-  'OOP',
-  'Express.js',
-  'REST',
-  'SQL',
-  'MySQL',
-  'Sequelize',
-  'ORM',
-  'MVC',
-  'Handlebars',
-  'NoSQL',
-  'MongoDB',
-  'Mongoose',
-  'GraphQL',
-  'MERN',
-];
+export const backEndSkills = {
+  summary:
+    'I enjoy finding solutions to complex problems and developing robust back-end systems with a focus on efficiency and security.',
+  skills: ['Node.js, Express.js, REST', 'SQL, MySQL, Sequelize', 'NoSQL, MongoDB, Mongoose, GraphQL', 'MERN'],
+};
 
 // Project List for Work section
 export const projectList = [
