@@ -38,13 +38,14 @@ const Hero = (props: Props) => {
       >
         {/* Center Image */}
         <div className="flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
-          {/* For personal brand Logo or portrait image, use either jpg or png for image file */}
+          {/* For personal brand Logo or portrait image */}
+          {/* If using portrait image, increase width and height for image to cover object */}
           <Image
-            src="/assets/logo500x500.png"
+            src="/assets/portfolio-logo.svg"
             alt="Portfolio Logo"
             width={64} // {128}
             height={64} // {128}
-            className="p-7 w-full object-cover object-center" // if using portrait image, remove class "p-7" for image to cover object, else add some padding for logo
+            className="mx-auto object-cover object-center" // use "mx-auto" to center logo
           />
         </div>
       </motion.div>
