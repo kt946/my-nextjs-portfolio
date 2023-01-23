@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-2416,-7.95808e-13)">
-        <g transform="matrix(1,0,0,1,-0.333333,7.95808e-13)">
-            <rect id="BlueLogo2" x="2416.33" y="0" width="1000" height="1000" style="fill:none;"/>
+    <g transform="matrix(1,0,0,1,-2416,-1100)">
+        <g transform="matrix(1,0,0,1,-0.333333,1100)">
+            <rect id="BlueLogo2-V2" x="2416.33" y="0" width="1000" height="1000" style="fill:none;"/>
             <clipPath id="_clip1">
-                <rect id="BlueLogo21" serif:id="BlueLogo2" x="2416.33" y="0" width="1000" height="1000"/>
+                <rect id="BlueLogo2-V21" serif:id="BlueLogo2-V2" x="2416.33" y="0" width="1000" height="1000"/>
             </clipPath>
             <g clip-path="url(#_clip1)">
+                <g id="Backgrounds">
+                </g>
                 <g id="Blue-Logo-Final-Large" serif:id="Blue Logo Final Large" transform="matrix(1.25,0,0,1.25,2291.33,-125)">
                     <g id="BlueBars" transform="matrix(1,0,0,1,-20,2.55795e-13)">
                         <g transform="matrix(0.5,0,0,1.01266,70,-11.3924)">
-                            <rect x="100" y="110" width="100" height="790" style="fill:rgb(0,166,255);"/>
+                            <rect x="100" y="110" width="100" height="790" style="fill:url(#_Linear2);"/>
                         </g>
                         <g transform="matrix(0.5,0,0,1.01266,145,-11.3924)">
-                            <rect x="100" y="110" width="100" height="790" style="fill:rgb(0,166,255);"/>
+                            <rect x="100" y="110" width="100" height="790" style="fill:url(#_Linear3);"/>
                         </g>
                         <g transform="matrix(0.5,0,0,1.01266,220,-11.3924)">
-                            <rect x="100" y="110" width="100" height="790" style="fill:rgb(0,166,255);"/>
+                            <rect x="100" y="110" width="100" height="790" style="fill:url(#_Linear4);"/>
                         </g>
                     </g>
                     <g id="BlueArrow" transform="matrix(0.9375,0,0,1,206.25,4.26326e-13)">
-                        <path d="M500,900L100,500L500,100L740,100L340,500L740,900L500,900Z" style="fill:rgb(0,166,255);"/>
+                        <path d="M500,900L100,500L500,100L740,100L340,500L740,900L500,900Z" style="fill:url(#_Linear5);"/>
                     </g>
                 </g>
             </g>
         </g>
     </g>
+    <defs>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(9.79717e-14,-790,1600,4.83735e-14,900,900)"><stop offset="0" style="stop-color:rgb(0,97,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(96,239,255);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear3" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(9.79717e-14,-790,1600,4.83735e-14,750,900)"><stop offset="0" style="stop-color:rgb(0,97,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(96,239,255);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear4" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(9.79717e-14,-790,1600,4.83735e-14,600,900)"><stop offset="0" style="stop-color:rgb(0,97,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(96,239,255);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear5" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.22516e-14,-800,853.333,4.89859e-14,313.333,900)"><stop offset="0" style="stop-color:rgb(0,97,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(96,239,255);stop-opacity:1"/></linearGradient>
+    </defs>
 </svg>

@@ -37,7 +37,7 @@
     @apply absolute rounded-full;
   }
   .custom-gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-t from-primary to-secondary;
+    @apply bg-clip-text text-transparent bg-gradient-to-t from-tertiary via-primary to-secondary;
   }
   .project-link-btn {
     @apply p-2 hover:bg-primary rounded-full text-2xl border-2 border-primary text-primary hover:text-black custom-transition;

@@ -24,7 +24,7 @@ const ResumeCTA = (props: Props) => {
         className="mx-auto p-6 md:py-12 w-full max-w-[1280px] flex flex-col justify-center items-center gap-6 text-center bg-slate-900 rounded-xl"
       >
         {/* Text */}
-        <h3 className="text-xl text-white md:text-3xl font-bold">
+        <h3 className="text-xl md:text-3xl font-bold">
           Want to see more of what I can do? Check out my resume.
         </h3>
         {/* Link */}
