@@ -3,12 +3,15 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
+import { devName, roles } from '../utils/constants';
 
 type Props = {};
 
 const Hero = (props: Props) => {
+  // typewriter effect from 'react-simple-typewriter' package
+  // import roles here 
   const [text] = useTypewriter({
-    words: ['Full Stack Developer', 'Designer', 'Creator'],
+    words: [...roles],
     loop: true,
     delaySpeed: 2000,
   });
@@ -65,11 +68,13 @@ const Hero = (props: Props) => {
         </h2>
         {/* Name */}
         <h1 className="pb-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-extrabold tracking-wider md:tracking-widest">
-          <span className="custom-gradient-text">Kyle Tang</span>
+          <span className="custom-gradient-text">{devName}</span>
         </h1>
         {/* Typing Text */}
         <h2 className="h-10 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest custom-text-shadow">
+          {/* text from array will display here */}
           <span>{text}</span>
+          {/* change the color of the cursor here */}
           <Cursor cursorColor="#00A6FF" />
         </h2>
       </motion.div>
