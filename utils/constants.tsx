@@ -64,7 +64,7 @@ export const skillCardData = [
   {
     id: 'backEndSkills',
     summary:
-      'I enjoy finding solutions to complex problems and developing powerfule server-side code with a focus on efficiency and security.',
+      'I enjoy finding solutions to complex problems and developing powerful server-side code with a focus on efficiency and security.',
     skills: ['Node.js, Express.js, RESTful APIs', 'SQL, MySQL, Sequelize', 'NoSQL, MongoDB, Mongoose, GraphQL', 'MERN'],
   },
 ];
