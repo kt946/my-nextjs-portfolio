@@ -1,5 +1,5 @@
 import React from 'react';
-import { frontEndSkills, backEndSkills } from '../utils/constants';
+import { skillCardData } from '../utils/constants';
 import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
 
@@ -53,11 +53,10 @@ const Skills = (props: Props) => {
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
           className="w-full max-w-full flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8"
         >
-          {/* Frontend Skill Card */}
-          <SkillCard frontEndSkills={frontEndSkills} />
-
-          {/* Backend Skill Card */}
-          <SkillCard backEndSkills={backEndSkills} />
+          {skillCardData.map((skillCard) => (
+            <SkillCard key={skillCard.id} skillCard={skillCard} />
+          ))}
+          
         </motion.div>
       </div>
     </section>

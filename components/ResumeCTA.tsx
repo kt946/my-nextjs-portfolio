@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaRegSmileWink } from 'react-icons/fa';
+import { HiOutlineDocumentText } from 'react-icons/hi';
 import { resumeLink } from '../utils/constants';
 
 type Props = {};
@@ -34,7 +34,7 @@ const ResumeCTA = (props: Props) => {
         >
           To my resume
           <span className="mt-1 ml-2 text-xl">
-            <FaRegSmileWink />
+            <HiOutlineDocumentText />
           </span>
         </Link>
       </motion.div>

@@ -49,19 +49,25 @@ export const bioParagraphs = [
   },
 ];
 
-// Front-end skills for Skills section
-export const frontEndSkills = {
-  summary:
-    'I am passionate about bringing ideas to life and creating visually stunning projects using a variety of modern technologies and frameworks.',
-  skills: ['HTML, CSS, JavaScript, TypeScript', 'Bootstrap, Tailwind CSS, Responsive Design', 'React, Redux, Next.js'],
-};
-
-// Back-end skills for Skills section
-export const backEndSkills = {
-  summary:
-    'I enjoy finding solutions to complex problems and developing robust back-end systems with a focus on efficiency and security.',
-  skills: ['Node.js, Express.js, REST', 'SQL, MySQL, Sequelize', 'NoSQL, MongoDB, Mongoose, GraphQL', 'MERN'],
-};
+// Summary and skills for skill cards
+export const skillCardData = [
+  {
+    id: 'frontEndSkills',
+    summary:
+      'I am passionate about bringing ideas to life and creating visually stunning projects using a variety of modern technologies and frameworks.',
+    skills: [
+      'HTML, CSS, JavaScript, TypeScript',
+      'Bootstrap, Tailwind CSS, Responsive Design',
+      'React, Redux, Next.js',
+    ],
+  },
+  {
+    id: 'backEndSkills',
+    summary:
+      'I enjoy finding solutions to complex problems and developing powerfule server-side code with a focus on efficiency and security.',
+    skills: ['Node.js, Express.js, RESTful APIs', 'SQL, MySQL, Sequelize', 'NoSQL, MongoDB, Mongoose, GraphQL', 'MERN'],
+  },
+];
 
 // Project List for Work section
 export const projectList = [
