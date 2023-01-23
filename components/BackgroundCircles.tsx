@@ -17,7 +17,7 @@ const BackgroundCircles = (props: Props) => {
       transition={{ delay: 1, duration: 1.5 }}
       className="relative flex justify-center items-center"
     >
-      <div className="h-[100px] w-[100px] md:h-[125px] md:w-[125px] hero-ring-style border md:border-2 border-slate-500/25 animate-ping" />
+      <div className="h-[100px] w-[100px] md:h-[125px] md:w-[125px] hero-ring-style border md:border-2 border-primary/25 animate-ping" />
 
       <div className="h-[200px] w-[200px] md:h-[350px] md:w-[350px] hero-ring-style border-dashed border-4 md:border-[15px] border-slate-800/50 animate-[spin_10s_linear_infinite]" />
 
@@ -31,7 +31,7 @@ const BackgroundCircles = (props: Props) => {
 
       <div className="h-[450px] w-[450px] md:h-[600px] md:w-[600px] hero-ring-style border-4 md:border-8 border-x-transparent border-slate-600/20 animate-[spin_10s_linear_infinite_reverse]" />
 
-      <div className="h-[500px] w-[500px] md:h-[650px] md:w-[650px] hero-ring-style border md:border-2 border-sky-500/40 animate-pulse" />
+      <div className="h-[500px] w-[500px] md:h-[650px] md:w-[650px] hero-ring-style border md:border-2 border-primary/40 animate-pulse" />
 
       <div className="h-[550px] w-[550px] md:h-[700px] md:w-[700px] hero-ring-style border-double border-4 md:border-[10px] border-x-transparent border-slate-600/30 animate-[spin_10s_linear_infinite]" />
 

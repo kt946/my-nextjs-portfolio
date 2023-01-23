@@ -27,7 +27,7 @@ const ProjectCard = ({ project }: Props) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
-      className="w-full flex flex-col lg:flex-row lg:space-y-0 space-x-0 lg:space-x-6 lg:even:flex-row-reverse lg:even:space-x-reverse"
+      className="w-full flex flex-col lg:flex-row lg:space-y-0 space-x-0 lg:space-x-12 lg:even:flex-row-reverse lg:even:space-x-reverse"
     >
       {/* Project Info */}
       <div className="w-full my-2 flex flex-col item justify-center order-last lg:order-first">
@@ -35,16 +35,16 @@ const ProjectCard = ({ project }: Props) => {
         <h4 className="w-fit group">
           <Link
             href={project.projectLink}
-            className="my-2 flex flex-wrap text-xl sm:text-2xl md:text-3xl font-bold tracking-wide group-hover:text-sky-500 custom-transition"
+            className="my-2 flex flex-wrap text-xl sm:text-2xl md:text-3xl font-bold tracking-wide group-hover:text-primary custom-transition"
           >
             {project.title}
-            <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 custom-transition">
+            <span className="ml-1 mt-1 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-2 custom-transition">
               <HiArrowRight />
             </span>
           </Link>
         </h4>
         {/* Project Description */}
-        <p className="sm:text-lg md:text-xl text-slate-300">{project.description}</p>
+        <p className="paragraph-text-color">{project.description}</p>
         {/* Project Technologies */}
         <ul className="my-4 flex flex-wrap text-slate-400 gap-2">
           {project.tech.map((techItem) => (
@@ -61,14 +61,14 @@ const ProjectCard = ({ project }: Props) => {
           {/* Deployed Link */}
           <Link
             href={project.projectLink}
-            className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition"
+            className="project-link-btn"
           >
             <HiOutlineExternalLink />
           </Link>
           {/* Github Link */}
           <Link
             href={project.githubLink}
-            className="p-2 border-sky-500 hover:bg-sky-500 rounded-full text-2xl md:font-semibold border-2 text-sky-500 hover:text-white custom-transition"
+            className="project-link-btn"
           >
             <FaGithub />
           </Link>
@@ -78,7 +78,7 @@ const ProjectCard = ({ project }: Props) => {
       {/* Project Image */}
       <Link
         href={project.projectLink}
-        className="lg:max-w-2xl relative flex w-full rounded-2xl overflow-hidden group shadow-2xl shadow-slate-800"
+        className="lg:max-w-2xl relative flex w-full rounded-2xl overflow-hidden group"
       >
         {/* Image */}
         <Image
@@ -89,7 +89,7 @@ const ProjectCard = ({ project }: Props) => {
           className="w-full h-full object-cover group-hover:scale-125 transition ease-in-out duration-500"
         ></Image>
         {/* Overlay */}
-        <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-sky-500 opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
+        <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-primary opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
           <span className="flex">
             Visit Project
             <span className="ml-2 mt-1">

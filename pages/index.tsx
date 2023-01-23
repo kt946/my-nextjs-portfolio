@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="font-sans bg-black text-slate-200 h-screen z-0 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-firefox md:scrollbar">
+    <div className="font-sans bg-black text-white h-screen z-0 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-firefox md:scrollbar">
       <Head>
         <title>Kyle Tang</title>
         <meta

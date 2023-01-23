@@ -10,7 +10,7 @@ const SkillCard = ({ frontEndSkills, backEndSkills }: Props) => {
       {/* Card Header */}
       <div className="mb-6 mt-3 flex flex-col items-center">
         {/* Card Icon */}
-        <div className="mb-4 p-4 rounded-full bg-slate-900 text-3xl text-sky-500">
+        <div className="mb-4 p-4 rounded-full bg-slate-900 text-3xl text-primary">
           {/* If frontend skills exist, use HiCode, else use HiDatabase for backend skills */}
           {frontEndSkills ? <HiCode /> : <HiDatabase />}
         </div>

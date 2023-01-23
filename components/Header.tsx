@@ -53,7 +53,7 @@ const Header = (props: Props) => {
         opacity: 1,
       }}
       transition={{ type: 'tween', ease: 'easeOut', duration: 0.8 }}
-      className="bg-black/70 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/20  backdrop-blur"
+      className="bg-black/90 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/20 backdrop-blur"
     >
       {/* Navbar */}
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
@@ -72,13 +72,13 @@ const Header = (props: Props) => {
         </Link>
 
         {/* Navigation Group */}
-        <ul className="hidden md:flex flex-row items-center space-x-6 tracking-wider font-semibold">
+        <ul className="hidden md:flex flex-row items-center gap-6 tracking-wider font-semibold">
           {/* Navigation Links */}
           {navLinks.map((navLink) => (
             <li key={navLink.name}>
               <Link
                 href={navLink.url}
-                className="hover:text-sky-500 custom-transition"
+                className="hover:text-primary custom-transition"
               >
                 {navLink.name}
               </Link>
@@ -88,7 +88,7 @@ const Header = (props: Props) => {
           <li>
             <Link
               href={resumeLink}
-              className="py-1 px-4 rounded-full text-sky-500 hover:text-white border border-sky-500 hover:bg-sky-500 custom-transition"
+              className="py-1 px-4 rounded-full border border-primary hover:bg-primary text-primary hover:text-black custom-transition"
             >
               Resume
             </Link>
@@ -98,7 +98,7 @@ const Header = (props: Props) => {
             <li key={socialLink.name}>
               <Link
                 href={socialLink.url}
-                className="text-2xl text-slate-400 hover:text-sky-500 custom-transition"
+                className="text-2xl text-slate-400 hover:text-primary custom-transition"
               >
                 {socialLink.icon}
               </Link>

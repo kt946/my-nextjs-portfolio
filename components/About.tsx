@@ -24,13 +24,13 @@ const About = (props: Props) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
-          className="mb-12 md:mb-24"
+          className="section-title-container"
         >
           <h2 className="section-title">About</h2>
           <h3 className="section-subtitle">Me, Myself, and I</h3>
         </motion.div>
 
-        <div className="w-full flex flex-col md:flex-row items-center md:items-start space-y-8 space-y-reverse md:space-y-0 space-x-0 md:space-x-12">
+        <div className="w-full flex flex-col md:flex-row items-center md:items-start gap-12">
           {/* Bio */}
           <motion.div
             initial={{
@@ -40,17 +40,17 @@ const About = (props: Props) => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
-            className="w-full flex flex-col sm:text-lg md:text-xl text-slate-300 space-y-4"
+            className="w-full flex flex-col paragraph-text-color gap-4"
           >
             {bioParagraphs.map((paragraph) => (
               <p key={paragraph.id}>{paragraph.text}</p>
             ))}
             <Link
               href="#work"
-              className="my-2 flex flex-wrap text-sky-500 group"
+              className="my-2 flex flex-wrap text-primary font-semibold group custom-transition"
             >
               Check out some of my latest projects.
-              <span className="ml-1 mt-1 text-sky-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
+              <span className="ml-1 mt-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
                 <HiArrowRight />
               </span>
             </Link>
@@ -73,7 +73,7 @@ const About = (props: Props) => {
               width={500}
               height={500}
               priority={true}
-              className="w-[256px] h-[256px] md:min-w-[320px] md:h-[320px] lg:h-[384px] lg:min-w-[384px] rounded-2xl object-cover"
+              className="w-[256px] h-[256px] md:min-w-[320px] md:h-[320px] lg:h-[384px] lg:min-w-[384px] rounded-full object-cover"
             />
           </motion.div>
         </div>

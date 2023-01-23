@@ -1,10 +1,7 @@
 import React, { useRef } from 'react';
-import Link from 'next/link';
 import { MdSend } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2';
-import { socialLinks, resumeLink } from '../utils/constants';
 
 type Props = {};
 
@@ -14,6 +11,7 @@ const Contact = (props: Props) => {
   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
+  // function to handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -38,7 +36,7 @@ const Contact = (props: Props) => {
   return (
     <section
       id="contact"
-      className="section-container mb-14"
+      className="section-container"
     >
       {/* Content Container */}
       <div className="mx-auto w-full max-w-[1280px] flex flex-col">
@@ -56,60 +54,35 @@ const Contact = (props: Props) => {
           <h2 className="section-title">Contact</h2>
           <h3 className="section-subtitle">Let&apos;s build something incredible together!</h3>
         </motion.div>
-        <div className="w-full grid md:grid-cols-5 md:flex-row gap-8">
-          {/* Contact Card */}
+
+        {/* Section Comment */}
+        <motion.p
+          initial={{
+            y: 20,
+            opacity: 0,
+          }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
+          className="section-subtitle-2"
+        >
+          I&apos;m currently looking for full-time positions, but if you got an exciting opportunity you need help with
+          or you just want to say hi, fill out this awesome contact form below or connect with me on social media!
+        </motion.p>
+
+        <div className="w-full">
+          {/* Contact Form Card */}
           <motion.div
             initial={{
-              x: -50,
+              y: 20,
               opacity: 0,
             }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
-            className="w-full h-full p-3 py-6 flex flex-col items-center justify-center col-span-3 md:col-span-2 bg-slate-800 rounded-xl text-center space-y-5"
+            className="mx-auto max-w-3xl h-auto bg-[#111111] rounded-xl p-3 text-slate-300 caret-primary focus:caret-primary"
           >
-            <h4 className="flex text-2xl md:text-3xl font-bold tracking-wide">
-              Get In Touch
-              <span className="mt-1 ml-3 text-2xl md:text-3xl">
-                <HiOutlineChatBubbleBottomCenterText />
-              </span>
-            </h4>
-            <p className="text-slate-300 md:px-2">
-              I&apos;m currently looking for full-time positions, but if you got an exciting opportunity you need help
-              with or if you just want to say hi, my inbox is always open!
-            </p>
-            <p className="text-slate-300 md:px-2">Send me a message through the form or connect with me on socials!</p>
-            {/* Social Links */}
-            <div className="w-full flex justify-center space-x-8">
-              {socialLinks.map((socialLink) => (
-                <Link
-                  key={socialLink.name}
-                  href={socialLink.url}
-                  className="custom-social-btn custom-transition"
-                >
-                  {socialLink.icon}
-                </Link>
-              ))}
-            </div>
-            {/* Resume Link */}
-            <Link
-              href={resumeLink}
-              className="custom-btn custom-transition"
-            >
-              Download Resume
-            </Link>
-          </motion.div>
-          {/* Contact Form */}
-          <motion.div
-            initial={{
-              x: 50,
-              opacity: 0,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
-            className="col-span-3 w-full h-auto bg-slate-800 rounded-xl p-3 caret-sky-500 focus:caret-sky-500"
-          >
+            {/* Form */}
             <form
               className="md:p-3"
               ref={formRef}
@@ -167,7 +140,7 @@ const Contact = (props: Props) => {
                 className="mx-auto px-8 mt-4 mb-2 custom-btn custom-transition group"
               >
                 Submit
-                <span className="ml-2 mt-1.5 text-sky-500 group-hover:text-slate-200 custom-transition">
+                <span className="ml-2 mt-1.5 text-primary group-hover:text-black custom-transition">
                   <MdSend />
                 </span>
               </button>

@@ -36,7 +36,7 @@ const Skills = (props: Props) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
-          className="mb-12 text-lg md:text-2xl text-center md:text-left text-slate-300 font-medium"
+          className="section-subtitle-2"
         >
           Web development is a never-ending quest, and I&apos;m always striving to improve myself, one skill set at a
           time.

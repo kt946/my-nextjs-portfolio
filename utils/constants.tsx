@@ -35,11 +35,11 @@ export const bioParagraphs = [
   },
   {
     id: 'paragraph3',
-    text: `When I'm not coding on my laptop, skimming through documentation, or searching Google for solutions to various issues, I enjoy cooking, exercising, video games, playing guitar, and learning new skills and languages.`,
+    text: `When I'm not coding on my laptop, skimming through documentation, or searching Google for solutions to various issues, I enjoy cooking, movies, exercising, video games, playing guitar, and learning new skills and languages.`,
   },
   {
     id: 'paragraph4',
-    text: `And yes, I do like blue.`,
+    text: `And yes, I do like blue. Blue is cool.`,
   },
 ];
 
