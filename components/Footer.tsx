@@ -24,7 +24,7 @@ const Footer = (props: Props) => {
             <li key={socialLink.name} className="flex">
               <Link
                 href={socialLink.url}
-                className="custom-social-btn text-2xl custom-transition"
+                className="custom-social-btn custom-transition"
               >
                 {socialLink.icon}
               </Link>

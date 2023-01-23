@@ -28,7 +28,7 @@
     @apply py-2 px-6 flex border-2 border-primary hover:bg-primary rounded-full text-center text-lg font-semibold text-primary hover:text-black;
   }
   .custom-social-btn {
-    @apply p-2 rounded-full border-2 border-slate-500 hover:border-primary text-3xl text-slate-400 hover:text-primary;
+    @apply p-2 rounded-full border-2 border-slate-500 hover:border-primary text-2xl text-slate-400 hover:text-primary;
   }
   .contactInput {
     @apply p-2.5 rounded-md flex bg-neutral-900 outline-none border border-neutral-900 focus:border-primary text-white placeholder-slate-500 transition-all;
@@ -40,7 +40,7 @@
     @apply bg-clip-text text-transparent bg-gradient-to-t from-primary to-secondary;
   }
   .project-link-btn {
-    @apply p-2 hover:bg-primary rounded-full text-3xl md:font-semibold border-2 border-primary text-primary hover:text-black custom-transition;
+    @apply p-2 hover:bg-primary rounded-full text-2xl border-2 border-primary text-primary hover:text-black custom-transition;
   }
 }
 
