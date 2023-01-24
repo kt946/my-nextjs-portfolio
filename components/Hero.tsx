@@ -36,13 +36,13 @@ const Hero = (props: Props) => {
         transition={{ delay: 2.9, duration: 0.5 }}
         className="-mt-[64px] p-[4px] w-32 h-32 rounded-full bg-gradient-to-t from-tertiary via-primary to-secondary"
         // to add a colored border to the image, add the class "bg-" with your desired color such as "bg-blue-500"
-        // able to make gradient borders for image
+        // you can also make gradient borders for image
         // change the width of the border by changing the padding
       >
         {/* Center Image */}
         <div className="flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
           {/* For personal brand Logo or portrait image */}
-          {/* If using portrait image, increase width and height for image to cover object */}
+          {/* If using portrait image, increase width and height for image to cover object and remove "mx-auto" */}
           <Image
             src="/assets/portfolio-logo.svg"
             alt="Portfolio Logo"

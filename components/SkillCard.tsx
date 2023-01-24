@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiCode, HiDatabase } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 
 type Props = {
   skillCard: {
@@ -10,6 +11,14 @@ type Props = {
 };
 
 const SkillCard = ({ skillCard }: Props) => {
+  const stagger = {
+    animate: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
     // Skill Card Container
     <div className="w-full max-w-7xl p-3 flex flex-col rounded-xl bg-slate-800 text-center gap-5">
@@ -30,17 +39,24 @@ const SkillCard = ({ skillCard }: Props) => {
 
       {/* Card List */}
       <div className="h-full p-4 bg-slate-900 rounded-xl ">
-        <ul className="flex flex-start flex-wrap gap-4 text-slate-400">
-          {/* Render skills list */}
-          {skillCard?.skills.map((skill) => (
-            <li
+        <motion.ul
+          {...stagger}
+          className="flex flex-start flex-wrap gap-4 text-slate-400"
+        >
+          {/* Render skills list using stagger animation */}
+          {skillCard?.skills.map((skill, i) => (
+            <motion.li
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ type: 'tween', ease: 'easeOut', duration: 0.2, delay: 0.1 * i }}
               key={skill}
               className="px-3 py-1 border border-slate-400 rounded-lg"
             >
               {skill}
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </div>
   );
