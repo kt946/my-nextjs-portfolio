@@ -41,7 +41,7 @@ const SkillCard = ({ skillCard }: Props) => {
       <div className="h-full p-4 bg-slate-900 rounded-xl ">
         <motion.ul
           {...stagger}
-          className="flex flex-start flex-wrap gap-4 text-slate-400"
+          className="flex flex-start flex-wrap gap-3 text-slate-400"
         >
           {/* Render skills list using stagger animation */}
           {skillCard?.skills.map((skill, i) => (

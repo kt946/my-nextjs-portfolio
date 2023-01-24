@@ -46,7 +46,7 @@ const ProjectCard = ({ project }: Props) => {
         {/* Project Description */}
         <p className="paragraph-text-color">{project.description}</p>
         {/* Project Technologies */}
-        <ul className="my-4 flex flex-wrap text-slate-400 gap-2">
+        <ul className="my-4 flex flex-wrap text-slate-400 gap-3">
           {project.tech.map((techItem) => (
             <li
               key={techItem}
