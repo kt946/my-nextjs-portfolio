@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { HiOutlineMail, HiCode, HiDatabase } from 'react-icons/hi';
+import { FaGithub, FaLinkedinIn, FaRegSmileWink } from 'react-icons/fa';
+import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentText } from 'react-icons/hi';
 
 // Name, will display in hero section and footer
 export const devName = 'Kyle Tang';
@@ -48,6 +48,24 @@ export const bioParagraphs = [
     text: `And yes, I do like blue. Blue is cool.`,
   },
 ];
+
+// object containing data for Call to Action sections
+export const ctaData = {
+  // for contact CTA
+  contactCTA: {
+    message: `Don't be a stranger. Feel free to reach out and connect with me!`,
+    buttonMessage: 'Get in touch',
+    buttonIcon: <FaRegSmileWink />,
+    linkURL: '#contact',
+  },
+  // for resume CTA
+  resumeCTA: {
+    message: `Want to see more of what I can do? Check out my resume.`,
+    buttonMessage: 'To my resume',
+    buttonIcon: <HiOutlineDocumentText />,
+    linkURL: resumeLink,
+  },
+};
 
 // icon, title, summary, and skills list for Skill Cards
 export const skillCardData = [
