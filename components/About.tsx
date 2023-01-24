@@ -47,7 +47,7 @@ const About = (props: Props) => {
             ))}
             <Link
               href="#work"
-              className="my-2 flex flex-wrap text-primary font-semibold group custom-transition"
+              className="w-fit my-2 flex flex-wrap text-primary font-semibold group custom-transition"
             >
               Check out some of my latest projects.
               <span className="ml-1 mt-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 custom-transition">
