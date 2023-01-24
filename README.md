@@ -8,7 +8,7 @@
 
 ## Description
 
-This repository contains my personal web developer portfolio built with modern technologies such as Tailwind CSS, Next.js, TypeScript, and Framer Motion. It is designed to showcase my skills and experience in a modern and visually appealing way. The portfolio is optimized for performance and accessibility with a mobile responsive design. This project is made for developers such as myself who are looking to make an impact in the tech world.
+This repository contains my personal web developer portfolio built with technologies such as Next.js, TypeScript, Tailwind CSS, and Framer Motion. It is designed to showcase my expertise and background in a modern and visually appealing way. The portfolio is optimized for performance and accessibility with a mobile responsive design. This project is made for developers such as myself who are looking to make an impact in the tech world.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 To install this project on your local computer, navigate to the `demo` branch of this repository.
 
-The `constants.tsx` and `assets` folder in this branch has dummy information and placeholder images to give developers an idea of how the information is structured in the portfolio.
+The `constants.tsx` and `assets` folder in the `demo` branch has dummy information and placeholder images to give developers an idea of how the information is structured in the portfolio.
 
 In the `demo` branch, clone the repository or download it as a ZIP file and place it into a local directory on your computer.
 
@@ -56,7 +56,7 @@ On smaller screens such as phones, the navigation links will collapse into a men
 
 This portfolio includes an About, Skills, Work, and Contact section. The About section contains a profile image of the developer and a short biography. The Skills section has a list of technical skills. The Work section consists of six projects, each of them having a screenshot of the project, a description, technologies used, and links to the deployed project and its github repository. In the Contact section, users can send emails by filling out the contact form fields and clicking the submit button.
 
-Users can start editing the portfolio by modifying `constants.tsx` in the utils folder. The page auto-updates as you edit this file.
+Users can start editing the portfolio by modifying `constants.tsx` in the `utils` folder. The page auto-updates as you edit this file.
 
 The `constants.tsx` is where a user can control most of the portfolio's information such as text, external links, image links, skills list, and project information.
 
