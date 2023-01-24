@@ -16,7 +16,6 @@ const CallToAction = ({ ctaData }: Props) => {
 
   return (
     <section
-      id="callToAction"
       className="section-container py-0 mb-14"
     >
       {/* Content Container */}
