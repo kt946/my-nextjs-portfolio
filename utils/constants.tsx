@@ -7,7 +7,7 @@ export const LogoImage = 'logo.svg';
 // Profile Image
 export const profileImage = 'profile.png';
 
-// Name, will display in hero section and footer
+// Name, will display in title, hero section, and footer
 export const devName = 'Kyle Tang';
 
 // Roles array for typewriter effect in hero
