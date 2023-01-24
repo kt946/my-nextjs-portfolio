@@ -4,6 +4,9 @@ import { HiOutlineMail } from 'react-icons/hi';
 // Name, will display in hero section and footer
 export const devName = 'Kyle Tang';
 
+// Roles array for typewriter effect in hero
+export const roles = ['Full Stack Developer', 'Designer', 'Coder'];
+
 // Social URL Links
 export const socialLinks = [
   {
@@ -25,9 +28,6 @@ export const socialLinks = [
 
 // Resume URL link
 export const resumeLink = 'https://drive.google.com/file/d/1aUiFaAlnXzcr3Nrz8uu4RTZr9klqImxv/view?usp=sharing';
-
-// Roles array for typewriter effect in hero
-export const roles = ['Full Stack Developer', 'Designer', 'Coder'];
 
 // Bio paragraphs for About section
 export const bioParagraphs = [
