@@ -86,7 +86,7 @@ For additional personalization such as colors, headings, or extra social links, 
 
 ## Links
 
-- [Link to deployed application](https://github.com/kt946/my-nextjs-portfolio)
+- [Link to deployed application](https://www.kyletang.dev/)
 
 - [Link to GitHub repository](https://github.com/kt946/my-nextjs-portfolio)
 
