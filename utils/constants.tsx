@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
+import { HiOutlineMail, HiCode, HiDatabase } from 'react-icons/hi';
 
 // Name, will display in hero section and footer
 export const devName = 'Kyle Tang';
@@ -49,10 +49,13 @@ export const bioParagraphs = [
   },
 ];
 
-// Summary and skills for skill cards
+// icon, title, summary, and skills list for Skill Cards
 export const skillCardData = [
+  // for front-end
   {
     id: 'frontEndSkills',
+    icon: <HiCode />,
+    title: 'Front-End Development',
     summary:
       'I am passionate about bringing ideas to life and creating visually stunning projects using a variety of modern technologies and frameworks.',
     skills: [
@@ -71,8 +74,11 @@ export const skillCardData = [
       'Framer Motion',
     ],
   },
+  // for back-end
   {
     id: 'backEndSkills',
+    icon: <HiDatabase />,
+    title: 'Back-End Development',
     summary:
       'I enjoy finding solutions to complex problems and developing powerful server-side code with a focus on efficiency and security.',
     skills: [
