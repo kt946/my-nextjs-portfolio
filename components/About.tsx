@@ -27,7 +27,7 @@ const About = (props: Props) => {
           className="section-title-container"
         >
           <h2 className="section-title">About</h2>
-          <h3 className="section-subtitle">Me, Myself, and I</h3>
+          <h3 className="section-subtitle">Varius morbi enim nunc faucibus</h3>
         </motion.div>
 
         <div className="w-full flex flex-col md:flex-row items-center md:items-start gap-12">

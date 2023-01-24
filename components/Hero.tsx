@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
-import { devName, LogoImage, roles } from '../utils/constants';
+import { devName, LogoImage, profileImage, roles } from '../utils/constants';
 
 type Props = {};
 
@@ -44,11 +44,11 @@ const Hero = (props: Props) => {
           {/* For personal brand Logo or profile image */}
           {/* If using profile image, increase width and height for image to cover object and remove "mx-auto" */}
           <Image
-            src={`/assets/${LogoImage}`}
+            src={`/assets/${profileImage}`}
             alt="Portfolio Logo"
-            width={64} // {128} for profile images
-            height={64} // {128} for profile images
-            className="mx-auto object-cover object-center" // use "mx-auto" to center logo
+            width={128} // {128} for profile images
+            height={128} // {128} for profile images
+            className="object-cover object-center" // use "mx-auto" to center logo
           />
         </div>
       </motion.div>

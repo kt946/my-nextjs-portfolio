@@ -25,7 +25,7 @@ const Work = (props: Props) => {
           className="mb-12 md:mb-24"
         >
           <h2 className="section-title">Work</h2>
-          <h3 className="section-subtitle">A selection of my latest web development projects</h3>
+          <h3 className="section-subtitle">Convallis posuere morbi leo urnas</h3>
         </motion.div>
 
         {/* Project List Container */}

@@ -52,7 +52,7 @@ const Contact = (props: Props) => {
           className="mb-12 md:mb-24"
         >
           <h2 className="section-title">Contact</h2>
-          <h3 className="section-subtitle">Let&apos;s build something incredible together!</h3>
+          <h3 className="section-subtitle">Ipsum dolor sit amet consectetur!</h3>
         </motion.div>
 
         {/* Section Comment */}
@@ -66,8 +66,7 @@ const Contact = (props: Props) => {
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
           className="section-subtitle-2"
         >
-          I&apos;m currently looking for full-time positions, but if you got an exciting opportunity you need help with
-          or you just want to say hi, fill out this awesome contact form below or connect with me on social media!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet architecto amet, vel, tenetur deleniti quas animi tempora eius ad quaerat ipsa aperiam ea sint. Ipsa quis magnam placeat. Dolorem.
         </motion.p>
 
         <div className="w-full">

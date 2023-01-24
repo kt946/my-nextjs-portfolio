@@ -25,7 +25,7 @@ const Skills = (props: Props) => {
           className="mb-12 md:mb-24"
         >
           <h2 className="section-title">Skills</h2>
-          <h3 className="section-subtitle">Crafting digital solutions with style</h3>
+          <h3 className="section-subtitle">Sollicitudin tempor id eu nisl</h3>
         </motion.div>
 
         <motion.p
@@ -38,8 +38,8 @@ const Skills = (props: Props) => {
           transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
           className="section-subtitle-2"
         >
-          Web development is a never-ending quest, and I&apos;m always striving to improve myself, one skill set at a
-          time.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste unde qui laborum cupiditate, nobis sequi dicta
+          assumenda ullam ducimus tempore ab doloremque labore rem a, blanditiis eos provident. Ratione, consequatur?
         </motion.p>
 
         {/* Skills Container */}
@@ -54,9 +54,11 @@ const Skills = (props: Props) => {
           className="w-full max-w-full flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8"
         >
           {skillCardData.map((skillCard) => (
-            <SkillCard key={skillCard.id} skillCard={skillCard} />
+            <SkillCard
+              key={skillCard.id}
+              skillCard={skillCard}
+            />
           ))}
-          
         </motion.div>
       </div>
     </section>

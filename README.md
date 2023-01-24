@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./public/assets/logo.svg" width="150" alt="Personal Logo">
-</p>
-
 # My Next.js Portfolio
 
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
@@ -85,8 +81,6 @@ For additional personalization such as colors, headings, or extra social links, 
 - [kt946](https://github.com/kt946)
 
 ## Links
-
-- [Link to deployed application](https://github.com/kt946/my-nextjs-portfolio)
 
 - [Link to GitHub repository](https://github.com/kt946/my-nextjs-portfolio)
 
