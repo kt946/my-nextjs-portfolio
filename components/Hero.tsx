@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
   return (
     <section
       id="home"
-      className="section-container hero-container bg-black md:pt-64 flex flex-col items-center justify-center text-center"
+      className="section-container h-[calc(100vh-60px)] bg-black md:pt-64 flex flex-col items-center justify-center text-center"
     >
       {/* Background Animation */}
       <BackgroundCircles />
