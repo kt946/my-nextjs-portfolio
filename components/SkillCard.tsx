@@ -29,7 +29,7 @@ const SkillCard = ({ skillCard }: Props) => {
       </div>
 
       {/* Card Title */}
-      <h3 className="w-min mx-auto text-xl sm:text-2xl font-bold uppercase tracking-widest">
+      <h3 className="mx-auto text-xl sm:text-2xl font-bold uppercase tracking-widest">
         {skillCard.title}
       </h3>
 
