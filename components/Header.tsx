@@ -6,7 +6,7 @@ import { HiOutlineHome } from 'react-icons/hi';
 import { HiUserCircle, HiOutlineFolder } from 'react-icons/hi2';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import MobileMenu from './MobileMenu';
-import { socialLinks, resumeLink } from './../utils/constants';
+import { socialLinks, resumeLink, LogoImage } from './../utils/constants';
 import { motion } from 'framer-motion';
 
 type Props = {};
@@ -63,7 +63,7 @@ const Header = (props: Props) => {
           className="py-1 md:p-0 hover:opacity-70 custom-transition"
         >
           <Image
-            src="/assets/portfolio-logo.svg"
+            src={`/assets/${LogoImage}`}
             alt="Portfolio Logo"
             width={0}
             height={0}

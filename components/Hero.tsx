@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
-import { devName, roles } from '../utils/constants';
+import { devName, LogoImage, roles } from '../utils/constants';
 
 type Props = {};
 
@@ -41,13 +41,13 @@ const Hero = (props: Props) => {
       >
         {/* Center Image */}
         <div className="flex flex-col justify-center w-full h-full rounded-full overflow-hidden bg-black">
-          {/* For personal brand Logo or portrait image */}
-          {/* If using portrait image, increase width and height for image to cover object and remove "mx-auto" */}
+          {/* For personal brand Logo or profile image */}
+          {/* If using profile image, increase width and height for image to cover object and remove "mx-auto" */}
           <Image
-            src="/assets/portfolio-logo.svg"
+            src={`/assets/${LogoImage}`}
             alt="Portfolio Logo"
-            width={64} // {128}
-            height={64} // {128}
+            width={64} // {128} for profile images
+            height={64} // {128} for profile images
             className="mx-auto object-cover object-center" // use "mx-auto" to center logo
           />
         </div>

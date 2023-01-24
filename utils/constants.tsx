@@ -1,6 +1,12 @@
 import { FaGithub, FaLinkedinIn, FaRegSmileWink } from 'react-icons/fa';
 import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentText } from 'react-icons/hi';
 
+// Logo Image
+export const LogoImage = 'logo.svg';
+
+// Profile Image
+export const profileImage = 'profile.png';
+
 // Name, will display in hero section and footer
 export const devName = 'Kyle Tang';
 

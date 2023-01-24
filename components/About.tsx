@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { HiArrowRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import { bioParagraphs } from '../utils/constants';
+import { bioParagraphs, profileImage } from '../utils/constants';
 
 type Props = {};
 
@@ -68,7 +68,7 @@ const About = (props: Props) => {
             className="mx-auto md:mx-0 order-first md:order-last"
           >
             <Image
-              src="/assets/portrait.png"
+              src={`/assets/${profileImage}`}
               alt="Portfolio portrait"
               width={500}
               height={500}
