@@ -59,7 +59,7 @@ const Header = (props: Props) => {
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link
-          href="/"
+          href="https://www.kyletang.dev"
           className="py-1 md:p-0 hover:opacity-70 custom-transition"
         >
           <Image
