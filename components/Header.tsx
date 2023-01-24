@@ -60,7 +60,9 @@ const Header = (props: Props) => {
         {/* Logo */}
         <Link
           href="/"
+          aria-label="home"
           className="py-1 md:p-0 hover:opacity-70 custom-transition"
+          onClick={() => window.location.replace("/")}
         >
           <Image
             src={`/assets/${LogoImage}`}
