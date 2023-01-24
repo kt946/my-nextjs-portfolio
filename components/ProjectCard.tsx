@@ -27,10 +27,35 @@ const ProjectCard = ({ project }: Props) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
-      className="w-full flex flex-col lg:flex-row lg:space-y-0 space-x-0 lg:space-x-12 lg:even:flex-row-reverse lg:even:space-x-reverse"
+      className="w-full flex flex-col lg:flex-row lg:gap-12 lg:odd:flex-row-reverse"
     >
+      {/* Project Image */}
+      <Link
+        href={project.projectLink}
+        className="lg:max-w-2xl relative flex w-full rounded-2xl overflow-hidden group"
+      >
+        {/* Image */}
+        <Image
+          src={`/assets/${project.image}`}
+          alt="Project screenshot"
+          width={1920}
+          height={1080}
+          className="w-full h-full object-cover group-hover:scale-125 transition ease-in-out duration-500"
+        ></Image>
+        {/* Overlay */}
+        <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-primary opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
+          <span className="flex">
+            Visit Project
+            <span className="ml-2 mt-1">
+              <HiArrowRight />
+            </span>
+          </span>
+        </p>
+        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black opacity-0 group-hover:opacity-80 transition ease-in-out duration-500" />
+      </Link>
+
       {/* Project Info */}
-      <div className="w-full my-2 flex flex-col item justify-center order-last lg:order-first">
+      <div className="w-full my-2 flex flex-col item justify-center">
         {/* Project Title */}
         <h4 className="w-fit group">
           <Link
@@ -74,31 +99,6 @@ const ProjectCard = ({ project }: Props) => {
           </Link>
         </div>
       </div>
-
-      {/* Project Image */}
-      <Link
-        href={project.projectLink}
-        className="lg:max-w-2xl relative flex w-full rounded-2xl overflow-hidden group"
-      >
-        {/* Image */}
-        <Image
-          src={`/assets/${project.image}`}
-          alt="Project screenshot"
-          width={1920}
-          height={1080}
-          className="w-full h-full object-cover group-hover:scale-125 transition ease-in-out duration-500"
-        ></Image>
-        {/* Overlay */}
-        <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-primary opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
-          <span className="flex">
-            Visit Project
-            <span className="ml-2 mt-1">
-              <HiArrowRight />
-            </span>
-          </span>
-        </p>
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black opacity-0 group-hover:opacity-80 transition ease-in-out duration-500" />
-      </Link>
     </motion.li>
   );
 };
