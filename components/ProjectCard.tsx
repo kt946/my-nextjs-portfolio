@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { HiOutlineExternalLink, HiArrowRight } from 'react-icons/hi';
 import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { title } from 'process';
 
 type Props = {
   project: {
@@ -37,7 +38,7 @@ const ProjectCard = ({ project }: Props) => {
         {/* Image */}
         <Image
           src={`/assets/${project.image}`}
-          alt="Project screenshot"
+          alt={`Project screenshot of ${project.title}`}
           width={1920}
           height={1080}
           className="w-full h-full object-cover group-hover:scale-125 transition ease-in-out duration-500"
