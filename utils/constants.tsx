@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaRegSmileWink } from 'react-icons/fa';
-import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentText } from 'react-icons/hi';
+import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentDownload } from 'react-icons/hi';
 
 // Logo Image
 export const LogoImage = 'sample-logo.svg';
@@ -67,8 +67,8 @@ export const ctaData = {
   // for resume CTA
   resumeCTA: {
     message: `Officia ratione sunt fugit voluptas deserunt odit vitae ipsa!`,
-    buttonMessage: 'To Resume',
-    buttonIcon: <HiOutlineDocumentText />,
+    buttonMessage: 'Download Resume',
+    buttonIcon: <HiOutlineDocumentDownload />,
     linkURL: resumeLink,
   },
 };
