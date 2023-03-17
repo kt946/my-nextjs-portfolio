@@ -7,30 +7,30 @@ type Props = {};
 
 const Contact = (props: Props) => {
   const formRef = useRef<HTMLFormElement | null>(null);
-  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
   // function to handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // if form data exists and environment variables exist, then send form data using emailjs
-    if (formRef.current && serviceId && templateId && publicKey) {
-      try {
-        const result = await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
-        // if message sent is successful
-        if (result.status === 200) {
+    // send form data using emailjs
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current!,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+      .then(
+        (result) => {
+          // if message sent is successful
           console.log('Email sent successfully');
           // clear form
-          formRef.current.reset();
-        } else {
-          console.error(`Error sending email: ${result.text}`);
+          formRef.current!.reset();
+        },
+        (error) => {
+          console.error(`Error sending email: ${error.text}`);
         }
-      } catch (error) {
-        console.error('Error sending email: ', error);
-      }
-    }
+      );
   };
 
   return (

@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaRegSmileWink } from 'react-icons/fa';
-import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentText } from 'react-icons/hi';
+import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentDownload } from 'react-icons/hi';
 
 // Logo Image
 export const LogoImage = 'logo.svg';
@@ -67,8 +67,8 @@ export const ctaData = {
   // for resume CTA
   resumeCTA: {
     message: `Want to see more of what I can do? Check out my resume.`,
-    buttonMessage: 'To my resume',
-    buttonIcon: <HiOutlineDocumentText />,
+    buttonMessage: 'Download resume',
+    buttonIcon: <HiOutlineDocumentDownload />,
     linkURL: resumeLink,
   },
 };
