@@ -2,19 +2,19 @@ import { FaGithub, FaLinkedinIn, FaRegSmileWink } from 'react-icons/fa';
 import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentDownload } from 'react-icons/hi';
 
 // Logo Image
-export const LogoImage = 'logo.svg';
+const LogoImage = 'logo.svg';
 
 // Profile Image
-export const profileImage = 'profile.png';
+const profileImage = 'profile.png';
 
 // Name, will display in title, hero section, and footer
-export const devName = 'Kyle Tang';
+const devName = 'Kyle Tang';
 
 // Roles array for typewriter effect in hero
-export const roles = ['Full Stack Developer', 'Designer', 'Coder'];
+const roles = ['Full Stack Developer', 'Designer', 'Coder'];
 
 // Social URL Links
-export const socialLinks = [
+const socialLinks = [
   {
     name: 'email',
     icon: <HiOutlineMail />,
@@ -33,10 +33,10 @@ export const socialLinks = [
 ];
 
 // Resume URL link
-export const resumeLink = 'https://drive.google.com/file/d/1aUiFaAlnXzcr3Nrz8uu4RTZr9klqImxv/view?usp=sharing';
+const resumeLink = 'https://drive.google.com/file/d/1aUiFaAlnXzcr3Nrz8uu4RTZr9klqImxv/view?usp=sharing';
 
 // Bio paragraphs for About section
-export const bioParagraphs = [
+const bioParagraphs = [
   {
     id: 'paragraph1',
     text: `Hi everyone! My name is Kyle and I'm a full stack web developer with a B.A. in Psychology from Rutgers University and a passion for technology, creativity, and learning. I've completed a certificate in Full Stack Web Development from the Rutgers Coding Bootcamp.`,
@@ -55,26 +55,23 @@ export const bioParagraphs = [
   },
 ];
 
-// object containing data for Call to Action sections
-export const ctaData = {
-  // for contact CTA
-  contactCTA: {
-    message: `Don't be a stranger. Feel free to reach out and connect with me!`,
-    buttonMessage: 'Get in touch',
-    buttonIcon: <FaRegSmileWink />,
-    linkURL: '#contact',
-  },
-  // for resume CTA
-  resumeCTA: {
-    message: `Want to see more of what I can do? Check out my resume.`,
-    buttonMessage: 'Download resume',
-    buttonIcon: <HiOutlineDocumentDownload />,
-    linkURL: resumeLink,
-  },
+// objects containing data for Call to Action sections
+const contactCTA = {
+  message: `Don't be a stranger. Feel free to reach out and connect with me!`,
+  buttonMessage: 'Get in touch',
+  buttonIcon: <FaRegSmileWink />,
+  linkURL: '#contact',
+};
+
+const resumeCTA = {
+  message: `Want to see more of what I can do? Check out my resume.`,
+  buttonMessage: 'Download resume',
+  buttonIcon: <HiOutlineDocumentDownload />,
+  linkURL: resumeLink,
 };
 
 // icon, title, summary, and skills list for Skill Cards
-export const skillCardData = [
+const skillCardData = [
   // for front-end
   {
     id: 'frontEndSkills',
@@ -129,7 +126,7 @@ export const skillCardData = [
 ];
 
 // Project List for Work section
-export const projectList = [
+const projectList = [
   {
     title: 'CodeFlow',
     image: 'codeflow.png',
@@ -179,3 +176,17 @@ export const projectList = [
     githubLink: 'https://github.com/kt946/epic-tech-blog-MVC',
   },
 ];
+
+export {
+  LogoImage,
+  profileImage,
+  devName,
+  roles,
+  socialLinks,
+  resumeLink,
+  bioParagraphs,
+  contactCTA,
+  resumeCTA,
+  skillCardData,
+  projectList,
+};

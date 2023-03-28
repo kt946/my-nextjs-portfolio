@@ -61,7 +61,7 @@ const ProjectCard = ({ project }: Props) => {
         <h4 className="w-fit group">
           <Link
             href={project.projectLink}
-            className="my-2 flex flex-wrap text-xl sm:text-2xl md:text-3xl font-bold tracking-wide group-hover:text-primary custom-transition"
+            className="my-2 flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide group-hover:text-primary custom-transition"
           >
             {project.title}
             <span className="ml-1 mt-1 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-2 custom-transition">
