@@ -3,21 +3,15 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 type Props = {
-  ctaData: {
-    message: string;
-    buttonMessage: string;
-    buttonIcon: JSX.Element;
-    linkURL: string;
-  };
+  message: string;
+  buttonMessage: string;
+  buttonIcon: JSX.Element;
+  linkURL: string;
 };
 
-const CallToAction = ({ ctaData }: Props) => {
-  const { message, buttonMessage, buttonIcon, linkURL } = ctaData;
-
+const CallToAction = ({ message, buttonMessage, buttonIcon, linkURL }: Props) => {
   return (
-    <section
-      className="section-container py-0 mb-14"
-    >
+    <section className="section-container py-0 mb-14">
       {/* Content Container */}
       <motion.div
         initial={{

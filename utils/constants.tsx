@@ -2,19 +2,19 @@ import { FaGithub, FaLinkedinIn, FaRegSmileWink } from 'react-icons/fa';
 import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentDownload } from 'react-icons/hi';
 
 // Logo Image
-export const LogoImage = 'sample-logo.svg';
+const LogoImage = 'sample-logo.svg';
 
 // Profile Image
-export const profileImage = 'profile.jpg';
+const profileImage = 'profile.jpg';
 
 // Name, will display in title, hero section, and footer
-export const devName = 'John Doe';
+const devName = 'John Doe';
 
 // Roles array for typewriter effect in hero
-export const roles = ['Full Stack Developer', 'Software Engineer', 'Coffee Lover'];
+const roles = ['Full Stack Developer', 'Software Engineer', 'Coffee Lover'];
 
 // Social URL Links
-export const socialLinks = [
+const socialLinks = [
   {
     name: 'email',
     icon: <HiOutlineMail />,
@@ -33,10 +33,10 @@ export const socialLinks = [
 ];
 
 // Resume URL link
-export const resumeLink = '/';
+const resumeLink = '/';
 
 // Bio paragraphs for About section
-export const bioParagraphs = [
+const bioParagraphs = [
   {
     id: 'paragraph1',
     text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex earum tempore vel! Esse, autem? Dolorum est, iusto numquam dicta natus minima nihil recusandae, hic, commodi officia animi totam consequatur amet!`,
@@ -56,25 +56,21 @@ export const bioParagraphs = [
 ];
 
 // object containing data for Call to Action sections
-export const ctaData = {
-  // for contact CTA
-  contactCTA: {
-    message: `A vero dolor libero molestias laborum est possimus repudiandae.`,
-    buttonMessage: 'To Contact',
-    buttonIcon: <FaRegSmileWink />,
-    linkURL: '#contact',
-  },
-  // for resume CTA
-  resumeCTA: {
-    message: `Officia ratione sunt fugit voluptas deserunt odit vitae ipsa!`,
-    buttonMessage: 'Download Resume',
-    buttonIcon: <HiOutlineDocumentDownload />,
-    linkURL: resumeLink,
-  },
+const contactCTA = {
+  message: `A vero dolor libero molestias laborum est possimus repudiandae.`,
+  buttonMessage: 'To Contact',
+  buttonIcon: <FaRegSmileWink />,
+  linkURL: '#contact',
+};
+const resumeCTA = {
+  message: `Officia ratione sunt fugit voluptas deserunt odit vitae ipsa!`,
+  buttonMessage: 'Download Resume',
+  buttonIcon: <HiOutlineDocumentDownload />,
+  linkURL: resumeLink,
 };
 
 // icon, title, summary, and skills list for Skill Cards
-export const skillCardData = [
+const skillCardData = [
   // for front-end
   {
     id: 'frontEndSkills',
@@ -107,7 +103,7 @@ export const skillCardData = [
 ];
 
 // Project List for Work section
-export const projectList = [
+const projectList = [
   {
     title: 'Project 1',
     image: 'project-1.jpg',
@@ -157,3 +153,17 @@ export const projectList = [
     githubLink: '/',
   },
 ];
+
+export {
+  LogoImage,
+  profileImage,
+  devName,
+  roles,
+  socialLinks,
+  resumeLink,
+  bioParagraphs,
+  contactCTA,
+  resumeCTA,
+  skillCardData,
+  projectList,
+};

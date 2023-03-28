@@ -7,7 +7,7 @@ import Work from '../components/Work';
 import Contact from '../components/Contact';
 import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
-import { devName, ctaData } from '../utils/constants';
+import { devName, contactCTA, resumeCTA } from '../utils/constants';
 
 export default function Home() {
   return (
@@ -36,12 +36,12 @@ export default function Home() {
         <About />
 
         {/* render CTA section using contact property from ctaData in constants */}
-        <CallToAction ctaData={ctaData.contactCTA} />
+        <CallToAction {...contactCTA} />
 
         <Skills />
 
         {/* render CTA section using resume property from ctaData in constants */}
-        <CallToAction ctaData={ctaData.resumeCTA} />
+        <CallToAction {...resumeCTA} />
 
         <Work />
 
