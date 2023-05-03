@@ -33,7 +33,7 @@ const ProjectCard = ({ project }: Props) => {
       {/* Project Image */}
       <Link
         href={project.projectLink}
-        className="lg:max-w-2xl relative flex w-full rounded-2xl overflow-hidden group"
+        className="lg:max-w-2xl relative flex w-full rounded-xl overflow-hidden group"
       >
         {/* Image */}
         <Image
@@ -46,7 +46,7 @@ const ProjectCard = ({ project }: Props) => {
         {/* Overlay */}
         <p className="absolute z-[1] w-full h-full flex flex-col justify-center items-center text-2xl md:text-3xl font-semibold text-primary opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
           <span className="flex">
-            Visit Project
+            View Project
             <span className="ml-2 mt-1">
               <HiArrowRight />
             </span>
@@ -58,10 +58,10 @@ const ProjectCard = ({ project }: Props) => {
       {/* Project Info */}
       <div className="w-full my-2 flex flex-col item justify-center">
         {/* Project Title */}
-        <h4 className="w-fit group">
+        <h4 className="w-fit my-2 group">
           <Link
             href={project.projectLink}
-            className="my-2 flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide group-hover:text-primary custom-transition"
+            className="flex flex-wrap text-2xl md:text-3xl font-bold tracking-wide group-hover:text-primary custom-transition hover:underline underline-offset-4"
           >
             {project.title}
             <span className="ml-1 mt-1 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-2 custom-transition">
@@ -83,20 +83,20 @@ const ProjectCard = ({ project }: Props) => {
           ))}
         </ul>
         {/* Project Links */}
-        <div className="flex space-x-6">
+        <div className="flex gap-2">
           {/* Deployed Link */}
           <Link
             href={project.projectLink}
-            className="project-link-btn"
+            className="project-link-btn btn-primary-style"
           >
-            <HiOutlineExternalLink />
+            View Project <HiArrowRight className="hidden sm:inline-flex" />
           </Link>
           {/* Github Link */}
           <Link
             href={project.githubLink}
-            className="project-link-btn"
+            className="project-link-btn btn-secondary-style"
           >
-            <FaGithub />
+            Visit Github <FaGithub className="hidden sm:inline-flex" />
           </Link>
         </div>
       </div>

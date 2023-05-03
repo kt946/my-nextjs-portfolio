@@ -90,7 +90,7 @@ const Header = (props: Props) => {
           <li>
             <Link
               href={resumeLink}
-              className="py-2 px-4 rounded-full border border-primary hover:bg-primary text-primary hover:text-black custom-transition"
+              className="py-2 px-4 rounded-full btn-secondary-style"
             >
               Resume
             </Link>

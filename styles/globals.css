@@ -16,22 +16,22 @@
     @apply text-3xl md:text-5xl text-center font-bold;
   }
   .section-subtitle-2 {
-    @apply mb-12 md:mb-24 mx-auto max-w-lg text-lg md:text-xl text-center text-slate-300 font-medium;
+    @apply mb-12 md:mb-24 mx-auto max-w-lg text-lg md:text-xl text-center text-slate-300;
   }
   .paragraph-text-color {
     @apply sm:text-lg text-slate-300;
   }
   .custom-transition {
-    @apply transition ease-in-out duration-300;
+    @apply transition-all ease-in-out duration-300;
   }
   .custom-btn {
-    @apply py-2.5 px-6 flex border-2 border-primary hover:bg-primary rounded-full text-center text-lg font-semibold text-primary hover:text-black;
+    @apply custom-transition py-3 px-6 rounded-full font-semibold flex justify-center items-center gap-2 ;
   }
   .custom-social-btn {
-    @apply p-2 rounded-full border-2 border-slate-500 hover:border-primary text-2xl text-slate-400 hover:text-primary;
+    @apply custom-transition p-2 rounded-full border-2 border-slate-500 hover:border-primary text-2xl text-slate-400 hover:text-primary;
   }
   .contactInput {
-    @apply p-2.5 rounded-md flex bg-slate-900 outline-none border border-slate-900 focus:border-primary text-white placeholder-slate-500 transition-all;
+    @apply p-3 rounded-md flex bg-slate-900 outline-none border border-slate-900 focus:border-primary text-white placeholder-slate-500 transition-all;
   }
   .hero-ring-style {
     @apply absolute rounded-full;
@@ -40,7 +40,13 @@
     @apply bg-clip-text text-transparent bg-gradient-to-t from-tertiary via-primary to-secondary;
   }
   .project-link-btn {
-    @apply p-2 hover:bg-primary rounded-full text-2xl border-2 border-primary text-primary hover:text-black custom-transition;
+    @apply custom-transition py-2 px-4 w-full sm:w-fit rounded-full font-semibold flex justify-center items-center gap-2;
+  }
+  .btn-primary-style {
+    @apply custom-transition border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-black
+  }
+  .btn-secondary-style {
+    @apply custom-transition border border-primary hover:bg-primary hover:border-primary text-primary hover:text-black
   }
 }
 

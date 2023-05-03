@@ -133,10 +133,10 @@ const Contact = (props: Props) => {
             {/* Submit button */}
             <button
               type="submit"
-              className="mx-auto mt-8 custom-btn px-8 custom-transition group"
+              className="mx-auto mt-8 w-full custom-btn btn-primary-style"
             >
               Submit
-              <span className="ml-2 mt-1.5 text-primary group-hover:text-black custom-transition">
+              <span className="">
                 <MdSend />
               </span>
             </button>

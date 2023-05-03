@@ -7,6 +7,7 @@ module.exports = {
         // Here you can change the primary, secondary, and tertiary colors throughout the app or create your own custom colors.
         // For best contrast results, be sure to follow the Web Content Accessibility Guidelines (WCAG)
         primary: '#30A8FF',
+        'primary-shade': '#0071C1',
         secondary: '#60efff',
         tertiary: '#0061ff',
       },

@@ -37,18 +37,18 @@ const MobileMenu = ({ navMenu, setNavMenu, navLinks }: Props) => {
         <div className="my-4 py-4 flex flex-col border-y border-slate-500/30">
           <Link
             href={resumeLink}
-            className="custom-btn custom-resume-btn-color block custom-transition"
+            className="custom-btn btn-secondary-style"
           >
             Resume
           </Link>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-evenly">
           {/* Social Links */}
           {socialLinks.map((socialLink) => (
             <Link
               key={socialLink.name}
               href={socialLink.url}
-              className="custom-social-btn custom-transition"
+              className="custom-social-btn"
             >
               {socialLink.icon}
             </Link>

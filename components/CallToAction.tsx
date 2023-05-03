@@ -28,10 +28,10 @@ const CallToAction = ({ message, buttonMessage, buttonIcon, linkURL }: Props) =>
         {/* Link */}
         <Link
           href={linkURL}
-          className="custom-btn text-white hover:text-black custom-transition"
+          className="custom-btn btn-primary-style"
         >
           {buttonMessage}
-          <span className="mt-1 ml-2 text-xl">{buttonIcon}</span>
+          {buttonIcon}
         </Link>
       </motion.div>
     </section>

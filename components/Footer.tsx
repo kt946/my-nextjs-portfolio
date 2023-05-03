@@ -12,7 +12,7 @@ const Footer = (props: Props) => {
       id="footer"
       className="px-4"
     >
-      <div className="max-w-7xl mx-auto py-12 border-t border-slate-300/20 flex flex-col-reverse sm:flex-row justify-between items-center text-lg text-center">
+      <div className="max-w-7xl mx-auto py-10 border-t border-slate-300/20 flex flex-col-reverse sm:flex-row justify-between items-center text-lg text-center">
         {/* Copyright */}
         <p>
           &copy; {year} {devName}. All rights reserved.
@@ -27,7 +27,7 @@ const Footer = (props: Props) => {
             >
               <Link
                 href={socialLink.url}
-                className="custom-social-btn custom-transition"
+                className="custom-social-btn"
               >
                 {socialLink.icon}
               </Link>
