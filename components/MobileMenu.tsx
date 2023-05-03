@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { socialLinks, resumeLink } from './../utils/constants';
+import { socialLinks, resumeLink } from '../constants/constants';
 
 type Props = {
   navMenu: boolean;

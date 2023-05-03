@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import { projectList } from '../utils/constants';
+import { projectList } from '../constants/constants';
 import { motion } from 'framer-motion';
 
 type Props = {};

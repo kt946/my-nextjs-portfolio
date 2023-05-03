@@ -1,5 +1,5 @@
 import React from 'react';
-import { skillCardData } from '../utils/constants';
+import { skillCardData } from '../constants/constants';
 import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
 
@@ -54,9 +54,11 @@ const Skills = (props: Props) => {
           className="w-full max-w-full flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8"
         >
           {skillCardData.map((skillCard) => (
-            <SkillCard key={skillCard.id} skillCard={skillCard} />
+            <SkillCard
+              key={skillCard.id}
+              skillCard={skillCard}
+            />
           ))}
-          
         </motion.div>
       </div>
     </section>

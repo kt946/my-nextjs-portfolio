@@ -7,7 +7,7 @@ import Work from '../components/Work';
 import Contact from '../components/Contact';
 import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
-import { devName, contactCTA, resumeCTA } from '../utils/constants';
+import { devName, contactCTA, resumeCTA } from '../constants/constants';
 
 export default function Home() {
   return (

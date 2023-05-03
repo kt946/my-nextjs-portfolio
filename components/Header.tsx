@@ -6,7 +6,7 @@ import { HiOutlineHome } from 'react-icons/hi';
 import { HiUserCircle, HiOutlineFolder } from 'react-icons/hi2';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import MobileMenu from './MobileMenu';
-import { socialLinks, resumeLink, LogoImage } from './../utils/constants';
+import { socialLinks, resumeLink, LogoImage } from '../constants/constants';
 import { motion } from 'framer-motion';
 
 type Props = {};
@@ -62,7 +62,7 @@ const Header = (props: Props) => {
           href="/"
           aria-label="home"
           className="py-1 md:p-0 hover:opacity-70 custom-transition"
-          onClick={() => window.location.replace("/")}
+          onClick={() => window.location.replace('/')}
         >
           <Image
             src={`/assets/${LogoImage}`}

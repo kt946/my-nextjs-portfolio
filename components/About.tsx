@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { HiArrowRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import { bioParagraphs, profileImage } from '../utils/constants';
+import { bioParagraphs, profileImage } from '../constants/constants';
 
 type Props = {};
 

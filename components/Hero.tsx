@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
-import { devName, LogoImage, roles } from '../utils/constants';
+import { devName, LogoImage, roles } from '../constants/constants';
 
 type Props = {};
 
