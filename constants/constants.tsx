@@ -130,7 +130,7 @@ const projectList = [
   {
     title: 'CodeFlow',
     image: 'codeflow.png',
-    description: `CodeFlow is an interactive social media MERN stack SPA that gives developers a creative hub to show off their coding projects through posts, add friends, and join the discussion with other developers in threaded comments.`,
+    description: `CodeFlow is a social media application built on the MERN stack, offering developers a platform to showcase their coding projects through interactive posts. With features like friend requests and threaded comments, CodeFlow provides a creative space for developers to engage in discussions with other like-minded individuals.`,
     tech: ['MERN', 'GraphQL', 'JWT', 'Tagify', 'Bootstrap'],
     projectLink: 'https://code-flow-app.herokuapp.com/',
     githubLink: 'https://github.com/cnohilly/codeflow',
@@ -138,15 +138,23 @@ const projectList = [
   {
     title: 'Watch It Later',
     image: 'watch-it-later.png',
-    description: `A full-stack app allowing users to search for movies and TV shows, create accounts to add them to their personal watchlist saved in a SQL database, leave comments, and rate movies.`,
+    description: `Watch It Later is a full-stack application that enables users to search for movies and TV shows, create accounts, and add their selected content to a personal watchlist, all of which is stored in a SQL database. Additionally, users can leave comments and rate the movies to share their feedback with others.`,
     tech: ['Node', 'MySQL', 'Sequelize', 'Handlebars', 'Bulma', 'MVC', 'TMDB API'],
     projectLink: 'https://watch-it-later.herokuapp.com/',
     githubLink: 'https://github.com/cnohilly/watch-it-later',
   },
   {
+    title: 'Sakura Study',
+    image: 'sakura-study.png',
+    description: `Sakura Study is a language learning app that offers fun and interactive quizzes to help users study Japanese. Inspired by Duolingo, Sakura Study provides a convenient and engaging way to practice hiragana, katakana, kanji, and vocabulary.`,
+    tech: ['MERN', 'Tailwind CSS', 'GraphQL', 'JWT', 'Redux'],
+    projectLink: 'https://sakurastudy.herokuapp.com/',
+    githubLink: 'https://github.com/kt946/japanese-quiz-mern-app',
+  },
+  {
     title: 'Movie TV Watchlist',
     image: 'movie-tv-watchlist.png',
-    description: `Looking for something to watch? Use this app to search for movies and TV shows through the TMDB's API as well as add them to a personal watchlist saved in the browser's local storage.`,
+    description: `Movie TV Watchlist is a web application that allows users to search for movies and TV shows through TMDB's API. Users can easily add their favorite content to a personal watchlist, which is conveniently saved in the browser's local storage for easy access.`,
     tech: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'TMDB API'],
     projectLink: 'https://cnohilly.github.io/movie-tv-watchlist/',
     githubLink: 'https://github.com/cnohilly/movie-tv-watchlist',
@@ -154,7 +162,7 @@ const projectList = [
   {
     title: 'Shop-Shop',
     image: 'shop-shop.png',
-    description: `An e-commerce full-stack MERN application that uses Redux to manage global state. Users can create accounts to add products to their shopping cart and checkout using the Stripe API.`,
+    description: `Shop-Shop is an e-commerce application built on the MERN stack, which leverages Redux to manage global state. With the ability to create accounts, users can easily add products to their shopping cart and checkout using the secure Stripe API.`,
     tech: ['MERN', 'JavaScript', 'GraphQL', 'JWT', 'Stripe', 'Redux'],
     projectLink: 'https://shop-shop-75043.herokuapp.com',
     githubLink: 'https://github.com/kt946/awesome-shop-shop-redux',
@@ -162,18 +170,10 @@ const projectList = [
   {
     title: 'Pizza Hunt',
     image: 'pizza-hunt.png',
-    description: `Hungry for some pizza but can't decide on your toppings? Check out Pizza Hunt, an app that uses MongoDB to store custom pizza recipies and user comments.`,
+    description: `Pizza Hunt is an application that provides users with a platform to discover and explore custom pizza recipes. Utilizing MongoDB, Pizza Hunt stores an extensive collection of recipes, along with user comments and feedback, to help users make informed decisions when selecting toppings for their perfect pizza.`,
     tech: ['Node', 'Express', 'NoSQL', 'MongoDB', 'Mongoose'],
     projectLink: 'https://pizza-hunt-13648.herokuapp.com/',
     githubLink: 'https://github.com/kt946/pizza-hunt',
-  },
-  {
-    title: 'The Epic Tech Blog',
-    image: 'the-epic-tech-blog.png',
-    description: `A CMS-style blog site using the MVC paradigm for discussing technology through blog posts and comments.`,
-    tech: ['Node', 'Express', 'MySQL', 'Handlebars', 'Bootstrap', 'MVC'],
-    projectLink: 'https://sheltered-mesa-54132.herokuapp.com',
-    githubLink: 'https://github.com/kt946/epic-tech-blog-MVC',
   },
 ];
 
