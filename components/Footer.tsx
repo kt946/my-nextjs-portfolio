@@ -12,7 +12,7 @@ const Footer = (props: Props) => {
       id="footer"
       className="px-4"
     >
-      <div className="max-w-7xl mx-auto py-10 border-t border-slate-300/20 flex flex-col-reverse sm:flex-row justify-between items-center text-lg text-center">
+      <div className="relative max-w-7xl mx-auto py-10 border-t border-slate-300/20 flex flex-col-reverse sm:flex-row justify-between items-center text-lg text-center">
         {/* Copyright */}
         <p>
           &copy; {year} {devName}. All rights reserved.

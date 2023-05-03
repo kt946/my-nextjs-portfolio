@@ -16,22 +16,22 @@
     @apply text-3xl md:text-5xl text-center font-bold;
   }
   .section-subtitle-2 {
-    @apply mb-12 md:mb-24 mx-auto max-w-lg text-lg md:text-xl text-center text-slate-300;
+    @apply mb-12 md:mb-24 mx-auto max-w-lg text-lg md:text-xl text-center text-gray-300;
   }
   .paragraph-text-color {
-    @apply sm:text-lg text-slate-300;
+    @apply sm:text-lg text-gray-300;
   }
   .custom-transition {
     @apply transition-all ease-in-out duration-300;
   }
   .custom-btn {
-    @apply custom-transition py-3 px-6 rounded-full font-semibold flex justify-center items-center gap-2 ;
+    @apply custom-transition py-2 px-4 text-lg rounded-full font-semibold flex justify-center items-center gap-2;
   }
   .custom-social-btn {
-    @apply custom-transition p-2 rounded-full border-2 border-slate-500 hover:border-primary text-2xl text-slate-400 hover:text-primary;
+    @apply custom-transition p-2 rounded-full border-2 border-gray-500 hover:border-primary text-2xl text-gray-300 hover:text-primary;
   }
   .contactInput {
-    @apply p-3 rounded-md flex bg-slate-900 outline-none border border-slate-900 focus:border-primary text-white placeholder-slate-500 transition-all;
+    @apply p-3 rounded-md flex bg-zinc-900 outline-none border border-zinc-800 focus:border-primary text-white placeholder-gray-500 transition-all;
   }
   .hero-ring-style {
     @apply absolute rounded-full;
@@ -43,10 +43,10 @@
     @apply custom-transition py-2 px-4 w-full sm:w-fit rounded-full font-semibold flex justify-center items-center gap-2;
   }
   .btn-primary-style {
-    @apply custom-transition border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-black
+    @apply custom-transition border border-primary bg-primary hover:bg-primary-shade hover:border-primary-shade text-black;
   }
   .btn-secondary-style {
-    @apply custom-transition border border-primary hover:bg-primary hover:border-primary text-primary hover:text-black
+    @apply custom-transition border border-primary hover:bg-primary hover:border-primary text-primary hover:text-black;
   }
 }
 
@@ -56,12 +56,20 @@
   }
 
   .scrollbar::-webkit-scrollbar-track {
-    @apply bg-slate-800;
+    @apply bg-slate-800 relative z-10;
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
     @apply bg-primary rounded-xl hover:bg-[#008AEC];
   }
+}
+
+.bg-overlay-style {
+  @apply absolute inset-0 w-full h-full z-0;
+}
+
+.bg-grid {
+  @apply bg-[url('../public/assets/grid.svg')] bg-repeat [mask-image:linear-gradient(90deg,rgba(255,255,255,0.07),transparent,transparent,transparent,rgba(255,255,255,0.07))];
 }
 
 .scrollbar-firefox {
@@ -71,6 +79,50 @@
 
 .custom-text-shadow {
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5), 0px 2px 10px rgba(0, 0, 0, 0.65), 0px 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+.bg-tech-circle-1 {
+  @apply h-[100px] w-[100px] md:h-[125px] md:w-[125px] hero-ring-style border md:border-2 border-[#003F6B] animate-ping;
+}
+
+.bg-tech-circle-2 {
+  @apply h-[200px] w-[200px] md:h-[350px] md:w-[350px] hero-ring-style border-dashed border-4 md:border-[15px] border-[#0F151E] animate-[spin_10s_linear_infinite];
+}
+
+.bg-tech-circle-3 {
+  @apply h-[250px] w-[250px] md:h-[400px] md:w-[400px] hero-ring-style border-4 md:border-8 border-b-transparent border-[#0E1115] animate-[spin_10s_linear_infinite_reverse];
+}
+
+.bg-tech-circle-4 {
+  @apply h-[300px] w-[300px] md:h-[450px] md:w-[450px] hero-ring-style border-dotted border-4 md:border-[10px] border-[#0F151E] animate-[spin_10s_linear_infinite];
+}
+
+.bg-tech-circle-5 {
+  @apply h-[350px] w-[350px] md:h-[500px] md:w-[500px] hero-ring-style border-double border-4 md:border-8 border-t-transparent border-r-transparent border-[#151A20] animate-[spin_10s_linear_infinite_reverse];
+}
+
+.bg-tech-circle-6 {
+  @apply h-[400px] w-[400px] md:h-[550px] md:w-[550px] hero-ring-style border-double border-4 md:border-8 border-r-transparent border-t-transparent border-[#0F151E] animate-[spin_10s_linear_infinite];
+}
+
+.bg-tech-circle-7 {
+  @apply h-[450px] w-[450px] md:h-[600px] md:w-[600px] hero-ring-style border-4 md:border-8 border-x-transparent border-[#0E1115] animate-[spin_10s_linear_infinite_reverse];
+}
+
+.bg-tech-circle-8 {
+  @apply h-[500px] w-[500px] md:h-[650px] md:w-[650px] hero-ring-style border md:border-2 border-primary/40 animate-pulse;
+}
+
+.bg-tech-circle-9 {
+  @apply h-[550px] w-[550px] md:h-[700px] md:w-[700px] hero-ring-style border-double border-4 md:border-[10px] border-x-transparent border-[#151A20] animate-[spin_10s_linear_infinite];
+}
+
+.bg-tech-circle-10 {
+  @apply h-[600px] w-[600px] md:h-[750px] md:w-[750px] hero-ring-style border-dashed border-4 md:border-[10px] border-y-transparent border-[#0F151E] animate-[spin_10s_linear_infinite_reverse];
+}
+
+.bg-tech-circle-11 {
+  @apply h-[650px] w-[650px] md:h-[800px] md:w-[800px] hero-ring-style border-8 md:border-[10px] border-[#0E1115];
 }
 
 .hamburger {

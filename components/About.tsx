@@ -70,10 +70,10 @@ const About = (props: Props) => {
             <Image
               src={`/assets/${profileImage}`}
               alt="Portfolio portrait"
-              width={500}
-              height={500}
-              priority={true}
+              width={384}
+              height={384}
               className="w-[256px] h-[256px] md:min-w-[320px] md:h-[320px] lg:h-[384px] lg:min-w-[384px] rounded-full object-cover"
+              priority={true}
             />
           </motion.div>
         </div>

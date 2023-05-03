@@ -19,8 +19,10 @@ const Hero = (props: Props) => {
   return (
     <section
       id="home"
-      className="section-container h-[calc(100vh-60px)] bg-black md:pt-64 flex flex-col items-center justify-center text-center"
+      className="relative section-container h-[calc(100vh-60px)] md:pt-64 flex flex-col items-center justify-center text-center"
     >
+      <div className='bg-overlay-style bg-grid' />
+
       {/* Background Animation */}
       <BackgroundCircles />
 
@@ -49,6 +51,7 @@ const Hero = (props: Props) => {
             width={64} // {128} for profile images
             height={64} // {128} for profile images
             className="mx-auto object-cover object-center" // use "mx-auto" to center logo
+            priority={true}
           />
         </div>
       </motion.div>

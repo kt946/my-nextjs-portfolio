@@ -82,12 +82,12 @@ const Contact = (props: Props) => {
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mx-auto max-w-3xl text-slate-300 caret-primary focus:caret-primary"
+            className="mx-auto max-w-3xl text-gray-300 caret-primary focus:caret-primary"
           >
             <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
               {/* Name Field */}
               <div className="flex flex-col">
-                <label className="pb-2 uppercase md:text-md">Name</label>
+                <label className="pb-2 uppercase md:text-md font-bold">Name</label>
                 <input
                   className="contactInput"
                   type="text"
@@ -98,7 +98,7 @@ const Contact = (props: Props) => {
               </div>
               {/* Email Field */}
               <div className="flex flex-col">
-                <label className="pb-2 uppercase md:text-md tracking-wider">Email</label>
+                <label className="pb-2 uppercase md:text-md tracking-wider font-bold">Email</label>
                 <input
                   className="contactInput"
                   type="email"
@@ -110,7 +110,7 @@ const Contact = (props: Props) => {
             </div>
             {/* Subject Field */}
             <div className="flex flex-col py-2">
-              <label className="pb-2 uppercase md:text-md tracking-wider">Subject</label>
+              <label className="pb-2 uppercase md:text-md tracking-wider font-bold">Subject</label>
               <input
                 className="contactInput"
                 type="text"
@@ -121,7 +121,7 @@ const Contact = (props: Props) => {
             </div>
             {/* Message Field */}
             <div className="flex flex-col py-2">
-              <label className="pb-2 uppercase md:text-md tracking-wider">Message</label>
+              <label className="pb-2 uppercase md:text-md tracking-wider font-bold">Message</label>
               <textarea
                 className="contactInput"
                 rows={6}

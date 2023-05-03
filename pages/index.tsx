@@ -11,7 +11,7 @@ import { devName, contactCTA, resumeCTA } from '../constants/constants';
 
 export default function Home() {
   return (
-    <div className="font-sans bg-black text-white h-screen z-0 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-firefox md:scrollbar">
+    <div className="font-sans bg-[#0a0a0a] text-gray-100 h-screen z-0 overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-firefox md:scrollbar">
       <Head>
         <title>{devName}</title>
         <meta

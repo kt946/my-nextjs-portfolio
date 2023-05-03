@@ -53,7 +53,7 @@ const Header = (props: Props) => {
         opacity: 1,
       }}
       transition={{ type: 'tween', ease: 'easeOut', duration: 0.8 }}
-      className="bg-black/80 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-slate-300/20 backdrop-blur"
+      className="bg-black/80 sticky top-0 z-20 w-full min-h-[61px] py-3 md:py-4 px-4 text-base border-b border-gray-300/20 backdrop-blur"
     >
       {/* Navbar */}
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
@@ -70,6 +70,7 @@ const Header = (props: Props) => {
             width={0}
             height={0}
             className="w-auto max-w-xs h-7"
+            priority={true}
           />
         </Link>
 
@@ -100,7 +101,7 @@ const Header = (props: Props) => {
             <li key={socialLink.name}>
               <Link
                 href={socialLink.url}
-                className="text-2xl text-slate-400 hover:text-primary custom-transition"
+                className="text-2xl text-gray-400 hover:text-primary custom-transition"
               >
                 {socialLink.icon}
               </Link>
