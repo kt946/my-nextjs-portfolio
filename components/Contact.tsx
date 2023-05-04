@@ -1,36 +1,36 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { MdSend } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+
+import { AiOutlineLoading } from 'react-icons/ai';
 
 type Props = {};
 
 const Contact = (props: Props) => {
   const formRef = useRef<HTMLFormElement | null>(null);
+  const [loading, setLoading] = useState(false);
 
   // function to handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // send form data using emailjs
-    emailjs
-      .sendForm(
+    try {
+      setLoading(true);
+      await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         formRef.current!,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      )
-      .then(
-        (result) => {
-          // if message sent is successful
-          console.log('Email sent successfully');
-          // clear form
-          formRef.current!.reset();
-        },
-        (error) => {
-          console.error(`Error sending email: ${error.text}`);
-        }
       );
+      console.log('Email sent successfully');
+      formRef.current!.reset();
+    } catch (error) {
+      console.error(`Error sending email: ${(error as Error).message}`);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -82,46 +82,32 @@ const Contact = (props: Props) => {
             transition={{ type: 'tween', ease: 'easeOut', duration: 1 }}
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mx-auto max-w-3xl text-gray-300 caret-primary focus:caret-primary"
+            className="flex flex-col gap-4 mx-auto max-w-2xl text-gray-300 caret-primary focus:caret-primary"
           >
-            <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
-              {/* Name Field */}
-              <div className="flex flex-col">
-                <label className="pb-2 uppercase md:text-md font-bold">Name</label>
-                <input
-                  className="contactInput"
-                  type="text"
-                  placeholder="Name"
-                  name="name"
-                  required
-                />
-              </div>
-              {/* Email Field */}
-              <div className="flex flex-col">
-                <label className="pb-2 uppercase md:text-md tracking-wider font-bold">Email</label>
-                <input
-                  className="contactInput"
-                  type="email"
-                  placeholder="Email"
-                  name="email"
-                  required
-                />
-              </div>
-            </div>
-            {/* Subject Field */}
-            <div className="flex flex-col py-2">
-              <label className="pb-2 uppercase md:text-md tracking-wider font-bold">Subject</label>
+            <div className="flex flex-col gap-1">
+              <label className="uppercase md:text-md font-bold">Name</label>
               <input
                 className="contactInput"
                 type="text"
-                placeholder="Subject"
-                name="subject"
+                placeholder="Name"
+                name="name"
+                required
+              />
+            </div>
+            {/* Email Field */}
+            <div className="flex flex-col gap-1">
+              <label className="uppercase md:text-md tracking-wider font-bold">Email</label>
+              <input
+                className="contactInput"
+                type="email"
+                placeholder="Email"
+                name="email"
                 required
               />
             </div>
             {/* Message Field */}
-            <div className="flex flex-col py-2">
-              <label className="pb-2 uppercase md:text-md tracking-wider font-bold">Message</label>
+            <div className="flex flex-col gap-1">
+              <label className="uppercase md:text-md tracking-wider font-bold">Message</label>
               <textarea
                 className="contactInput"
                 rows={6}
@@ -133,12 +119,16 @@ const Contact = (props: Props) => {
             {/* Submit button */}
             <button
               type="submit"
-              className="mx-auto mt-8 w-full custom-btn btn-primary-style"
+              className="h-12 custom-btn btn-primary-style"
             >
-              Submit
-              <span className="">
-                <MdSend />
-              </span>
+              {loading ? (
+                <AiOutlineLoading className="animate-spin h-6 w-6" />
+              ) : (
+                <>
+                  Submit
+                  <MdSend />
+                </>
+              )}
             </button>
           </motion.form>
         </div>

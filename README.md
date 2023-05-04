@@ -24,29 +24,35 @@ This repository contains my personal web developer portfolio built with technolo
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-To install this project on your local computer, navigate to the `demo` branch of this repository.
-
-The `constants.tsx` and `assets` folder in the `demo` branch has dummy information and placeholder images to give developers an idea of how the information is structured in the portfolio.
+To install this project on your local computer, navigate to the `demo` branch of this repository. The `constants.tsx` and `assets` folder in the `demo` branch has dummy information and placeholder images to give developers an idea of how the information is structured in the portfolio.
 
 In the `demo` branch, clone the repository or download it as a ZIP file and place it into a local directory on your computer.
 
 Open a command-line interface (VS Code, Git Bash, etc.) and navigate to the root directory containing the application's package.json.
 
-In the command-line, download the application's dependencies by typing:
+To download the application's dependencies, run:
 
 ```
 npm install
 ```
 
-Next, run the development server:
+Create a .env file in the root directory and add the following environment variables for the contact form: 
 
-```bash
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+```
+
+Please refer to the [EmailJS documentation](https://www.emailjs.com/docs/) to learn more about EmailJS and how to set up the required environment variables.
+
+To start the development server, run:
+
+```
 npm run dev
 ```
 
-Open http://localhost:3000 with your browser to see the portfolio.
-
-This portfolio also uses [EmailJS](https://www.emailjs.com/) to send emails via a contact form. Please refer to the [documentation](https://www.emailjs.com/docs/) to learn more about EmailJS and how to set up the required environment variables.
+Navigate to http://localhost:3000 in your browser to view the portfolio.
 
 ## Usage
 
@@ -66,7 +72,7 @@ For additional personalization such as colors, headings, or extra social links, 
 
 ## Screenshots
 
-![hero-page](./public/assets/screenshots/screenshot-hero.png)
+![home-page](./public/assets/screenshots/screenshot-home.png 'Homepage')
 
 ## Technologies Used
 
@@ -82,7 +88,7 @@ For additional personalization such as colors, headings, or extra social links, 
 
 ## Credits
 
-- [kt946](https://github.com/kt946)
+- [kt946](https://github.com/kt946) - Project Creator
 
 ## Links
 
