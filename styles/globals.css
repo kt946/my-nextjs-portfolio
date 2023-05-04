@@ -25,7 +25,7 @@
     @apply transition-all ease-in-out duration-300;
   }
   .custom-btn {
-    @apply custom-transition py-2 px-4 text-lg rounded-full font-semibold flex justify-center items-center gap-2;
+    @apply custom-transition py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-full font-semibold flex justify-center items-center gap-2;
   }
   .custom-social-btn {
     @apply custom-transition p-2 rounded-full border-2 border-gray-500 hover:border-primary text-2xl text-gray-300 hover:text-primary;
