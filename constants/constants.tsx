@@ -11,7 +11,7 @@ const profileImage = 'profile.png';
 const devName = 'Kyle Tang';
 
 // Roles array for typewriter effect in hero
-const roles = ['Full Stack Developer', 'Designer', 'Coder'];
+const roles = ['Full Stack Developer', 'Designer', 'Problem Solver', 'Coffee Lover'];
 
 // Social URL Links
 const socialLinks = [
