@@ -152,6 +152,14 @@ const projectList = [
     githubLink: 'https://github.com/kt946/japanese-quiz-mern-app',
   },
   {
+    title: 'BlinkReader',
+    image: 'blinkreader.jpg',
+    description: 'BlinkReader is a simple speed reading web application designed to enhance reading speed through streamlined functionality. Users can easily paste text into the app and practice speed reading with an optimized display and customizable controls.',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Google Fonts', 'Vite'],
+    projectLink: 'https://blinkreader.netlify.app/',
+    githubLink: 'https://github.com/kt946/blink-reader',
+  },
+  {
     title: 'Movie TV Watchlist',
     image: 'movie-tv-watchlist.png',
     description: `Movie TV Watchlist is a web application that allows users to search for movies and TV shows through TMDB's API. Users can easily add their favorite content to a personal watchlist, which is conveniently saved in the browser's local storage for easy access.`,
@@ -166,14 +174,6 @@ const projectList = [
     tech: ['MERN', 'JavaScript', 'GraphQL', 'JWT', 'Stripe', 'Redux'],
     projectLink: 'https://shop-shop-75043.herokuapp.com',
     githubLink: 'https://github.com/kt946/awesome-shop-shop-redux',
-  },
-  {
-    title: 'Pizza Hunt',
-    image: 'pizza-hunt.png',
-    description: `Pizza Hunt is an application that provides users with a platform to discover and explore custom pizza recipes. Utilizing MongoDB, Pizza Hunt stores an extensive collection of recipes, along with user comments and feedback, to help users make informed decisions when selecting toppings for their perfect pizza.`,
-    tech: ['Node', 'Express', 'NoSQL', 'MongoDB', 'Mongoose'],
-    projectLink: 'https://pizza-hunt-13648.herokuapp.com/',
-    githubLink: 'https://github.com/kt946/pizza-hunt',
   },
 ];
 
