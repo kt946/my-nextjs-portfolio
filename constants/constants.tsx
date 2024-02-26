@@ -2,19 +2,19 @@ import { FaGithub, FaLinkedinIn, FaRegSmileWink } from 'react-icons/fa';
 import { HiOutlineMail, HiCode, HiDatabase, HiOutlineDocumentDownload } from 'react-icons/hi';
 
 // Logo Image
-const LogoImage = 'logo.svg';
+export const LogoImage = 'logo.svg';
 
 // Profile Image
-const profileImage = 'profile.png';
+export const profileImage = 'profile.png';
 
 // Name, will display in title, hero section, and footer
-const devName = 'Kyle Tang';
+export const devName = 'Kyle Tang';
 
 // Roles array for typewriter effect in hero
-const roles = ['Full Stack Developer', 'Designer', 'Problem Solver', 'Coffee Lover'];
+export const roles = ['Full Stack Developer', 'Data Analyst', 'Designer', 'Traveler', 'Coffee Lover'];
 
 // Social URL Links
-const socialLinks = [
+export const socialLinks = [
   {
     name: 'email',
     icon: <HiOutlineMail />,
@@ -33,10 +33,10 @@ const socialLinks = [
 ];
 
 // Resume URL link
-const resumeLink = 'https://drive.google.com/file/d/1aUiFaAlnXzcr3Nrz8uu4RTZr9klqImxv/view?usp=sharing';
+export const resumeLink = 'https://drive.google.com/file/d/1aUiFaAlnXzcr3Nrz8uu4RTZr9klqImxv/view?usp=sharing';
 
 // Bio paragraphs for About section
-const bioParagraphs = [
+export const bioParagraphs = [
   {
     id: 'paragraph1',
     text: `Hi everyone! My name is Kyle and I'm a full stack web developer with a B.A. in Psychology from Rutgers University and a passion for technology, creativity, and learning. I've completed a certificate in Full Stack Web Development from the Rutgers Coding Bootcamp.`,
@@ -56,14 +56,14 @@ const bioParagraphs = [
 ];
 
 // objects containing data for Call to Action sections
-const contactCTA = {
+export const contactCTA = {
   message: `Don't be a stranger. Feel free to reach out and connect with me!`,
   buttonMessage: 'Get in touch',
   buttonIcon: <FaRegSmileWink />,
   linkURL: '#contact',
 };
 
-const resumeCTA = {
+export const resumeCTA = {
   message: `Want to see more of what I can do? Check out my resume.`,
   buttonMessage: 'Download resume',
   buttonIcon: <HiOutlineDocumentDownload />,
@@ -71,7 +71,7 @@ const resumeCTA = {
 };
 
 // icon, title, summary, and skills list for Skill Cards
-const skillCardData = [
+export const skillCardData = [
   // for front-end
   {
     id: 'frontEndSkills',
@@ -126,7 +126,7 @@ const skillCardData = [
 ];
 
 // Project List for Work section
-const projectList = [
+export const projectList = [
   {
     title: 'CodeFlow',
     image: 'codeflow.png',
@@ -152,6 +152,14 @@ const projectList = [
     githubLink: 'https://github.com/kt946/japanese-quiz-mern-app',
   },
   {
+    title: 'Sakura Flashcards',
+    image: 'sakura-flashcards.jpg',
+    description: `Sakura Flashcards is a Japanese language flashcard app inspired by Quizlet. Users can study hiragana, katakana, kanji and vocabulary with a variety of interactive flashcard sets.`,
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    projectLink: 'https://sakura-flashcards.vercel.app/',
+    githubLink: 'https://github.com/kt946/sakura-flashcards',
+  },
+  {
     title: 'BlinkReader',
     image: 'blinkreader.jpg',
     description: 'BlinkReader is a simple speed reading web application designed to enhance reading speed through streamlined functionality. Users can easily paste text into the app and practice speed reading with an optimized display and customizable controls.',
@@ -167,26 +175,4 @@ const projectList = [
     projectLink: 'https://cnohilly.github.io/movie-tv-watchlist/',
     githubLink: 'https://github.com/cnohilly/movie-tv-watchlist',
   },
-  {
-    title: 'Shop-Shop',
-    image: 'shop-shop.png',
-    description: `Shop-Shop is an e-commerce application built on the MERN stack, which leverages Redux to manage global state. With the ability to create accounts, users can easily add products to their shopping cart and checkout using the secure Stripe API.`,
-    tech: ['MERN', 'JavaScript', 'GraphQL', 'JWT', 'Stripe', 'Redux'],
-    projectLink: 'https://shop-shop-75043.herokuapp.com',
-    githubLink: 'https://github.com/kt946/awesome-shop-shop-redux',
-  },
 ];
-
-export {
-  LogoImage,
-  profileImage,
-  devName,
-  roles,
-  socialLinks,
-  resumeLink,
-  bioParagraphs,
-  contactCTA,
-  resumeCTA,
-  skillCardData,
-  projectList,
-};
